@@ -1,0 +1,586 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>CPP-MBee MSP430 Examples: Файл macros.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CPP-MBee MSP430 Examples
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Примеры использования библиотеки cpp-mbee на микроконтроллерах MSP430</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Макросы</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл macros.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="macros_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a23c9c8c18abfb7d5f0807cd4ebdbb468"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a23c9c8c18abfb7d5f0807cd4ebdbb468">BV</a>(n)&#160;&#160;&#160;(1 &lt;&lt; (n))</td></tr>
+<tr class="separator:a23c9c8c18abfb7d5f0807cd4ebdbb468"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e8173b720a3eed301262ae808ee976d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a2e8173b720a3eed301262ae808ee976d">st</a>(x)&#160;&#160;&#160;do{x} while(__LINE__ == -1)</td></tr>
+<tr class="separator:a2e8173b720a3eed301262ae808ee976d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81bd8438bd53715b20f45ef6f7a1a8c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a81bd8438bd53715b20f45ef6f7a1a8c1">ENTER_CRITICAL_SECTION</a>(x)</td></tr>
+<tr class="separator:a81bd8438bd53715b20f45ef6f7a1a8c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98c17b875da74687ccf00fbfdc6718e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a98c17b875da74687ccf00fbfdc6718e1">EXIT_CRITICAL_SECTION</a>(x)&#160;&#160;&#160;<a class="el" href="macros_8h.html#a2e8173b720a3eed301262ae808ee976d">st</a>(__bis_SR_register (x);)</td></tr>
+<tr class="separator:a98c17b875da74687ccf00fbfdc6718e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3f1825392e3f5ba6661fed409283a77"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#ad3f1825392e3f5ba6661fed409283a77">CRITICAL_STATEMENT</a>(x)</td></tr>
+<tr class="separator:ad3f1825392e3f5ba6661fed409283a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e6ce685536ade828a79a63d0ec48ba1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a2e6ce685536ade828a79a63d0ec48ba1">SET_EVENT</a>(evt)&#160;&#160;&#160;(<a class="el" href="_control_8cpp.html#af0a83106765170123327c33b9cdcaf51">events</a> |= <a class="el" href="macros_8h.html#a23c9c8c18abfb7d5f0807cd4ebdbb468">BV</a>(evt))</td></tr>
+<tr class="separator:a2e6ce685536ade828a79a63d0ec48ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a869e56fdeba1c76a9cd7ce49d38598d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a869e56fdeba1c76a9cd7ce49d38598d6">RESET_EVENT</a>(evt)&#160;&#160;&#160;(<a class="el" href="_control_8cpp.html#af0a83106765170123327c33b9cdcaf51">events</a> &amp;= ~<a class="el" href="macros_8h.html#a23c9c8c18abfb7d5f0807cd4ebdbb468">BV</a>( evt))</td></tr>
+<tr class="separator:a869e56fdeba1c76a9cd7ce49d38598d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a969bdef54f5d4e309c9b4dd379a32f26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a969bdef54f5d4e309c9b4dd379a32f26">TEST_EVENT</a>(evt)&#160;&#160;&#160;(<a class="el" href="_control_8cpp.html#af0a83106765170123327c33b9cdcaf51">events</a> &amp; <a class="el" href="macros_8h.html#a23c9c8c18abfb7d5f0807cd4ebdbb468">BV</a>(evt))</td></tr>
+<tr class="separator:a969bdef54f5d4e309c9b4dd379a32f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26096234aaf2269fdbb2b8c30b339775"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a26096234aaf2269fdbb2b8c30b339775">BUILD_UINT32</a>(Byte0,  Byte1,  Byte2,  Byte3)</td></tr>
+<tr class="separator:a26096234aaf2269fdbb2b8c30b339775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2af494bbd433546064b907de08a4104"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#ad2af494bbd433546064b907de08a4104">BUILD_UINT16</a>(loByte,  hiByte)&#160;&#160;&#160;((unsigned short)(((loByte) &amp; 0x00FF) + (((hiByte) &amp; 0x00FF) &lt;&lt; 8)))</td></tr>
+<tr class="separator:ad2af494bbd433546064b907de08a4104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a869398c9f0eb7bcf1c8e101b052eed07"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a869398c9f0eb7bcf1c8e101b052eed07">HI_UINT16</a>(a)&#160;&#160;&#160;(((a) &gt;&gt; 8) &amp; 0xFF)</td></tr>
+<tr class="separator:a869398c9f0eb7bcf1c8e101b052eed07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2b94e11f455d94fd743666d4f1364d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#ab2b94e11f455d94fd743666d4f1364d7">LO_UINT16</a>(a)&#160;&#160;&#160;((a) &amp; 0xFF)</td></tr>
+<tr class="separator:ab2b94e11f455d94fd743666d4f1364d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb6a538a5563fd049e7fcba20a715d33"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#abb6a538a5563fd049e7fcba20a715d33">BUILD_UINT8</a>(hiByte,  loByte)&#160;&#160;&#160;((uint8)(((loByte) &amp; 0x0F) + (((hiByte) &amp; 0x0F) &lt;&lt; 4)))</td></tr>
+<tr class="separator:abb6a538a5563fd049e7fcba20a715d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7629869e29cb401a58e84d99e0ae82ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a7629869e29cb401a58e84d99e0ae82ad">HI_UINT8</a>(a)&#160;&#160;&#160;(((a) &gt;&gt; 4) &amp; 0x0F)</td></tr>
+<tr class="separator:a7629869e29cb401a58e84d99e0ae82ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9844003fc4febd0713865b611af2505c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a9844003fc4febd0713865b611af2505c">LO_UINT8</a>(a)&#160;&#160;&#160;((a) &amp; 0x0F)</td></tr>
+<tr class="separator:a9844003fc4febd0713865b611af2505c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41e4a5af14f4630bdf84312eedd096cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a41e4a5af14f4630bdf84312eedd096cd">UINT16_TO_BUF_LITTLE_ENDIAN</a>(pBuf,  val)</td></tr>
+<tr class="separator:a41e4a5af14f4630bdf84312eedd096cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd596d25df337f133bc748114e10168f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#abd596d25df337f133bc748114e10168f">UINT16_TO_BUF_BIG_ENDIAN</a>(pBuf,  val)</td></tr>
+<tr class="separator:abd596d25df337f133bc748114e10168f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a251909b029dadacf3d6e031b4b1712a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a251909b029dadacf3d6e031b4b1712a3">UINT32_TO_BUF_LITTLE_ENDIAN</a>(pBuf,  val)</td></tr>
+<tr class="separator:a251909b029dadacf3d6e031b4b1712a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae456fe7f8a4b8f78fb5da4cc46b83d56"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#ae456fe7f8a4b8f78fb5da4cc46b83d56">UINT32_TO_BUF_BIG_ENDIAN</a>(pBuf,  val)</td></tr>
+<tr class="separator:ae456fe7f8a4b8f78fb5da4cc46b83d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Макросы</h2>
+<a id="ad2af494bbd433546064b907de08a4104"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2af494bbd433546064b907de08a4104">&#9670;&nbsp;</a></span>BUILD_UINT16</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUILD_UINT16</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">loByte, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">hiByte&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((unsigned short)(((loByte) &amp; 0x00FF) + (((hiByte) &amp; 0x00FF) &lt;&lt; 8)))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="macros_8h_source.html">macros.h</a> строка <a class="el" href="macros_8h_source.html#l00029">29</a></p>
+
+</div>
+</div>
+<a id="a26096234aaf2269fdbb2b8c30b339775"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26096234aaf2269fdbb2b8c30b339775">&#9670;&nbsp;</a></span>BUILD_UINT32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUILD_UINT32</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Byte0, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Byte1, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Byte2, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Byte3&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">((<span class="keywordtype">unsigned</span> long)((<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>)((Byte0) &amp; 0x00FF) \</div><div class="line">          + ((<span class="keywordtype">unsigned</span> long)((Byte1) &amp; 0x00FF) &lt;&lt; 8) \</div><div class="line">          + ((<span class="keywordtype">unsigned</span> long)((Byte2) &amp; 0x00FF) &lt;&lt; 16) \</div><div class="line">          + ((<span class="keywordtype">unsigned</span> long)((Byte3) &amp; 0x00FF) &lt;&lt; 24)))</div></div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="macros_8h_source.html">macros.h</a> строка <a class="el" href="macros_8h_source.html#l00023">23</a></p>
+
+</div>
+</div>
+<a id="abb6a538a5563fd049e7fcba20a715d33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb6a538a5563fd049e7fcba20a715d33">&#9670;&nbsp;</a></span>BUILD_UINT8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUILD_UINT8</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">hiByte, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">loByte&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((uint8)(((loByte) &amp; 0x0F) + (((hiByte) &amp; 0x0F) &lt;&lt; 4)))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="macros_8h_source.html">macros.h</a> строка <a class="el" href="macros_8h_source.html#l00035">35</a></p>
+
+</div>
+</div>
+<a id="a23c9c8c18abfb7d5f0807cd4ebdbb468"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23c9c8c18abfb7d5f0807cd4ebdbb468">&#9670;&nbsp;</a></span>BV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BV</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n</td><td>)</td>
+          <td>&#160;&#160;&#160;(1 &lt;&lt; (n))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="macros_8h_source.html">macros.h</a> строка <a class="el" href="macros_8h_source.html#l00009">9</a></p>
+
+</div>
+</div>
+<a id="ad3f1825392e3f5ba6661fed409283a77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3f1825392e3f5ba6661fed409283a77">&#9670;&nbsp;</a></span>CRITICAL_STATEMENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CRITICAL_STATEMENT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><a class="code" href="macros_8h.html#a2e8173b720a3eed301262ae808ee976d">st</a>(uint16_t s;\</div><div class="line">                                            ENTER_CRITICAL_SECTION(s);\</div><div class="line">                                            (x);\</div><div class="line">                                            EXIT_CRITICAL_SECTION(s);)</div><div class="ttc" id="macros_8h_html_a2e8173b720a3eed301262ae808ee976d"><div class="ttname"><a href="macros_8h.html#a2e8173b720a3eed301262ae808ee976d">st</a></div><div class="ttdeci">#define st(x)</div><div class="ttdef"><b>Definition:</b> <a href="macros_8h_source.html#l00010">macros.h:10</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="macros_8h_source.html">macros.h</a> строка <a class="el" href="macros_8h_source.html#l00014">14</a></p>
+
+</div>
+</div>
+<a id="a81bd8438bd53715b20f45ef6f7a1a8c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81bd8438bd53715b20f45ef6f7a1a8c1">&#9670;&nbsp;</a></span>ENTER_CRITICAL_SECTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ENTER_CRITICAL_SECTION</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><a class="code" href="macros_8h.html#a2e8173b720a3eed301262ae808ee976d">st</a>((x) = __get_SR_register() &amp; GIE; <span class="comment">/*Атомарно сохраняем регистр STATUS.*/</span>\</div><div class="line">                                        __disable_interrupt();)</div><div class="ttc" id="macros_8h_html_a2e8173b720a3eed301262ae808ee976d"><div class="ttname"><a href="macros_8h.html#a2e8173b720a3eed301262ae808ee976d">st</a></div><div class="ttdeci">#define st(x)</div><div class="ttdef"><b>Definition:</b> <a href="macros_8h_source.html#l00010">macros.h:10</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="macros_8h_source.html">macros.h</a> строка <a class="el" href="macros_8h_source.html#l00011">11</a></p>
+
+</div>
+</div>
+<a id="a98c17b875da74687ccf00fbfdc6718e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98c17b875da74687ccf00fbfdc6718e1">&#9670;&nbsp;</a></span>EXIT_CRITICAL_SECTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXIT_CRITICAL_SECTION</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a2e8173b720a3eed301262ae808ee976d">st</a>(__bis_SR_register (x);)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="macros_8h_source.html">macros.h</a> строка <a class="el" href="macros_8h_source.html#l00013">13</a></p>
+
+</div>
+</div>
+<a id="a869398c9f0eb7bcf1c8e101b052eed07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a869398c9f0eb7bcf1c8e101b052eed07">&#9670;&nbsp;</a></span>HI_UINT16</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HI_UINT16</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a</td><td>)</td>
+          <td>&#160;&#160;&#160;(((a) &gt;&gt; 8) &amp; 0xFF)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="macros_8h_source.html">macros.h</a> строка <a class="el" href="macros_8h_source.html#l00032">32</a></p>
+
+</div>
+</div>
+<a id="a7629869e29cb401a58e84d99e0ae82ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7629869e29cb401a58e84d99e0ae82ad">&#9670;&nbsp;</a></span>HI_UINT8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HI_UINT8</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a</td><td>)</td>
+          <td>&#160;&#160;&#160;(((a) &gt;&gt; 4) &amp; 0x0F)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="macros_8h_source.html">macros.h</a> строка <a class="el" href="macros_8h_source.html#l00038">38</a></p>
+
+</div>
+</div>
+<a id="ab2b94e11f455d94fd743666d4f1364d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2b94e11f455d94fd743666d4f1364d7">&#9670;&nbsp;</a></span>LO_UINT16</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LO_UINT16</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a</td><td>)</td>
+          <td>&#160;&#160;&#160;((a) &amp; 0xFF)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="macros_8h_source.html">macros.h</a> строка <a class="el" href="macros_8h_source.html#l00033">33</a></p>
+
+</div>
+</div>
+<a id="a9844003fc4febd0713865b611af2505c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9844003fc4febd0713865b611af2505c">&#9670;&nbsp;</a></span>LO_UINT8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LO_UINT8</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a</td><td>)</td>
+          <td>&#160;&#160;&#160;((a) &amp; 0x0F)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="macros_8h_source.html">macros.h</a> строка <a class="el" href="macros_8h_source.html#l00039">39</a></p>
+
+</div>
+</div>
+<a id="a869e56fdeba1c76a9cd7ce49d38598d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a869e56fdeba1c76a9cd7ce49d38598d6">&#9670;&nbsp;</a></span>RESET_EVENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RESET_EVENT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">evt</td><td>)</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="_control_8cpp.html#af0a83106765170123327c33b9cdcaf51">events</a> &amp;= ~<a class="el" href="macros_8h.html#a23c9c8c18abfb7d5f0807cd4ebdbb468">BV</a>( evt))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="macros_8h_source.html">macros.h</a> строка <a class="el" href="macros_8h_source.html#l00020">20</a></p>
+
+</div>
+</div>
+<a id="a2e6ce685536ade828a79a63d0ec48ba1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e6ce685536ade828a79a63d0ec48ba1">&#9670;&nbsp;</a></span>SET_EVENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SET_EVENT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">evt</td><td>)</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="_control_8cpp.html#af0a83106765170123327c33b9cdcaf51">events</a> |= <a class="el" href="macros_8h.html#a23c9c8c18abfb7d5f0807cd4ebdbb468">BV</a>(evt))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="macros_8h_source.html">macros.h</a> строка <a class="el" href="macros_8h_source.html#l00019">19</a></p>
+
+</div>
+</div>
+<a id="a2e8173b720a3eed301262ae808ee976d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e8173b720a3eed301262ae808ee976d">&#9670;&nbsp;</a></span>st</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define st</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;do{x} while(__LINE__ == -1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="macros_8h_source.html">macros.h</a> строка <a class="el" href="macros_8h_source.html#l00010">10</a></p>
+
+</div>
+</div>
+<a id="a969bdef54f5d4e309c9b4dd379a32f26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a969bdef54f5d4e309c9b4dd379a32f26">&#9670;&nbsp;</a></span>TEST_EVENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TEST_EVENT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">evt</td><td>)</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="_control_8cpp.html#af0a83106765170123327c33b9cdcaf51">events</a> &amp; <a class="el" href="macros_8h.html#a23c9c8c18abfb7d5f0807cd4ebdbb468">BV</a>(evt))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="macros_8h_source.html">macros.h</a> строка <a class="el" href="macros_8h_source.html#l00021">21</a></p>
+
+</div>
+</div>
+<a id="abd596d25df337f133bc748114e10168f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd596d25df337f133bc748114e10168f">&#9670;&nbsp;</a></span>UINT16_TO_BUF_BIG_ENDIAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UINT16_TO_BUF_BIG_ENDIAN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pBuf, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">val&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div><div class="line">        *(pBuf)++ = ((((<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>)(val)) &gt;&gt; 8) &amp; 0xFF); \</div><div class="line">        *(pBuf)++ = ((((<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>)(val)) &gt;&gt; 0) &amp; 0xFF); \</div><div class="line">    }<span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="macros_8h_source.html">macros.h</a> строка <a class="el" href="macros_8h_source.html#l00048">48</a></p>
+
+</div>
+</div>
+<a id="a41e4a5af14f4630bdf84312eedd096cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41e4a5af14f4630bdf84312eedd096cd">&#9670;&nbsp;</a></span>UINT16_TO_BUF_LITTLE_ENDIAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UINT16_TO_BUF_LITTLE_ENDIAN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pBuf, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">val&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div><div class="line">        *(pBuf)++ = ((((<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>)(val)) &gt;&gt;  0) &amp; 0xFF); \</div><div class="line">        *(pBuf)++ = ((((<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>)(val)) &gt;&gt;  8) &amp; 0xFF); \</div><div class="line">    }<span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="macros_8h_source.html">macros.h</a> строка <a class="el" href="macros_8h_source.html#l00042">42</a></p>
+
+</div>
+</div>
+<a id="ae456fe7f8a4b8f78fb5da4cc46b83d56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae456fe7f8a4b8f78fb5da4cc46b83d56">&#9670;&nbsp;</a></span>UINT32_TO_BUF_BIG_ENDIAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UINT32_TO_BUF_BIG_ENDIAN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pBuf, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">val&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div><div class="line">        *(pBuf)++ = ((((<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>)(val)) &gt;&gt; 24) &amp; 0xFF); \</div><div class="line">        *(pBuf)++ = ((((<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>)(val)) &gt;&gt; 16) &amp; 0xFF); \</div><div class="line">        *(pBuf)++ = ((((<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>)(val)) &gt;&gt; 8) &amp; 0xFF); \</div><div class="line">        *(pBuf)++ = ((((<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>)(val)) &gt;&gt; 0) &amp; 0xFF); \</div><div class="line">    }<span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="macros_8h_source.html">macros.h</a> строка <a class="el" href="macros_8h_source.html#l00063">63</a></p>
+
+</div>
+</div>
+<a id="a251909b029dadacf3d6e031b4b1712a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a251909b029dadacf3d6e031b4b1712a3">&#9670;&nbsp;</a></span>UINT32_TO_BUF_LITTLE_ENDIAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UINT32_TO_BUF_LITTLE_ENDIAN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pBuf, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">val&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div><div class="line">        *(pBuf)++ = ((((<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>)(val)) &gt;&gt;  0) &amp; 0xFF); \</div><div class="line">        *(pBuf)++ = ((((<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>)(val)) &gt;&gt;  8) &amp; 0xFF); \</div><div class="line">        *(pBuf)++ = ((((<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>)(val)) &gt;&gt; 16) &amp; 0xFF); \</div><div class="line">        *(pBuf)++ = ((((<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>)(val)) &gt;&gt; 24) &amp; 0xFF); \</div><div class="line">    }<span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="macros_8h_source.html">macros.h</a> строка <a class="el" href="macros_8h_source.html#l00055">55</a></p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
