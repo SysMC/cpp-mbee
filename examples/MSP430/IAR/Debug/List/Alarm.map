@@ -1,0 +1,1984 @@
+################################################################################
+#                                                                              #
+#      IAR Universal Linker V6.5.1.95                                          #
+#                                                                              #
+#           Link time     =  01/Aug/2019  15:06:35                             #
+#           Target CPU    =  MSP430                                            #
+#           List file     =  "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\exampl #
+#                            es\MSP430\IAR\Debug\List\Alarm.map"               #
+#           Output file 1 =  "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\exampl #
+#                            es\MSP430\IAR\Debug\Exe\Alarm.d43"                #
+#                            Format: ubrof10                                   #
+#                            UBROF version 10.0.6                              #
+#                            Using library modules for C-SPY (-rt)             #
+#           Command line  =  -f                                                #
+#                            C:\Users\NIKOLA~1.NEU\AppData\Local\Temp\EW2165.t #
+#                            mp                                                #
+#                            ("C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\examp #
+#                            les\MSP430\IAR\Debug\Obj\Alarm.r43"               #
+#                            "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\exampl #
+#                            es\MSP430\IAR\Debug\Obj\console.r43"              #
+#                            "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\exampl #
+#                            es\MSP430\IAR\Debug\Obj\cs.r43"                   #
+#                            "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\exampl #
+#                            es\MSP430\IAR\Debug\Obj\eusci_a_uart.r43"         #
+#                            "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\exampl #
+#                            es\MSP430\IAR\Debug\Obj\gpio.r43"                 #
+#                            "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\exampl #
+#                            es\MSP430\IAR\Debug\Obj\MBee.r43"                 #
+#                            "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\exampl #
+#                            es\MSP430\IAR\Debug\Obj\MSP430Serial.r43"         #
+#                            "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\exampl #
+#                            es\MSP430\IAR\Debug\Obj\pmm.r43"                  #
+#                            "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\exampl #
+#                            es\MSP430\IAR\Debug\Obj\SerialStar.r43"           #
+#                            "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\exampl #
+#                            es\MSP430\IAR\Debug\Obj\System.r43"               #
+#                            "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\exampl #
+#                            es\MSP430\IAR\Debug\Obj\timer_b.r43"              #
+#                            "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\exampl #
+#                            es\MSP430\IAR\Debug\Obj\uart.r43"                 #
+#                            "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\exampl #
+#                            es\MSP430\IAR\Debug\Obj\wdt_a.r43"                #
+#                            -o                                                #
+#                            "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\exampl #
+#                            es\MSP430\IAR\Debug\Exe\Alarm.d43"                #
+#                            -l                                                #
+#                            "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\exampl #
+#                            es\MSP430\IAR\Debug\List\Alarm.map"               #
+#                            -xms                                              #
+#                            "-IC:\Program Files (x86)\IAR Systems\Embedded Wo #
+#                            rkbench 9.0\430\LIB\"                             #
+#                            -f                                                #
+#                            "C:\Program Files (x86)\IAR Systems\Embedded Work #
+#                            bench 9.0\430\config\linker\lnk430fr2355.xcl"     #
+#                            (-cmsp430 -QCODE_I=CODE_ID -QTLS16_I=TLS16_ID     #
+#                            -D__iar_HWMUL=4C0 -Z(CONST)INFO=1800-19FF         #
+#                            -Z(DATA)TINYRAM=0006-001F                         #
+#                            -Z(DATA)DATA16_I,DATA16_Z,DATA16_N,TLS16_I=2000-2 #
+#                            FFF                                               #
+#                            -Z(DATA)CODE_I                                    #
+#                            -Z(DATA)DATA20_I,DATA20_Z,DATA20_N                #
+#                            -Z(DATA)CSTACK+_STACK_SIZE#                       #
+#                            -Z(CONST)FRWP_B1,DATA16_P,DATA20_P=8000-FF7F      #
+#                            -Z(DATA)DATA16_HEAP+_DATA16_HEAP_SIZE,DATA20_HEAP #
+#                            +_DATA20_HEAP_SIZE,FRWP_B2                        #
+#                            -Z(CONST)DATA16_C,DATA16_ID,TLS16_ID,DIFUNCT,CHEC #
+#                            KSUM=8000-FF7F                                    #
+#                            -Z(CONST)DATA20_C,DATA20_ID                       #
+#                            -Z(CODE)CSTART,ISR_CODE,CODE_ID=8000-FF7F         #
+#                            -P(CODE)CODE,CODE16=8000-FF7F                     #
+#                            -Z(CONST)BSLCONFIGURATIONSIGNATURE=FF88-FF89      #
+#                            -Z(CONST)BSLCONFIGURATION=FF8A-FF8B               #
+#                            -Z(CONST)BSLI2CADDRESS=FFA0-FFA1                  #
+#                            -Z(CONST)JTAGSIGNATURE=FF80-FF83                  #
+#                            -Z(CONST)BSLSIGNATURE=FF84-FF87                   #
+#                            -Z(CODE)INTVEC=FFA2-FFFF                          #
+#                            -Z(CODE)RESET=FFFE-FFFF) -f                       #
+#                            "C:\Program Files (x86)\IAR Systems\Embedded Work #
+#                            bench 9.0\430\config\linker\multiplier32.xcl"     #
+#                            (-e?Mul8Hw=?Mul8 -e?Mul16Hw=?Mul16                #
+#                            -e?Mul16to32uHw=?Mul16to32u                       #
+#                            -e?Mul16to32sHw=?Mul16to32s -e?Mul32Hw32=?Mul32   #
+#                            -e?Mul64Hw32=_Mul64i                              #
+#                            -e?Mul32u32uto64iHw32=_Mul32u32uto64i             #
+#                            -e?Mul32fHw32=_Mul32f                             #
+#                            -e_Mul64fHw32Ptr=_Mul64fPtr) -D_STACK_SIZE=A0     #
+#                            -rt                                               #
+#                            "C:\Program Files (x86)\IAR Systems\Embedded Work #
+#                            bench 9.0\430\lib\dlib\dl430xlsfn.r43"            #
+#                            -e_PrintfLarge=_Printf -e_ScanfLarge=_Scanf       #
+#                            -D_DATA16_HEAP_SIZE=A0 -s __program_start         #
+#                            -D_DATA20_HEAP_SIZE=50)                           #
+#                                                                              #
+#                           Copyright (C) 1987-2016 IAR Systems AB.            #
+################################################################################
+
+
+
+
+
+                ****************************************
+                *                                      *
+                *           CROSS REFERENCE            *
+                *                                      *
+                ****************************************
+
+       Program entry at :           824E  Relocatable, from module : ?cstart
+
+
+
+
+                ****************************************
+                *                                      *
+                *            RUNTIME MODEL             *
+                *                                      *
+                ****************************************
+
+  __Heap_Handler             = Basic
+  __SystemLibrary            = DLib
+  __code_model               = large
+  __core                     = 430X
+  __data_model               = small
+  __dlib_file_descriptor     = 0
+  __dlib_full_locale_support = 0
+  __double_size              = 32
+  __pic                      = no
+  __reg_r4                   = free
+  __reg_r5                   = free
+  __rt_version               = 3
+
+                ****************************************
+                *                                      *
+                *    AUTOMATIC SYMBOL REDIRECTIONS     *
+                *                                      *
+                ****************************************
+
+                  There are no automatic symbol redirections.
+
+
+
+                ****************************************
+                *                                      *
+                *              MODULE MAP              *
+                *                                      *
+                ****************************************
+
+
+  DEFINED ABSOLUTE ENTRIES
+    *************************************************************************
+
+  DEFINED ABSOLUTE ENTRIES
+  PROGRAM MODULE, NAME : ?ABS_ENTRY_MOD
+
+Absolute parts
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _DATA20_HEAP_SIZE       0050 
+           _DATA16_HEAP_SIZE       00A0 
+           _STACK_SIZE             00A0 
+           __iar_HWMUL             04C0            ?Mul32fHw32 (?Mul32fHw32)
+                                                   Console::ultoa(uint32_t, uint8_t *, uint8_t) (Alarm)
+    *************************************************************************
+
+  FILE NAME : C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\examples\MSP430\IAR\Debug\Obj\Alarm.r43
+  PROGRAM MODULE, NAME : Alarm
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_AN
+  Relative segment, address: 0130 - 0131 (0x2 bytes), align: 0
+  Segment part 1. ROOT        Intra module refs:   hardwareInit()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PM5CTL0_L            0130 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PM5CTL0                 0130 
+           PM5CTL0_H               0131 
+           PM5CTL0_L               0130 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0380 - 0381 (0x2 bytes), align: 0
+  Segment part 2. ROOT        Intra module refs:   Serial::begin(unsigned long)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_TB0CTL_L             0380 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           TB0CTL                  0380 
+           TB0CTL_H                0381 
+           TB0CTL_L                0380 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0382 - 0383 (0x2 bytes), align: 0
+  Segment part 3. ROOT        Intra module refs:   Serial::begin(unsigned long)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_TB0CCTL0_L           0382 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           TB0CCTL0                0382 
+           TB0CCTL0_H              0383 
+           TB0CCTL0_L              0382 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0392 - 0393 (0x2 bytes), align: 0
+  Segment part 4. ROOT        Intra module refs:   Serial::begin(unsigned long)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_TB0CCR0_L            0392 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           TB0CCR0                 0392 
+           TB0CCR0_H               0393 
+           TB0CCR0_L               0392 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 03A0 - 03A1 (0x2 bytes), align: 0
+  Segment part 5. ROOT        Intra module refs:   Serial::begin(unsigned long)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_TB0EX0_L             03A0 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           TB0EX0                  03A0 
+           TB0EX0_H                03A1 
+           TB0EX0_L                03A0 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 03C0 - 03C1 (0x2 bytes), align: 0
+  Segment part 6. ROOT        Intra module refs:   delayMs(unsigned int)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_TB1CTL_L             03C0 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           TB1CTL                  03C0 
+           TB1CTL_H                03C1 
+           TB1CTL_L                03C0 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 03C2 - 03C3 (0x2 bytes), align: 0
+  Segment part 7. ROOT        Intra module refs:   delayMs(unsigned int)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_TB1CCTL0_L           03C2 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           TB1CCTL0                03C2 
+           TB1CCTL0_H              03C3 
+           TB1CCTL0_L              03C2 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 03D2 - 03D3 (0x2 bytes), align: 0
+  Segment part 8. ROOT        Intra module refs:   delayMs(unsigned int)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_TB1CCR0_L            03D2 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           TB1CCR0                 03D2 
+           TB1CCR0_H               03D3 
+           TB1CCR0_L               03D2 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0500 - 0501 (0x2 bytes), align: 0
+  Segment part 9. ROOT        Intra module refs:   Serial::begin(unsigned long)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA0CTLW0_L          0500 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA0CTLW0               0500 
+           UCA0CTLW0_H             0501 
+           UCA0CTLW0_L             0500 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0506 - 0507 (0x2 bytes), align: 0
+  Segment part 10. ROOT       Intra module refs:   Serial::begin(unsigned long)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA0BRW_L            0506 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA0BRW                 0506 
+           UCA0BRW_H               0507 
+           UCA0BRW_L               0506 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0508 - 0509 (0x2 bytes), align: 0
+  Segment part 11. ROOT       Intra module refs:   Serial::begin(unsigned long)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA0MCTLW_L          0508 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA0MCTLW               0508 
+           UCA0MCTLW_H             0509 
+           UCA0MCTLW_L             0508 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 050C - 050D (0x2 bytes), align: 0
+  Segment part 12. ROOT       Intra module refs:   USCI_A0_ISR()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA0RXBUF_L          050C 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA0RXBUF               050C 
+           UCA0RXBUF_H             050D 
+           UCA0RXBUF_L             050C 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 050E - 050F (0x2 bytes), align: 0
+  Segment part 13. ROOT       Intra module refs:   USCI_A0_ISR()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA0TXBUF_L          050E 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA0TXBUF               050E 
+           UCA0TXBUF_H             050F 
+           UCA0TXBUF_L             050E 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 051A - 051B (0x2 bytes), align: 0
+  Segment part 14. ROOT       Intra module refs:   Serial::begin(unsigned long)
+                                                   Serial::write(uint8_t)
+                                                   USCI_A0_ISR()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA0IE_L             051A 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA0IE                  051A 
+           UCA0IE_H                051B 
+           UCA0IE_L                051A 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 051C - 051D (0x2 bytes), align: 0
+  Segment part 15. ROOT       Intra module refs:   Serial::write(uint8_t)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA0IFG_L            051C 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA0IFG                 051C 
+           UCA0IFG_H               051D 
+           UCA0IFG_L               051C 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 051E - 051F (0x2 bytes), align: 0
+  Segment part 16. ROOT       Intra module refs:   USCI_A0_ISR()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA0IV_L             051E 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA0IV                  051E 
+           UCA0IV_H                051F 
+           UCA0IV_L                051E 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0580 - 0581 (0x2 bytes), align: 0
+  Segment part 17. ROOT       Intra module refs:   uartInit
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA1CTLW0_L          0580 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA1CTLW0               0580 
+           UCA1CTLW0_H             0581 
+           UCA1CTLW0_L             0580 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0586 - 0587 (0x2 bytes), align: 0
+  Segment part 18. ROOT       Intra module refs:   uartInit
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA1BRW_L            0586 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA1BRW                 0586 
+           UCA1BRW_H               0587 
+           UCA1BRW_L               0586 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0588 - 0589 (0x2 bytes), align: 0
+  Segment part 19. ROOT       Intra module refs:   uartInit
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA1MCTLW_L          0588 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA1MCTLW               0588 
+           UCA1MCTLW_H             0589 
+           UCA1MCTLW_L             0588 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 058C - 058D (0x2 bytes), align: 0
+  Segment part 20. ROOT       Intra module refs:   USCI_A1_ISR()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA1RXBUF_L          058C 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA1RXBUF               058C 
+           UCA1RXBUF_H             058D 
+           UCA1RXBUF_L             058C 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 058E - 058F (0x2 bytes), align: 0
+  Segment part 21. ROOT       Intra module refs:   USCI_A1_ISR()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA1TXBUF_L          058E 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA1TXBUF               058E 
+           UCA1TXBUF_H             058F 
+           UCA1TXBUF_L             058E 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 059A - 059B (0x2 bytes), align: 0
+  Segment part 22. ROOT       Intra module refs:   USCI_A1_ISR()
+                                                   uartInit
+                                                   uartTx(void const *, uint16_t)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA1IE_L             059A 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA1IE                  059A 
+           UCA1IE_H                059B 
+           UCA1IE_L                059A 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 059C - 059D (0x2 bytes), align: 0
+  Segment part 23. ROOT       Intra module refs:   uartTx(void const *, uint16_t)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA1IFG_L            059C 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA1IFG                 059C 
+           UCA1IFG_H               059D 
+           UCA1IFG_L               059C 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 059E - 059F (0x2 bytes), align: 0
+  Segment part 24. ROOT       Intra module refs:   USCI_A1_ISR()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA1IV_L             059E 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA1IV                  059E 
+           UCA1IV_H                059F 
+           UCA1IV_L                059E 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9A14 - 9A1B (0x8 bytes), align: 1
+  Segment part 166.           Intra module refs:   Segment part 59
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Serial::~Serial()       9A14 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2016 - 2093 (0x7e bytes), align: 1
+  Segment part 56.            Intra module refs:   __sti__routine()
+                                                   main
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           MBee                    2016 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2094 - 2095 (0x2 bytes), align: 1
+  Segment part 60.            Intra module refs:   Segment part 59
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 8000 - 800B (0xc bytes), align: 1
+  Segment part 30.            Intra module refs:   Segment part 58
+                                                   Serial::~Serial()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Serial::__vtbl          8000 
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 800C - 801B (0x10 bytes), align: 1
+  Segment part 31.            Intra module refs:   SerialStar::SerialStar()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SerialStar::__vtbl      800C 
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 801C - 802B (0x10 bytes), align: 1
+  Segment part 32.            Intra module refs:   __sti__routine()
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           SerialStarWithCallbacks::__vtbl_SerialStar
+                                   801C 
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 802C - 8033 (0x8 bytes), align: 1
+  Segment part 33.            Intra module refs:   Segment part 62
+                                                   SerialStarWithCallbacks::loopBottom()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RxIoSampleResponse::__vtbl
+                                   802C 
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 8034 - 803B (0x8 bytes), align: 1
+  Segment part 34.            Intra module refs:   SerialStarWithCallbacks::loopBottom()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RxResponse::__vtbl      8034 
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 8060 - 8060 (0x1 bytes), align: 0
+  Segment part 36.            Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 8061 - 80A1 (0x41 bytes), align: 0
+  Segment part 37.            Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 80A2 - 80B6 (0x15 bytes), align: 0
+  Segment part 38.            Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 80B7 - 80B8 (0x2 bytes), align: 0
+  Segment part 39.            Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 80B9 - 80BB (0x3 bytes), align: 0
+  Segment part 40.            Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 80BC - 80CE (0x13 bytes), align: 0
+  Segment part 41.            Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 80CF - 80D3 (0x5 bytes), align: 0
+  Segment part 42.            Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 80D4 - 80D9 (0x6 bytes), align: 0
+  Segment part 43.            Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 80DA - 80DE (0x5 bytes), align: 0
+  Segment part 44.            Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 80DF - 80F6 (0x18 bytes), align: 0
+  Segment part 45.            Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 80F7 - 810D (0x17 bytes), align: 0
+  Segment part 46.            Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 810E - 813C (0x2f bytes), align: 0
+  Segment part 47.            Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 813D - 816C (0x30 bytes), align: 0
+  Segment part 48.            Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 816D - 8195 (0x29 bytes), align: 0
+  Segment part 49.            Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 8196 - 8197 (0x2 bytes), align: 0
+  Segment part 50.            Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 8198 - 81B4 (0x1d bytes), align: 0
+  Segment part 51.            Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 81B5 - 81EF (0x3b bytes), align: 0
+  Segment part 52.            Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 81F0 - 822A (0x3b bytes), align: 0
+  Segment part 53.            Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 822B - 822D (0x3 bytes), align: 0
+  Segment part 54.            Intra module refs:   Segment part 99
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 822E - 8232 (0x5 bytes), align: 0
+  Segment part 55.            Intra module refs:   Segment part 58
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 803C - 8043 (0x8 bytes), align: 1
+  Segment part 59.            Intra module refs:   __sti__routine()
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2000 - 2007 (0x8 bytes), align: 1
+  Segment part 57.            Intra module refs:   Segment part 59
+                                                   main
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           serial                  2000 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2008 - 2013 (0xc bytes), align: 1
+  Segment part 61.            Intra module refs:   ioSamplePacketReceived(RxIoSampleResponse &, uintptr_t)
+                                                   parseIoSamplePacket()
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           packet                  2008 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2096 - 2097 (0x2 bytes), align: 1
+  Segment part 63.            Intra module refs:   P4_ISR()
+                                                   ioSamplePacketReceived(RxIoSampleResponse &, uintptr_t)
+                                                   main
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           events                  2096 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 20B2 - 20B2 (0x1 bytes), align: 0
+  Segment part 64.            Intra module refs:   parseIoSamplePacket()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           console                 20B2 
+    -------------------------------------------------------------------------
+ISR_CODE
+  Relative segment, address: 8282 - 828D (0xc bytes), align: 1
+  Segment part 167.           Intra module refs:   P4_ISR()::??INTVEC 44
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P4_ISR()                8282 
+               interrupt function
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 8044 - 805F (0x1c bytes), align: 1
+  Segment part 65.            Intra module refs:   ?Subroutine23
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           GPIO_PORT_TO_BASE       8044 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2014 - 2015 (0x2 bytes), align: 1
+  Segment part 66.            Intra module refs:   TIMER0_B0_ISR()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           millisCorrector         2014 
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 20B3 - 2132 (0x80 bytes), align: 0
+  Segment part 68.            Intra module refs:   Serial::write(uint8_t)
+                                                   USCI_A0_ISR()
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           txBuffer                20B3 
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 2133 - 21B2 (0x80 bytes), align: 0
+  Segment part 69.            Intra module refs:   Serial::read()
+                                                   USCI_A0_ISR()
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           rxBuffer                2133 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2098 - 2099 (0x2 bytes), align: 1
+  Segment part 70.            Intra module refs:   Serial::write(uint8_t)
+                                                   USCI_A0_ISR()
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           txBufferPointer         2098 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 209A - 209B (0x2 bytes), align: 1
+  Segment part 71.            Intra module refs:   Serial::write(uint8_t)
+                                                   USCI_A0_ISR()
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           txBufferCounter         209A 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 209C - 209D (0x2 bytes), align: 1
+  Segment part 72.            Intra module refs:   Serial::read()
+                                                   USCI_A0_ISR()
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           rxBufferPointer         209C 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 209E - 209F (0x2 bytes), align: 1
+  Segment part 73.            Intra module refs:   Serial::available()
+                                                   Serial::read()
+                                                   USCI_A0_ISR()
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           rxBufferCounter         209E 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 20A0 - 20A7 (0x8 bytes), align: 1
+  Segment part 74.            Intra module refs:   SerialStar::readPacket(int)
+                                                   TIMER0_B0_ISR()
+                                                   millis()
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           sysTickCounter          20A0 
+    -------------------------------------------------------------------------
+ISR_CODE
+  Relative segment, address: 828E - 830F (0x82 bytes), align: 1
+  Segment part 168.           Intra module refs:   USCI_A0_ISR()::??INTVEC 66
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           USCI_A0_ISR()           828E 
+               interrupt function
+    -------------------------------------------------------------------------
+ISR_CODE
+  Relative segment, address: 8310 - 832D (0x1e bytes), align: 1
+  Segment part 169.           Intra module refs:   TIMER0_B0_ISR()::??INTVEC 86
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TIMER0_B0_ISR()         8310 
+               interrupt function
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 83B0 - 83B3 (0x4 bytes), align: 1
+  Segment part 107.           Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine16           83B0 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 83B4 - 83B7 (0x4 bytes), align: 1
+  Segment part 108.           Intra module refs:   ?Subroutine16
+                                                   Console::printIoSamplePacket(RxIoSampleResponse &)
+                                                   RxIoSampleResponse::getAnalog(uint8_t)
+                                                   parseIoSamplePacket()
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 83B8 - 83BD (0x6 bytes), align: 1
+  Segment part 109.           Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine15           83B8 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 83BE - 83BF (0x2 bytes), align: 1
+  Segment part 110.           Intra module refs:   RxIoSampleResponse::getCounter(uint8_t)
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine14           83BE 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 83C0 - 83C5 (0x6 bytes), align: 1
+  Segment part 111.           Intra module refs:   ?Subroutine14
+                                                   RxIoSampleResponse::getCounter(uint8_t)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 83C6 - 83D1 (0xc bytes), align: 1
+  Segment part 112.           Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine8            83C6 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 83D2 - 83DF (0xe bytes), align: 1
+  Segment part 113.           Intra module refs:   ?Subroutine15
+                                                   ?Subroutine8
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine27           83D2 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 83E0 - 8427 (0x48 bytes), align: 1
+  Segment part 114.           Intra module refs:   ?Subroutine24
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           delayMs(unsigned int)   83E0 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8428 - 8463 (0x3c bytes), align: 1
+  Segment part 115.           Intra module refs:   parseIoSamplePacket()
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ledBlinking(uint8_t, uint8_t)
+                                   8428 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8464 - 846B (0x8 bytes), align: 1
+  Segment part 116.           Intra module refs:   ledBlinking(uint8_t, uint8_t)
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine24           8464 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 846C - 8505 (0x9a bytes), align: 1
+  Segment part 117.           Intra module refs:   main
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           parseIoSamplePacket()   846C 
+               calls direct and indirect
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8506 - 8513 (0xe bytes), align: 1
+  Segment part 118.           Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+                                                   parseIoSamplePacket()
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine21           8506 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8514 - 8519 (0x6 bytes), align: 1
+  Segment part 119.           Intra module refs:   RxIoSampleResponse::getAnalog(uint8_t)
+                                                   parseIoSamplePacket()
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine12           8514 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 851A - 851B (0x2 bytes), align: 1
+  Segment part 120.           Intra module refs:   ?Subroutine12
+                                                   ?Subroutine27
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine33           851A 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 851C - 8521 (0x6 bytes), align: 1
+  Segment part 121.           Intra module refs:   ?Subroutine33
+                                                   RxIoSampleResponse::getCounter(uint8_t)
+                                                   Segment part 108
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 21B3 - 23B2 (0x200 bytes), align: 0
+  Segment part 75.            Intra module refs:   USCI_A1_ISR()
+                                                   uartTx(void const *, uint16_t)
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           txBuffer                21B3 
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 23B3 - 25B2 (0x200 bytes), align: 0
+  Segment part 76.            Intra module refs:   USCI_A1_ISR()
+                                                   uartRx
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           rxBuffer                23B3 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 20A8 - 20A9 (0x2 bytes), align: 1
+  Segment part 77.            Intra module refs:   USCI_A1_ISR()
+                                                   uartTx(void const *, uint16_t)
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           txBufferPointer         20A8 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 20AA - 20AB (0x2 bytes), align: 1
+  Segment part 78.            Intra module refs:   USCI_A1_ISR()
+                                                   uartTx(void const *, uint16_t)
+                                                   uartTxWait
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           txBufferCounter         20AA 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 20AC - 20AD (0x2 bytes), align: 1
+  Segment part 79.            Intra module refs:   USCI_A1_ISR()
+                                                   uartRx
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           rxBufferPointer         20AC 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 20AE - 20AF (0x2 bytes), align: 1
+  Segment part 80.            Intra module refs:   USCI_A1_ISR()
+                                                   main
+                                                   uartRx
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           rxBufferCounter         20AE 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8522 - 857D (0x5c bytes), align: 1
+  Segment part 122.           Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           uartRx                  8522 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 857E - 8603 (0x86 bytes), align: 1
+  Segment part 123.           Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           uartInit                857E 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8604 - 86A3 (0xa0 bytes), align: 1
+  Segment part 124.           Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Serial::begin(unsigned long)
+                                   8604 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 86A4 - 8711 (0x6e bytes), align: 1
+  Segment part 125.           Intra module refs:   hardwareInit()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Timer_B_initUpMode      86A4 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8712 - 87D7 (0xc6 bytes), align: 1
+  Segment part 126.           Intra module refs:   hardwareInit()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           CS_initFLL              8712 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 87D8 - 8813 (0x3c bytes), align: 1
+  Segment part 127.           Intra module refs:   hardwareInit()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           CS_turnOnXT1LFWithTimeout
+                                   87D8 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8814 - 8837 (0x24 bytes), align: 1
+  Segment part 128.           Intra module refs:   hardwareInit()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           GPIO_setAsInputPinWithPullUpResistor
+                                   8814 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8838 - 8849 (0x12 bytes), align: 1
+  Segment part 129.           Intra module refs:   hardwareInit()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           GPIO_setAsOutputPin     8838 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 884A - 886F (0x26 bytes), align: 1
+  Segment part 130.           Intra module refs:   GPIO_setAsInputPinWithPullUpResistor
+                                                   GPIO_setAsOutputPin
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine6            884A 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8870 - 88B7 (0x48 bytes), align: 1
+  Segment part 131.           Intra module refs:   hardwareInit()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           GPIO_setAsPeripheralModuleFunctionOutputPin
+                                   8870 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 88B8 - 88C3 (0xc bytes), align: 1
+  Segment part 132.           Intra module refs:   GPIO_setAsInputPinWithPullUpResistor
+                                                   GPIO_setAsOutputPin
+                                                   GPIO_setAsPeripheralModuleFunctionInputPin
+                                                   GPIO_setAsPeripheralModuleFunctionOutputPin
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine23           88B8 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 88C4 - 8915 (0x52 bytes), align: 1
+  Segment part 133.           Intra module refs:   hardwareInit()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           GPIO_setAsPeripheralModuleFunctionInputPin
+                                   88C4 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8916 - 8923 (0xe bytes), align: 1
+  Segment part 134.           Intra module refs:   GPIO_setAsPeripheralModuleFunctionInputPin
+                                                   GPIO_setAsPeripheralModuleFunctionOutputPin
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine25           8916 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8924 - 8933 (0x10 bytes), align: 1
+  Segment part 135.           Intra module refs:   GPIO_setAsPeripheralModuleFunctionInputPin
+                                                   GPIO_setAsPeripheralModuleFunctionOutputPin
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine5            8924 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8934 - 8A17 (0xe4 bytes), align: 1
+  Segment part 136.           Intra module refs:   main
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           hardwareInit()          8934 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8A18 - 8AFD (0xe6 bytes), align: 1
+  Segment part 137.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           main                    8A18            Segment part 27 (?cstart)
+               calls direct and indirect
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8AFE - 8B17 (0x1a bytes), align: 1
+  Segment part 138.           Intra module refs:   main
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ioSamplePacketReceived(RxIoSampleResponse &, uintptr_t)
+                                   8AFE 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8B18 - 8B29 (0x12 bytes), align: 1
+  Segment part 139.           Intra module refs:   Serial::__vtbl
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Serial::available()     8B18 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8B2A - 8B55 (0x2c bytes), align: 1
+  Segment part 140.           Intra module refs:   Serial::__vtbl
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Serial::read()          8B2A 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8B56 - 8B5F (0xa bytes), align: 1
+  Segment part 141.           Intra module refs:   Serial::read()
+                                                   Serial::write(uint8_t)
+                                                   delayMs(unsigned int)
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine18           8B56 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8B60 - 8B91 (0x32 bytes), align: 1
+  Segment part 142.           Intra module refs:   Serial::__vtbl
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Serial::write(uint8_t)
+                                   8B60 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8B92 - 8BAF (0x1e bytes), align: 1
+  Segment part 143.           Intra module refs:   SerialStar::readPacket(int)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           millis()                8B92 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8BB0 - 8BB9 (0xa bytes), align: 1
+  Segment part 144.           Intra module refs:   RxIoSampleResponse::__vtbl
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RxIoSampleResponse::getDataLength()
+                                   8BB0 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8BBA - 8BBF (0x6 bytes), align: 1
+  Segment part 145.           Intra module refs:   RxIoSampleResponse::__vtbl
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RxIoSampleResponse::getDataOffset()
+                                   8BBA 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8BC0 - 8C19 (0x5a bytes), align: 1
+  Segment part 146.           Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+                                                   parseIoSamplePacket()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RxIoSampleResponse::getSampleSize()
+                                   8BC0 
+               calls indirect
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8C1A - 8C1F (0x6 bytes), align: 1
+  Segment part 147.           Intra module refs:   RxIoSampleResponse::getSample(uint8_t)
+                                                   RxIoSampleResponse::getSampleSize()
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine11           8C1A 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8C20 - 8C27 (0x8 bytes), align: 1
+  Segment part 148.           Intra module refs:   ?Subroutine11
+                                                   ?Subroutine12
+                                                   ?Subroutine8
+                                                   Console::printIoSamplePacket(RxIoSampleResponse &)
+                                                   RxDataResponse::getData()
+                                                   RxIoSampleResponse::getAnalog(uint8_t)
+                                                   Segment part 111
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine30           8C20 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9210 - 9217 (0x8 bytes), align: 1
+  Segment part 155.           Intra module refs:   SerialStar::readPacket()
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine2            9210 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9218 - 925F (0x48 bytes), align: 1
+  Segment part 156.           Intra module refs:   SerialStar::__vtbl
+                                                   SerialStarWithCallbacks::__vtbl_SerialStar
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SerialStar::readPacket(int)
+                                   9218 
+               calls direct and indirect
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9260 - 927F (0x20 bytes), align: 1
+  Segment part 157.           Intra module refs:   SerialStar::__vtbl
+                                                   SerialStarWithCallbacks::__vtbl_SerialStar
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SerialStar::readPacketUntilAvailable()
+                                   9260 
+               calls indirect
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9280 - 9285 (0x6 bytes), align: 1
+  Segment part 158.           Intra module refs:   RxIoSampleResponse::getSample(uint8_t)
+                                                   RxIoSampleResponse::getSampleSize()
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine10           9280 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9286 - 928F (0xa bytes), align: 1
+  Segment part 159.           Intra module refs:   ?Subroutine10
+                                                   ?Subroutine3
+                                                   SerialStar::readPacket(int)
+                                                   SerialStar::readPacketUntilAvailable()
+                                                   main
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine32           9286 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9290 - 92FF (0x70 bytes), align: 1
+  Segment part 160.           Intra module refs:   SerialStar::send(void *)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SerialStar::send(MBeeRequest &)
+                                   9290 
+               calls indirect
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9300 - 930F (0x10 bytes), align: 1
+  Segment part 161.           Intra module refs:   SerialStar::send(MBeeRequest &)
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine13           9300 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9310 - 9315 (0x6 bytes), align: 1
+  Segment part 162.           Intra module refs:   SerialStar::send(MBeeRequest &)
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine9            9310 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9316 - 9321 (0xc bytes), align: 1
+  Segment part 163.           Intra module refs:   ?Subroutine2
+                                                   ?Subroutine30
+                                                   ?Subroutine9
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine34           9316 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8C28 - 8EAF (0x288 bytes), align: 1
+  Segment part 100.           Intra module refs:   parseIoSamplePacket()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Console::printIoSamplePacket(RxIoSampleResponse &)
+                                   8C28 
+               calls direct and indirect
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 99AC - 99AF (0x4 bytes), align: 1
+  Segment part 102.           Intra module refs:   ?Subroutine16
+                                                   Console::printIoSamplePacket(RxIoSampleResponse &)
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine28           99AC 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 99B0 - 99B9 (0xa bytes), align: 1
+  Segment part 103.           Intra module refs:   ?Subroutine15
+                                                   ?Subroutine28
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 999E - 99AB (0xe bytes), align: 1
+  Segment part 104.           Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine22           999E 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 98FE - 9911 (0x14 bytes), align: 1
+  Segment part 97.            Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Console::println(char const *)
+                                   98FE 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 99BA - 99BD (0x4 bytes), align: 1
+  Segment part 98.            Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+                                                   Console::println(char const *)
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine19           99BA 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 99BE - 99C7 (0xa bytes), align: 1
+  Segment part 99.            Intra module refs:   ?Subroutine19
+                                                   Console::printIoSamplePacket(RxIoSampleResponse &)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9A04 - 9A0B (0x8 bytes), align: 1
+  Segment part 101.           Intra module refs:   ?Subroutine20
+                                                   Console::print(uint32_t, uint8_t)
+                                                   Console::printIoSamplePacket(RxIoSampleResponse &)
+                                                   Console::println(char const *)
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine29           9A04 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 96A4 - 96EB (0x48 bytes), align: 1
+  Segment part 96.            Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Console::print(uint32_t, uint8_t)
+                                   96A4 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 941A - 94A5 (0x8c bytes), align: 1
+  Segment part 93.            Intra module refs:   ?Subroutine17
+                                                   Console::print(uint32_t, uint8_t)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Console::ultoa(uint32_t, uint8_t *, uint8_t)
+                                   941A 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 97AE - 97E7 (0x3a bytes), align: 1
+  Segment part 84.            Intra module refs:   ?Subroutine26
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           MBeeResponse::setCommon(MBeeResponse &)
+                                   97AE 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 98EA - 98FD (0x14 bytes), align: 1
+  Segment part 92.            Intra module refs:   Segment part 103
+                                                   parseIoSamplePacket()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RxDataResponse::getData()
+                                   98EA 
+               calls indirect
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9732 - 9773 (0x42 bytes), align: 1
+  Segment part 91.            Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RxIoSampleResponse::getAnalog(uint8_t)
+                                   9732 
+               calls direct and indirect
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 94A6 - 9525 (0x80 bytes), align: 1
+  Segment part 90.            Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RxIoSampleResponse::getCounter(uint8_t)
+                                   94A6 
+               calls direct and indirect
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 95A4 - 9601 (0x5e bytes), align: 1
+  Segment part 89.            Intra module refs:   Segment part 121
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RxIoSampleResponse::getSample(uint8_t)
+                                   95A4 
+               calls indirect
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9A0C - 9A13 (0x8 bytes), align: 1
+  Segment part 149.           Intra module refs:   RxResponse::__vtbl
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RxResponse::getDataLength()
+                                   9A0C 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9A2E - 9A31 (0x4 bytes), align: 1
+  Segment part 150.           Intra module refs:   RxResponse::__vtbl
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RxResponse::getDataOffset()
+                                   9A2E 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9870 - 9899 (0x2a bytes), align: 1
+  Segment part 82.            Intra module refs:   __sti__routine()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SerialStar::SerialStar()
+                                   9870 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9990 - 999D (0xe bytes), align: 1
+  Segment part 152.           Intra module refs:   SerialStar::SerialStar()
+                                                   SerialStar::resetResponse()
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine4            9990 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8FE0 - 90F9 (0x11a bytes), align: 1
+  Segment part 153.           Intra module refs:   SerialStar::__vtbl
+                                                   SerialStarWithCallbacks::__vtbl_SerialStar
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SerialStar::readPacket()
+                                   8FE0 
+               calls direct and indirect
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 99C8 - 99D5 (0xe bytes), align: 1
+  Segment part 154.           Intra module refs:   SerialStar::readPacket()
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine3            99C8 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 99EE - 99F9 (0xc bytes), align: 1
+  Segment part 165.           Intra module refs:   SerialStar::__vtbl
+                                                   SerialStarWithCallbacks::__vtbl_SerialStar
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SerialStar::send(void *)
+                                   99EE 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9844 - 986F (0x2c bytes), align: 1
+  Segment part 151.           Intra module refs:   SerialStar::readPacket()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SerialStar::resetResponse()
+                                   9844 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9322 - 9419 (0xf8 bytes), align: 1
+  Segment part 85.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SerialStarWithCallbacks::loopBottom()
+                                   9322 
+               calls direct and indirect
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 99FA - 9A03 (0xa bytes), align: 1
+  Segment part 86.            Intra module refs:   SerialStarWithCallbacks::loopBottom()
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine7            99FA 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9912 - 991D (0xc bytes), align: 1
+  Segment part 87.            Intra module refs:   SerialStarWithCallbacks::loopBottom()
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine1            9912 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 991E - 9925 (0x8 bytes), align: 1
+  Segment part 88.            Intra module refs:   ?Subroutine1
+                                                   SerialStarWithCallbacks::loopBottom()
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine26           991E 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 96EC - 9731 (0x46 bytes), align: 1
+  Segment part 95.            Intra module refs:   ?Subroutine19
+                                                   ?Subroutine20
+                                                   ?Subroutine28
+                                                   Console::print(uint32_t, uint8_t)
+                                                   Console::printIoSamplePacket(RxIoSampleResponse &)
+                                                   Segment part 99
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           uartTxWait              96EC 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9602 - 9657 (0x56 bytes), align: 1
+  Segment part 94.            Intra module refs:   uartTxWait
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           uartTx(void const *, uint16_t)
+                                   9602 
+    -------------------------------------------------------------------------
+ISR_CODE
+  Relative segment, address: 832E - 83AF (0x82 bytes), align: 1
+  Segment part 170.           Intra module refs:   USCI_A1_ISR()::??INTVEC 64
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           USCI_A1_ISR()           832E 
+               interrupt function
+    -------------------------------------------------------------------------
+INTVEC
+  Common segment, address: FFA2 - FFCF (0x2e bytes), align: 1
+  Segment part 25. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P4_ISR()::??INTVEC 44   FFCE 
+    -------------------------------------------------------------------------
+INTVEC
+  Common segment, address: FFA2 - FFE3 (0x42 bytes), align: 1
+  Segment part 26. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           USCI_A1_ISR()::??INTVEC 64
+                                   FFE2 
+    -------------------------------------------------------------------------
+INTVEC
+  Common segment, address: FFA2 - FFE5 (0x44 bytes), align: 1
+  Segment part 27. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           USCI_A0_ISR()::??INTVEC 66
+                                   FFE4 
+    -------------------------------------------------------------------------
+INTVEC
+  Common segment, address: FFA2 - FFF9 (0x58 bytes), align: 1
+  Segment part 28. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TIMER0_B0_ISR()::??INTVEC 86
+                                   FFF8 
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 8234 - 823B (0x8 bytes), align: 1
+  Segment part 58.            Intra module refs:   serial
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 823C - 8247 (0xc bytes), align: 1
+  Segment part 62.            Intra module refs:   packet
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 8248 - 8249 (0x2 bytes), align: 1
+  Segment part 67.            Intra module refs:   millisCorrector
+    -------------------------------------------------------------------------
+DIFUNCT
+  Relative segment, address: 824A - 824D (0x4 bytes), align: 1
+  Segment part 81. ROOT 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 98C0 - 98D5 (0x16 bytes), align: 1
+  Segment part 83.            Intra module refs:   Segment part 81
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           __sti__routine()        98C0 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9926 - 9939 (0x14 bytes), align: 1
+  Segment part 105.           Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine20           9926 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9A1C - 9A21 (0x6 bytes), align: 1
+  Segment part 106.           Intra module refs:   Console::printIoSamplePacket(RxIoSampleResponse &)
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine17           9A1C 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 995E - 996F (0x12 bytes), align: 1
+  Segment part 164.           Intra module refs:   SerialStar::send(MBeeRequest &)
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine0            995E 
+
+    *************************************************************************
+
+  FILE NAME : C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\examples\MSP430\IAR\Debug\Obj\console.r43
+    *************************************************************************
+
+  FILE NAME : C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\examples\MSP430\IAR\Debug\Obj\cs.r43
+    *************************************************************************
+
+  FILE NAME : C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\examples\MSP430\IAR\Debug\Obj\eusci_a_uart.r43
+    *************************************************************************
+
+  FILE NAME : C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\examples\MSP430\IAR\Debug\Obj\gpio.r43
+    *************************************************************************
+
+  FILE NAME : C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\examples\MSP430\IAR\Debug\Obj\MBee.r43
+    *************************************************************************
+
+  FILE NAME : C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\examples\MSP430\IAR\Debug\Obj\MSP430Serial.r43
+    *************************************************************************
+
+  FILE NAME : C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\examples\MSP430\IAR\Debug\Obj\pmm.r43
+    *************************************************************************
+
+  FILE NAME : C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\examples\MSP430\IAR\Debug\Obj\SerialStar.r43
+    *************************************************************************
+
+  FILE NAME : C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\examples\MSP430\IAR\Debug\Obj\System.r43
+    *************************************************************************
+
+  FILE NAME : C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\examples\MSP430\IAR\Debug\Obj\timer_b.r43
+    *************************************************************************
+
+  FILE NAME : C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\examples\MSP430\IAR\Debug\Obj\uart.r43
+    *************************************************************************
+
+  FILE NAME : C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\examples\MSP430\IAR\Debug\Obj\wdt_a.r43
+    *************************************************************************
+
+  FILE NAME : C:\Program Files (x86)\IAR Systems\Embedded Workbench 9.0\430\lib\dlib\dl430xlsfn.r43
+  LIBRARY MODULE, NAME : ?abort
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 9970 - 997F (0x10 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           abort                   9970            __record_needed_destruction (?cppinit)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?__dbg_break
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 9A32 - 9A33 (0x2 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __DebugBreak            9A32            __exit (?__exit)
+                                                   abort (?abort)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?__exit
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 98D6 - 98E9 (0x14 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __exit                  98D6            Segment part 6 (?_exit)
+                                                   _exit (?_exit)
+                                                   abort (?abort)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?_exit
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 99D6, align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _exit                   99D6            exit (?exit)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 99D6 - 99D7 (0x2 bytes), align: 1
+  Segment part 1.             Intra module refs:   __cstart_call_dtors
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 99D8 - 99DB (0x4 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __cstart_call_dtors     99D8            __record_needed_destruction (?cppinit)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 99DC - 99DD (0x2 bytes), align: 1
+  Segment part 5.             Intra module refs:   Segment part 1
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 99DE - 99E1 (0x4 bytes), align: 1
+  Segment part 6.             Intra module refs:   _exit
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?cppinit
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 9774 - 97AD (0x3a bytes), align: 1
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __call_ctors            9774            ?cstart_call_ctors (?cstart)
+               calls indirect
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 20B0 - 20B1 (0x2 bytes), align: 1
+  Segment part 2.             Intra module refs:   __call_dtors
+                                                   __record_needed_destruction
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 989A - 98BF (0x26 bytes), align: 1
+  Segment part 4.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __record_needed_destruction
+                                   989A            __sti__routine() (Alarm)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9818 - 9843 (0x2c bytes), align: 1
+  Segment part 6.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __call_dtors            9818            __cstart_call_dtors (?_exit)
+               calls indirect
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?cstart
+
+  SEGMENTS IN THE MODULE
+  ======================
+CSTACK
+  Relative segment, address: 2F60, align: 1
+  Segment part 1.
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 20B2, align: 1
+  Segment part 2.
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2016, align: 1
+  Segment part 3.
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 824A, align: 1
+  Segment part 4.
+    -------------------------------------------------------------------------
+CODE_I
+  Relative segment, address: 25B4, align: 1
+  Segment part 5.
+    -------------------------------------------------------------------------
+CODE_ID
+  Relative segment, address: 83B0, align: 1
+  Segment part 6.
+    -------------------------------------------------------------------------
+DATA20_Z
+  Relative segment, address: 25B4, align: 1
+  Segment part 7.
+    -------------------------------------------------------------------------
+DATA20_I
+  Relative segment, address: 25B4, align: 1
+  Segment part 8.
+    -------------------------------------------------------------------------
+DATA20_ID
+  Relative segment, address: 824E, align: 1
+  Segment part 9.
+    -------------------------------------------------------------------------
+DATA20_C
+  Relative segment, address: 824E, align: 1
+  Segment part 10.
+    -------------------------------------------------------------------------
+DATA20_N
+  Relative segment, address: 25B4, align: 1
+  Segment part 12.
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: 824E - 8251 (0x4 bytes), align: 1
+  Segment part 15.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __program_start         824E            ?reset_vector (?reset_vector)
+                                                   Absolute parts (?ABS_ENTRY_MOD)
+           ?cstart_begin           824E 
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: 8252 - 825D (0xc bytes), align: 1
+  Segment part 20.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?cstart_init_zero       8252            MBee (Alarm)
+                                                   Segment part 2 (?cppinit)
+                                                   Segment part 60 (Alarm)
+                                                   console (Alarm)
+                                                   events (Alarm)
+                                                   rxBufferCounter (Alarm)
+                                                   rxBufferPointer (Alarm)
+                                                   sysTickCounter (Alarm)
+                                                   txBufferCounter (Alarm)
+                                                   txBufferPointer (Alarm)
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: 825E - 826D (0x10 bytes), align: 1
+  Segment part 21.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?cstart_init_copy       825E            millisCorrector (Alarm)
+                                                   packet (Alarm)
+                                                   serial (Alarm)
+    -------------------------------------------------------------------------
+DIFUNCT
+  Relative segment, address: 824E, align: 1
+  Segment part 25.
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: 826E - 8279 (0xc bytes), align: 1
+  Segment part 26.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?cstart_call_ctors      826E            Segment part 81 (Alarm)
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: 827A - 8281 (0x8 bytes), align: 1
+  Segment part 27.            Intra module refs:   Segment part 15
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?cstart_call_main       827A 
+           ?cstart_end             8282 
+    -------------------------------------------------------------------------
+CODE_ID
+  Relative segment, address: 83B0, align: 1
+  Segment part 28.            Intra module refs:   Segment part 5
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?reset_vector
+
+  SEGMENTS IN THE MODULE
+  ======================
+RESET
+  Relative segment, address: FFFE - FFFF (0x2 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?reset_vector           FFFE            Segment part 15 (?cstart)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?exit
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 9A22 - 9A25 (0x4 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           exit                    9A22            Segment part 27 (?cstart)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?Mul32fHw32
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 90FA - 920F (0x116 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?Mul32fHw32             90FA            ?Subroutine22 (Alarm)
+                                                   Console::printIoSamplePacket(RxIoSampleResponse &) (Alarm)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?Cast32f32i
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 9526 - 95A3 (0x7e bytes), align: 1
+  Segment part 1.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _Cast32uto32f           9526            Console::printIoSamplePacket(RxIoSampleResponse &) (Alarm)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : _Cast32fto32u
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 99E2 - 99ED (0xc bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _Cast32fto32u           99E2            ?Subroutine22 (Alarm)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?FLT_Extract
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 9658 - 96A3 (0x4c bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?FLT_Extract            9658            _Cast32fto32u (_Cast32fto32u)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : _Div32f
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 8EB0 - 8FDF (0x130 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _Div32f                 8EB0            Console::printIoSamplePacket(RxIoSampleResponse &) (Alarm)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?DivMod32u
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 97E8 - 9817 (0x30 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?DivMod32u              97E8            Console::ultoa(uint32_t, uint8_t *, uint8_t) (Alarm)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?memcpy
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 993A - 994B (0x12 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           memcpy                  993A            __data16_memcpy (?memzero)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?memzero
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 9980 - 998F (0x10 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __data16_memzero        9980            ?cstart_init_zero (?cstart)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9A26 - 9A29 (0x4 bytes), align: 1
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __data16_memcpy         9A26            ?cstart_init_copy (?cstart)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?IndCallR15
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 9A2A - 9A2D (0x4 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?IndCallR15             9A2A            ?Subroutine0 (Alarm)
+                                                   ?Subroutine13 (Alarm)
+                                                   ?Subroutine32 (Alarm)
+                                                   ?Subroutine34 (Alarm)
+                                                   SerialStarWithCallbacks::loopBottom() (Alarm)
+                                                   __call_ctors (?cppinit)
+                                                   __call_dtors (?cppinit)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?strlen
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 994C - 995D (0x12 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           strlen                  994C            ?Subroutine29 (Alarm)
+
+
+
+
+                ****************************************
+                *                                      *
+                *      SEGMENTS IN ADDRESS ORDER       *
+                *                                      *
+                ****************************************
+
+
+SEGMENT              SPACE    START ADDRESS   END ADDRESS     SIZE  TYPE  ALIGN
+=======              =====    =============   ===========     ====  ====  =====
+DATA16_AN                              0130 - 0131               2   rel    0
+                                       0380 - 0383               4 
+                                       0392 - 0393               2 
+                                       03A0 - 03A1               2 
+                                       03C0 - 03C3               4 
+                                       03D2 - 03D3               2 
+                                       0500 - 0501               2 
+                                       0506 - 0509               4 
+                                       050C - 050F               4 
+                                       051A - 051F               6 
+                                       0580 - 0581               2 
+                                       0586 - 0589               4 
+                                       058C - 058F               4 
+                                       059A - 059F               6 
+DATA16_I                               2000 - 2015              16   rel    1
+DATA16_Z                               2016 - 20B2              9D   rel    1
+DATA16_N                               20B3 - 25B2             500   rel    0
+CODE_I                                    25B4                       rel    1
+DATA20_I                                  25B4                       rel    1
+DATA20_Z                                  25B4                       rel    1
+DATA20_N                                  25B4                       rel    1
+CSTACK                                 2F60 - 2FFF              A0   rel    1
+DATA16_C                               8000 - 8232             233   rel    1
+DATA16_ID                              8234 - 8249              16   rel    1
+TLS16_ID                                  824A                       dse    0
+DIFUNCT                                824A - 824D               4   rel    1
+DATA20_ID                                 824E                       rel    1
+DATA20_C                                  824E                       rel    1
+CSTART                                 824E - 8281              34   rel    1
+ISR_CODE                               8282 - 83AF             12E   rel    1
+CODE_ID                                   83B0                       rel    1
+<CODE> 1                               83B0 - 9A33            1684   rel    1
+INTVEC                                 FFA2 - FFF9              58   com    1
+RESET                                  FFFE - FFFF               2   rel    1
+
+                ****************************************
+                *                                      *
+                *        END OF CROSS REFERENCE        *
+                *                                      *
+                ****************************************
+
+ 6 208 bytes of CODE  memory
+ 1 619 bytes of DATA  memory (+ 48 absolute )
+   589 bytes of CONST memory
+
+Errors: none
+Warnings: none
+

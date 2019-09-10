@@ -1,0 +1,632 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MBee C++ library: Класс TxRequest</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="MBee.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MBee C++ library
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="class_tx_request-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс TxRequest</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_serial_star_8h_source.html">SerialStar.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:TxRequest:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_tx_request.png" usemap="#TxRequest_map" alt=""/>
+  <map id="TxRequest_map" name="TxRequest_map">
+<area href="class_payload_request.html" alt="PayloadRequest" shape="rect" coords="0,56,102,80"/>
+<area href="class_m_bee_request.html" alt="MBeeRequest" shape="rect" coords="0,0,102,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a1082531ba3a9618d8db1ad4d556deb5d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tx_request.html#a1082531ba3a9618d8db1ad4d556deb5d">TxRequest</a> ()</td></tr>
+<tr class="separator:a1082531ba3a9618d8db1ad4d556deb5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41b574d377de9d7304164c02fbe58ee6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tx_request.html#a41b574d377de9d7304164c02fbe58ee6">TxRequest</a> (uint16_t addr, uint8_t *payload, uint8_t payloadLength)</td></tr>
+<tr class="separator:a41b574d377de9d7304164c02fbe58ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d559b76413a0de99f2e4e3679b4312a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tx_request.html#a3d559b76413a0de99f2e4e3679b4312a">TxRequest</a> (uint16_t addr, uint8_t option, uint8_t *payload, uint8_t payloadLength, uint8_t frameId)</td></tr>
+<tr class="separator:a3d559b76413a0de99f2e4e3679b4312a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f2c294156c1aa3e4b6e9cbaab1c99b3"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tx_request.html#a2f2c294156c1aa3e4b6e9cbaab1c99b3">getRemoteAddress</a> ()</td></tr>
+<tr class="separator:a2f2c294156c1aa3e4b6e9cbaab1c99b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5ecf62687d15072091700b24389c4ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tx_request.html#af5ecf62687d15072091700b24389c4ef">setRemoteAddress</a> (uint16_t remoteAddress)</td></tr>
+<tr class="separator:af5ecf62687d15072091700b24389c4ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cfd487291c3842225242ed894865dc1"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tx_request.html#a0cfd487291c3842225242ed894865dc1">getOption</a> ()</td></tr>
+<tr class="separator:a0cfd487291c3842225242ed894865dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc10c87f1201e14772451b97d555c06b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tx_request.html#acc10c87f1201e14772451b97d555c06b">setOption</a> (uint8_t option)</td></tr>
+<tr class="separator:acc10c87f1201e14772451b97d555c06b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1335f743da2adead37fa79536b57891"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tx_request.html#af1335f743da2adead37fa79536b57891">getOptionEnable</a> ()</td></tr>
+<tr class="separator:af1335f743da2adead37fa79536b57891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9173436ee26445eee2b3500e32ea0cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tx_request.html#ab9173436ee26445eee2b3500e32ea0cc">setOptionEnable</a> (bool optionEnable)</td></tr>
+<tr class="separator:ab9173436ee26445eee2b3500e32ea0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70013ce263ca909a7aebce048e2717c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tx_request.html#a70013ce263ca909a7aebce048e2717c5">getAcknowledge</a> ()</td></tr>
+<tr class="separator:a70013ce263ca909a7aebce048e2717c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62e6a200120892100db9dfdea1a0f8d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tx_request.html#a62e6a200120892100db9dfdea1a0f8d3">setAcknowledge</a> (bool acknowledge)</td></tr>
+<tr class="separator:a62e6a200120892100db9dfdea1a0f8d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82dddc275c202d455025015ec7443dc4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tx_request.html#a82dddc275c202d455025015ec7443dc4">getCca</a> ()</td></tr>
+<tr class="separator:a82dddc275c202d455025015ec7443dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fa29bb4cf554810cbae809756ef7505"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tx_request.html#a6fa29bb4cf554810cbae809756ef7505">setCca</a> (bool cca)</td></tr>
+<tr class="separator:a6fa29bb4cf554810cbae809756ef7505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9807c02d3c5a08d8a0a285bb17dcfd54"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tx_request.html#a9807c02d3c5a08d8a0a285bb17dcfd54">getEncryption</a> ()</td></tr>
+<tr class="separator:a9807c02d3c5a08d8a0a285bb17dcfd54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8bf714992ae741813ee90ef82446ff0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tx_request.html#ac8bf714992ae741813ee90ef82446ff0">setEncryption</a> (bool encryption)</td></tr>
+<tr class="separator:ac8bf714992ae741813ee90ef82446ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e5aec72f86934bbb567a9927749f9da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tx_request.html#a5e5aec72f86934bbb567a9927749f9da">getSleepingDevice</a> ()</td></tr>
+<tr class="separator:a5e5aec72f86934bbb567a9927749f9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaee532c9efa8110abc1d9348d129166c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tx_request.html#aaee532c9efa8110abc1d9348d129166c">setSleepingDevice</a> (bool sleepingDevice)</td></tr>
+<tr class="separator:aaee532c9efa8110abc1d9348d129166c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a080b5ac5999b7746c4134c64cec61033"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tx_request.html#a080b5ac5999b7746c4134c64cec61033">getFrameData</a> (uint8_t pos)</td></tr>
+<tr class="separator:a080b5ac5999b7746c4134c64cec61033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadca285fab370a7604ed8c024074b29e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tx_request.html#aadca285fab370a7604ed8c024074b29e">getFrameDataLength</a> ()</td></tr>
+<tr class="separator:aadca285fab370a7604ed8c024074b29e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_payload_request"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_payload_request')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_payload_request.html">PayloadRequest</a></td></tr>
+<tr class="memitem:a03857bcfef96e21b8f2082d658cb6dc9 inherit pub_methods_class_payload_request"><td class="memItemLeft" align="right" valign="top"><a id="a03857bcfef96e21b8f2082d658cb6dc9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PayloadRequest</b> (uint8_t apiId, uint8_t frameId, uint8_t *payload, uint8_t payloadLength)</td></tr>
+<tr class="separator:a03857bcfef96e21b8f2082d658cb6dc9 inherit pub_methods_class_payload_request"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79bf867bc90ae21d88d6266aef6feea7 inherit pub_methods_class_payload_request"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_payload_request.html#a79bf867bc90ae21d88d6266aef6feea7">getPayload</a> ()</td></tr>
+<tr class="separator:a79bf867bc90ae21d88d6266aef6feea7 inherit pub_methods_class_payload_request"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0984735099ca5a737d66d51ad3be735c inherit pub_methods_class_payload_request"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_payload_request.html#a0984735099ca5a737d66d51ad3be735c">setPayload</a> (uint8_t *payloadPtr)</td></tr>
+<tr class="separator:a0984735099ca5a737d66d51ad3be735c inherit pub_methods_class_payload_request"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d7ae2e197ee496ccab10b9b23053fcd inherit pub_methods_class_payload_request"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_payload_request.html#a0d7ae2e197ee496ccab10b9b23053fcd">setPayload</a> (uint8_t *payloadPtr, uint8_t payloadLength)</td></tr>
+<tr class="separator:a0d7ae2e197ee496ccab10b9b23053fcd inherit pub_methods_class_payload_request"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31e085fcb06f4603c1358d541cc2ca6a inherit pub_methods_class_payload_request"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_payload_request.html#a31e085fcb06f4603c1358d541cc2ca6a">getPayloadLength</a> ()</td></tr>
+<tr class="separator:a31e085fcb06f4603c1358d541cc2ca6a inherit pub_methods_class_payload_request"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42cd89199ab2773fedeb41d4ebe9e4ca inherit pub_methods_class_payload_request"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_payload_request.html#a42cd89199ab2773fedeb41d4ebe9e4ca">setPayloadLength</a> (uint8_t payloadLength)</td></tr>
+<tr class="separator:a42cd89199ab2773fedeb41d4ebe9e4ca inherit pub_methods_class_payload_request"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_m_bee_request"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_m_bee_request')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_m_bee_request.html">MBeeRequest</a></td></tr>
+<tr class="memitem:a1e0ed2a43dca204676b3641f1839e4d9 inherit pub_methods_class_m_bee_request"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_bee_request.html#a1e0ed2a43dca204676b3641f1839e4d9">MBeeRequest</a> (uint8_t apiId, uint8_t frameId)</td></tr>
+<tr class="separator:a1e0ed2a43dca204676b3641f1839e4d9 inherit pub_methods_class_m_bee_request"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdd8685d5d19a7d122f1f3b4136fc6eb inherit pub_methods_class_m_bee_request"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_bee_request.html#abdd8685d5d19a7d122f1f3b4136fc6eb">setFrameId</a> (uint8_t frameId)</td></tr>
+<tr class="separator:abdd8685d5d19a7d122f1f3b4136fc6eb inherit pub_methods_class_m_bee_request"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e24f4267388f39c146a244e2ec42017 inherit pub_methods_class_m_bee_request"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_bee_request.html#a5e24f4267388f39c146a244e2ec42017">getFrameId</a> ()</td></tr>
+<tr class="separator:a5e24f4267388f39c146a244e2ec42017 inherit pub_methods_class_m_bee_request"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac74fa544909d8a00c2f4f8b046bce717 inherit pub_methods_class_m_bee_request"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_bee_request.html#ac74fa544909d8a00c2f4f8b046bce717">setApiId</a> (uint8_t apiId)</td></tr>
+<tr class="separator:ac74fa544909d8a00c2f4f8b046bce717 inherit pub_methods_class_m_bee_request"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dfd58e82797890032dfb7b8d9e40d5e inherit pub_methods_class_m_bee_request"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_bee_request.html#a2dfd58e82797890032dfb7b8d9e40d5e">getApiId</a> ()</td></tr>
+<tr class="separator:a2dfd58e82797890032dfb7b8d9e40d5e inherit pub_methods_class_m_bee_request"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс для пакета,предназначенного для передачи удаленному модему неструктурированных данных, которые будут отправлены им на последовательный интерфейс UART. Режим отправки на UART(пакетный или прозрачный) зависит от настроек удаленного модуля. </p>
+<p>Режимы передачи пакета и получения подтверждений могут определяться байтом option. Для этого параметр _optionEnable должен быть установлен в true (режим "по умолчанию"). Если параметр _optionEnable=false, то режимы отправки определяются параметром DM(Device Mode). Максимальная допустимая длина поля данных пакета зависит от выбранного режима передачи:</p><ol type="1">
+<li>Если _optionEnable=false, то FrameDataLength &lt;= 40.</li>
+<li>Если _optionEnable=true, то FrameDataLength &lt;= 39.</li>
+<li>Если требуется шифрование поля данных(_encryption = true или DEVICE_MODE_ENCRYPTION_BIT = 1), то FrameDataLength &lt;= 32 независимо от установки _optionEnable. </li>
+</ol>
+<p>ВНИМАНИЕ! Каких-либо проверок на превышение допустимой длины поля данных не производится. Если длина поля данных превышает максимально допустимую для данного режима, то в поле данных помещается макисмально возможное число. При этом все "лишние" отбрасываются и никакие уведомлений об этом в ответном пакете не формируются. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8h_source.html">SerialStar.h</a> строка <a class="el" href="_serial_star_8h_source.html#l00918">918</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a1082531ba3a9618d8db1ad4d556deb5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1082531ba3a9618d8db1ad4d556deb5d">&#9670;&nbsp;</a></span>TxRequest() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_tx_request.html">TxRequest</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Конструктор "по умолчанию". Перед отправкой пакета, необходимо как минимум установить указатель на буфер с исходными данными, указать количество отправлямых байт, начиная с первого, и адрес получателя. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00848">848</a></p>
+<div class="fragment"><div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;                     : <a class="code" href="class_payload_request.html">PayloadRequest</a>(TRANSMIT_REQUEST_API_FRAME, DEFAULT_FRAME_ID, NULL, 0)</div><div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;{</div><div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;    _remoteAddress = BROADCAST_ADDRESS;</div><div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;    _option = TRANSMIT_OPTION_DEFAULT;</div><div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;    _optionEnable = <span class="keyword">true</span>;</div><div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;}</div><div class="ttc" id="class_payload_request_html"><div class="ttname"><a href="class_payload_request.html">PayloadRequest</a></div><div class="ttdef"><b>Definition:</b> <a href="_serial_star_8h_source.html#l00796">SerialStar.h:796</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a41b574d377de9d7304164c02fbe58ee6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41b574d377de9d7304164c02fbe58ee6">&#9670;&nbsp;</a></span>TxRequest() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_tx_request.html">TxRequest</a> </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>payloadLength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Класс для адресной отправки данных со значением frameId и опций передачи "по умолчанию". </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00855">855</a></p>
+<div class="fragment"><div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;                                                                              : <a class="code" href="class_payload_request.html">PayloadRequest</a>(TRANSMIT_REQUEST_API_FRAME, DEFAULT_FRAME_ID, data, dataLength)</div><div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;{</div><div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;    _remoteAddress = remoteAddress;</div><div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;    _optionEnable = <span class="keyword">true</span>;</div><div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;    _option = TRANSMIT_OPTION_DEFAULT;</div><div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;}</div><div class="ttc" id="class_payload_request_html"><div class="ttname"><a href="class_payload_request.html">PayloadRequest</a></div><div class="ttdef"><b>Definition:</b> <a href="_serial_star_8h_source.html#l00796">SerialStar.h:796</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3d559b76413a0de99f2e4e3679b4312a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d559b76413a0de99f2e4e3679b4312a">&#9670;&nbsp;</a></span>TxRequest() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_tx_request.html">TxRequest</a> </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>payloadLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>frameId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Класс для адресной отправки пакета с заданным frameId и опциями передачи. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00862">862</a></p>
+<div class="fragment"><div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;                                                                                                               : <a class="code" href="class_payload_request.html">PayloadRequest</a>(TRANSMIT_REQUEST_API_FRAME, frameId, data, dataLength)</div><div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;{</div><div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;    _remoteAddress = remoteAddress;</div><div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;    _optionEnable = <span class="keyword">true</span>;</div><div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;    _option = option;</div><div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;}</div><div class="ttc" id="class_payload_request_html"><div class="ttname"><a href="class_payload_request.html">PayloadRequest</a></div><div class="ttdef"><b>Definition:</b> <a href="_serial_star_8h_source.html#l00796">SerialStar.h:796</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a70013ce263ca909a7aebce048e2717c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70013ce263ca909a7aebce048e2717c5">&#9670;&nbsp;</a></span>getAcknowledge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool getAcknowledge </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Возвращает true, если подтверждение удаленным модемом получения пакета включено. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00903">903</a></p>
+<div class="fragment"><div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;{</div><div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;    <span class="keywordflow">return</span> (_option &amp; BV(ACKNOWLEDGE_DISABLE_COMMAND_OPTIONS_BIT)) ? false : <span class="keyword">true</span>;</div><div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a82dddc275c202d455025015ec7443dc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82dddc275c202d455025015ec7443dc4">&#9670;&nbsp;</a></span>getCca()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool getCca </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Возвращает true, если при отправке пакетов включен режим CCA (Clear Channel Assessment). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00916">916</a></p>
+<div class="fragment"><div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;{</div><div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;    <span class="keywordflow">return</span> (_option &amp; BV(CCA_DISABLE_COMMAND_OPTION_BIT)) ? false : <span class="keyword">true</span>;</div><div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a9807c02d3c5a08d8a0a285bb17dcfd54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9807c02d3c5a08d8a0a285bb17dcfd54">&#9670;&nbsp;</a></span>getEncryption()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool getEncryption </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Возвращает true, если включен режим шифрования поля данных. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00929">929</a></p>
+<div class="fragment"><div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;{</div><div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;    <span class="keywordflow">return</span> (_option &amp; BV(ENCRYPTION_ENABLE_COMMAND_OPTION_BIT)) ? true : <span class="keyword">false</span>;</div><div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a080b5ac5999b7746c4134c64cec61033"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a080b5ac5999b7746c4134c64cec61033">&#9670;&nbsp;</a></span>getFrameData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t getFrameData </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Возвращает байт поля данных, номер которого определяется аргументом. </p>
+
+<p>Замещает <a class="el" href="class_m_bee_request.html#ac1bff9d7bce3aa7f7edac2a1a3f9b8f7">MBeeRequest</a>.</p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00955">955</a></p>
+<div class="fragment"><div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;{</div><div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;    <span class="keywordflow">if</span>(pos == 0)</div><div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;    {</div><div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;        <span class="keywordflow">return</span> (_remoteAddress &gt;&gt; 8) &amp; 0xFF;</div><div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;    }</div><div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(pos == 1)</div><div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;    {</div><div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;        <span class="keywordflow">return</span> _remoteAddress &amp; 0xFF;</div><div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;    }</div><div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>((pos == 2) &amp;&amp; _optionEnable)</div><div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;    {</div><div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;        <span class="keywordflow">return</span> _option;</div><div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;    }</div><div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;    {</div><div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;        <span class="keywordflow">if</span>(_optionEnable)</div><div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_payload_request.html#a79bf867bc90ae21d88d6266aef6feea7">getPayload</a>()[pos - 3];</div><div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;        <span class="keywordflow">else</span></div><div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_payload_request.html#a79bf867bc90ae21d88d6266aef6feea7">getPayload</a>()[pos - 2];</div><div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;    }</div><div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;}</div><div class="ttc" id="class_payload_request_html_a79bf867bc90ae21d88d6266aef6feea7"><div class="ttname"><a href="class_payload_request.html#a79bf867bc90ae21d88d6266aef6feea7">PayloadRequest::getPayload</a></div><div class="ttdeci">uint8_t * getPayload()</div><div class="ttdef"><b>Definition:</b> <a href="_serial_star_8cpp_source.html#l00666">SerialStar.cpp:666</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aadca285fab370a7604ed8c024074b29e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadca285fab370a7604ed8c024074b29e">&#9670;&nbsp;</a></span>getFrameDataLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t getFrameDataLength </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Возвращает полную длину поля данных API-фрейма. </p>
+
+<p>Замещает <a class="el" href="class_m_bee_request.html#a9e365cb39d0064c58567377b84e0203f">MBeeRequest</a>.</p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00978">978</a></p>
+<div class="fragment"><div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;{</div><div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;    <span class="keywordflow">if</span>(_optionEnable)</div><div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_payload_request.html#a31e085fcb06f4603c1358d541cc2ca6a">getPayloadLength</a>() + 3;<span class="comment">// Добавляется 2 байта адреса + 1 байт опций.</span></div><div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_payload_request.html#a31e085fcb06f4603c1358d541cc2ca6a">getPayloadLength</a>() + 2;<span class="comment">// Добавляется только 2 байта адреса.</span></div><div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;}</div><div class="ttc" id="class_payload_request_html_a31e085fcb06f4603c1358d541cc2ca6a"><div class="ttname"><a href="class_payload_request.html#a31e085fcb06f4603c1358d541cc2ca6a">PayloadRequest::getPayloadLength</a></div><div class="ttdeci">uint8_t getPayloadLength()</div><div class="ttdef"><b>Definition:</b> <a href="_serial_star_8cpp_source.html#l00676">SerialStar.cpp:676</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0cfd487291c3842225242ed894865dc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cfd487291c3842225242ed894865dc1">&#9670;&nbsp;</a></span>getOption()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t getOption </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Возвращает значение байта опций отправки пакета. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00879">879</a></p>
+<div class="fragment"><div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;{</div><div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;    <span class="keywordflow">return</span> _option;</div><div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="af1335f743da2adead37fa79536b57891"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1335f743da2adead37fa79536b57891">&#9670;&nbsp;</a></span>getOptionEnable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool getOptionEnable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Возвращает true, если передача пакета осуществляется в соответствии с байтом опций и false, если в сответствии с настройками Device Mode (DM). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00889">889</a></p>
+<div class="fragment"><div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;{</div><div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;    <span class="keywordflow">return</span> _optionEnable;</div><div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a2f2c294156c1aa3e4b6e9cbaab1c99b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f2c294156c1aa3e4b6e9cbaab1c99b3">&#9670;&nbsp;</a></span>getRemoteAddress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t getRemoteAddress </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Возвращает адрес получателя пакета. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00869">869</a></p>
+<div class="fragment"><div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;{</div><div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;    <span class="keywordflow">return</span> _remoteAddress;</div><div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a5e5aec72f86934bbb567a9927749f9da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e5aec72f86934bbb567a9927749f9da">&#9670;&nbsp;</a></span>getSleepingDevice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool getSleepingDevice </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Возвращает true, если пакет предназначается для спящего модема. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00942">942</a></p>
+<div class="fragment"><div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;{</div><div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;    <span class="keywordflow">return</span> (_option &amp; BV(SLEEP_DEVICE_COMMAND_OPTIONS_BIT)) ? true : <span class="keyword">false</span>;</div><div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a62e6a200120892100db9dfdea1a0f8d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62e6a200120892100db9dfdea1a0f8d3">&#9670;&nbsp;</a></span>setAcknowledge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setAcknowledge </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>acknowledge</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Включает/выключает отправку подтверждения удаленным модемом получения пакета. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00908">908</a></p>
+<div class="fragment"><div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;{</div><div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;    <span class="keywordflow">if</span>(acknowledge)</div><div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;        _option &amp;= ~BV(ACKNOWLEDGE_DISABLE_COMMAND_OPTIONS_BIT);</div><div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;        _option |= BV(ACKNOWLEDGE_DISABLE_COMMAND_OPTIONS_BIT);</div><div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a6fa29bb4cf554810cbae809756ef7505"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fa29bb4cf554810cbae809756ef7505">&#9670;&nbsp;</a></span>setCca()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setCca </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>cca</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Включает/выключает режим CCA (Clear Channel Assessment) при отправке пакетов. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00921">921</a></p>
+<div class="fragment"><div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;{</div><div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;    <span class="keywordflow">if</span>(cca)</div><div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;        _option &amp;= ~BV(CCA_DISABLE_COMMAND_OPTION_BIT);</div><div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;        _option |= BV(CCA_DISABLE_COMMAND_OPTION_BIT);</div><div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ac8bf714992ae741813ee90ef82446ff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8bf714992ae741813ee90ef82446ff0">&#9670;&nbsp;</a></span>setEncryption()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setEncryption </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>encryption</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Включает/выключает шифрование поля данных передаваемого пакета. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00934">934</a></p>
+<div class="fragment"><div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;{</div><div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;    <span class="keywordflow">if</span>(encryption)</div><div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;        _option |= BV(ENCRYPTION_ENABLE_COMMAND_OPTION_BIT);</div><div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;        _option &amp;= ~BV(ENCRYPTION_ENABLE_COMMAND_OPTION_BIT);</div><div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="acc10c87f1201e14772451b97d555c06b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc10c87f1201e14772451b97d555c06b">&#9670;&nbsp;</a></span>setOption()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setOption </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>option</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Устанавливает опции отправки пакета. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00884">884</a></p>
+<div class="fragment"><div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;{</div><div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;    _option = option;</div><div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ab9173436ee26445eee2b3500e32ea0cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9173436ee26445eee2b3500e32ea0cc">&#9670;&nbsp;</a></span>setOptionEnable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setOptionEnable </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>optionEnable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Включает/выключает передачу пакетов в соответствии с байтом опций. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00894">894</a></p>
+<div class="fragment"><div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;{</div><div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;    _optionEnable = optionEnable;</div><div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;    <span class="keywordflow">if</span>(optionEnable)</div><div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;        <a class="code" href="class_m_bee_request.html#ac74fa544909d8a00c2f4f8b046bce717">setApiId</a>(TRANSMIT_REQUEST_API_FRAME);</div><div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;        <a class="code" href="class_m_bee_request.html#ac74fa544909d8a00c2f4f8b046bce717">setApiId</a>(TRANSMIT_REQUEST_NO_OPTIONS_API_FRAME);</div><div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;}</div><div class="ttc" id="class_m_bee_request_html_ac74fa544909d8a00c2f4f8b046bce717"><div class="ttname"><a href="class_m_bee_request.html#ac74fa544909d8a00c2f4f8b046bce717">MBeeRequest::setApiId</a></div><div class="ttdeci">void setApiId(uint8_t apiId)</div><div class="ttdef"><b>Definition:</b> <a href="_serial_star_8cpp_source.html#l00566">SerialStar.cpp:566</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af5ecf62687d15072091700b24389c4ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5ecf62687d15072091700b24389c4ef">&#9670;&nbsp;</a></span>setRemoteAddress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setRemoteAddress </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>remoteAddress</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Устанавливает адрес получателя пакета. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00874">874</a></p>
+<div class="fragment"><div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;{</div><div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;    _remoteAddress = remoteAddress;</div><div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="aaee532c9efa8110abc1d9348d129166c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaee532c9efa8110abc1d9348d129166c">&#9670;&nbsp;</a></span>setSleepingDevice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setSleepingDevice </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>sleepingDevice</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Включает/выключает буферизацию пакетов для спящих модемов. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00947">947</a></p>
+<div class="fragment"><div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;{</div><div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;    <span class="keywordflow">if</span>(sleepingDevice)</div><div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;        _option |= BV(SLEEP_DEVICE_COMMAND_OPTIONS_BIT);</div><div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;        _option &amp;= ~BV(SLEEP_DEVICE_COMMAND_OPTIONS_BIT);</div><div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>includes/<a class="el" href="_serial_star_8h_source.html">SerialStar.h</a></li>
+<li><a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

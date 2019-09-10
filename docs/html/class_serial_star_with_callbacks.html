@@ -1,0 +1,776 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MBee C++ library: Класс SerialStarWithCallbacks</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="MBee.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MBee C++ library
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="class_serial_star_with_callbacks-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс SerialStarWithCallbacks</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_serial_star_8h_source.html">SerialStar.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:SerialStarWithCallbacks:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_serial_star_with_callbacks.png" usemap="#SerialStarWithCallbacks_map" alt=""/>
+  <map id="SerialStarWithCallbacks_map" name="SerialStarWithCallbacks_map">
+<area href="class_serial_star.html" alt="SerialStar" shape="rect" coords="0,112,147,136"/>
+<area href="class_m_bee868.html" alt="MBee868" shape="rect" coords="0,56,147,80"/>
+<area href="class_m_bee.html" alt="MBee" shape="rect" coords="0,0,147,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a84eeae3f4ca204c0ec54e7db6b4f84ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial_star_with_callbacks.html#a84eeae3f4ca204c0ec54e7db6b4f84ce">onPacketError</a> (void(*func)(uint8_t, uintptr_t), uintptr_t data=0)</td></tr>
+<tr class="separator:a84eeae3f4ca204c0ec54e7db6b4f84ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a230e475ff70bb229fadb94ef25920331"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial_star_with_callbacks.html#a230e475ff70bb229fadb94ef25920331">onResponse</a> (void(*func)(<a class="el" href="class_m_bee_response.html">MBeeResponse</a> &amp;, uintptr_t), uintptr_t data=0)</td></tr>
+<tr class="separator:a230e475ff70bb229fadb94ef25920331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53deab9369ccaf8d8eedce7652084fb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial_star_with_callbacks.html#a53deab9369ccaf8d8eedce7652084fb0">onOtherResponse</a> (void(*func)(<a class="el" href="class_m_bee_response.html">MBeeResponse</a> &amp;, uintptr_t), uintptr_t data=0)</td></tr>
+<tr class="separator:a53deab9369ccaf8d8eedce7652084fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c4e3552269f5ffc94e0396902ba6eae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial_star_with_callbacks.html#a1c4e3552269f5ffc94e0396902ba6eae">onModemStatusResponse</a> (void(*func)(<a class="el" href="class_modem_status_response.html">ModemStatusResponse</a> &amp;, uintptr_t), uintptr_t data=0)</td></tr>
+<tr class="separator:a1c4e3552269f5ffc94e0396902ba6eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e804306660b8e33478de0e8072782af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial_star_with_callbacks.html#a6e804306660b8e33478de0e8072782af">onTxStatusResponse</a> (void(*func)(<a class="el" href="class_tx_status_response.html">TxStatusResponse</a> &amp;, uintptr_t), uintptr_t data=0)</td></tr>
+<tr class="separator:a6e804306660b8e33478de0e8072782af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaa64d915b3de476dca6666be1e81984"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial_star_with_callbacks.html#abaa64d915b3de476dca6666be1e81984">onAtCommandResponse</a> (void(*func)(<a class="el" href="class_at_command_response.html">AtCommandResponse</a> &amp;, uintptr_t), uintptr_t data=0)</td></tr>
+<tr class="separator:abaa64d915b3de476dca6666be1e81984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04ae031181ee4f559b015b0f609c645b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial_star_with_callbacks.html#a04ae031181ee4f559b015b0f609c645b">onRemoteAtCommandResponse</a> (void(*func)(<a class="el" href="class_remote_at_command_response.html">RemoteAtCommandResponse</a> &amp;, uintptr_t), uintptr_t data=0)</td></tr>
+<tr class="separator:a04ae031181ee4f559b015b0f609c645b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1c3af73659348bd000cbf4c010c12c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial_star_with_callbacks.html#ab1c3af73659348bd000cbf4c010c12c4">onRxAcknowledgeResponse</a> (void(*func)(<a class="el" href="class_rx_acknowledge_response.html">RxAcknowledgeResponse</a> &amp;, uintptr_t), uintptr_t data=0)</td></tr>
+<tr class="separator:ab1c3af73659348bd000cbf4c010c12c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6945a247da146c44e9a19e832a0998a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial_star_with_callbacks.html#a6945a247da146c44e9a19e832a0998a1">onRxResponse</a> (void(*func)(<a class="el" href="class_rx_response.html">RxResponse</a> &amp;, uintptr_t), uintptr_t data=0)</td></tr>
+<tr class="separator:a6945a247da146c44e9a19e832a0998a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dfd96e429470bd2d2bf6591296456a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial_star_with_callbacks.html#a1dfd96e429470bd2d2bf6591296456a4">onRxIoSampleResponse</a> (void(*func)(<a class="el" href="class_rx_io_sample_response.html">RxIoSampleResponse</a> &amp;, uintptr_t), uintptr_t data=0)</td></tr>
+<tr class="separator:a1dfd96e429470bd2d2bf6591296456a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13a43e6d814de94978c515cb084873b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial_star_with_callbacks.html#a13a43e6d814de94978c515cb084873b1">run</a> ()</td></tr>
+<tr class="separator:a13a43e6d814de94978c515cb084873b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd0b1a614166edea8747af1ffdd60c37"><td class="memTemplParams" colspan="2">template&lt;typename Response &gt; </td></tr>
+<tr class="memitem:acd0b1a614166edea8747af1ffdd60c37"><td class="memTemplItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_serial_star_with_callbacks.html#acd0b1a614166edea8747af1ffdd60c37">waitFor</a> (Response &amp;response, uint16_t timeout, bool(*func)(Response &amp;, uintptr_t)=NULL, uintptr_t data=0, int16_t frameId=-1)</td></tr>
+<tr class="separator:acd0b1a614166edea8747af1ffdd60c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0abcfbbaadd2f4f609c6205de5d5ec15"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial_star_with_callbacks.html#a0abcfbbaadd2f4f609c6205de5d5ec15">sendAndWait</a> (<a class="el" href="class_m_bee_request.html">MBeeRequest</a> &amp;request, uint16_t timeout)</td></tr>
+<tr class="separator:a0abcfbbaadd2f4f609c6205de5d5ec15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af31eeb375341ed45463172b8529473dd"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial_star_with_callbacks.html#af31eeb375341ed45463172b8529473dd">sendAndWaitForAcknowledge</a> (<a class="el" href="class_m_bee_request.html">MBeeRequest</a> &amp;request, uint16_t timeout)</td></tr>
+<tr class="separator:af31eeb375341ed45463172b8529473dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52eb66fcb01e664e90ced223585502c9"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial_star_with_callbacks.html#a52eb66fcb01e664e90ced223585502c9">waitForStatus</a> (uint8_t frameId, uint16_t timeout)</td></tr>
+<tr class="separator:a52eb66fcb01e664e90ced223585502c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac990a762421bc3aed687f540abd41269"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial_star_with_callbacks.html#ac990a762421bc3aed687f540abd41269">waitForAcknowledge</a> (uint8_t frameId, uint16_t timeout)</td></tr>
+<tr class="separator:ac990a762421bc3aed687f540abd41269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_serial_star"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_serial_star')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_serial_star.html">SerialStar</a></td></tr>
+<tr class="memitem:a88d30eaef4e5f380b643a45c84820946 inherit pub_methods_class_serial_star"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial_star.html#a88d30eaef4e5f380b643a45c84820946">readPacket</a> ()</td></tr>
+<tr class="separator:a88d30eaef4e5f380b643a45c84820946 inherit pub_methods_class_serial_star"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89478769e94cd4db900da74d8a953678 inherit pub_methods_class_serial_star"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial_star.html#a89478769e94cd4db900da74d8a953678">readPacket</a> (int timeout)</td></tr>
+<tr class="separator:a89478769e94cd4db900da74d8a953678 inherit pub_methods_class_serial_star"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2730ce8195120508777415c0b8cf3dda inherit pub_methods_class_serial_star"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial_star.html#a2730ce8195120508777415c0b8cf3dda">readPacketUntilAvailable</a> ()</td></tr>
+<tr class="separator:a2730ce8195120508777415c0b8cf3dda inherit pub_methods_class_serial_star"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefd9352747104d8a511e52204a27906f inherit pub_methods_class_serial_star"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial_star.html#aefd9352747104d8a511e52204a27906f">send</a> (void *)</td></tr>
+<tr class="separator:aefd9352747104d8a511e52204a27906f inherit pub_methods_class_serial_star"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa09c04faf456ebd38677d112e54e430b inherit pub_methods_class_serial_star"><td class="memItemLeft" align="right" valign="top"><a id="aa09c04faf456ebd38677d112e54e430b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> (<a class="el" href="class_m_bee_request.html">MBeeRequest</a> &amp;request)</td></tr>
+<tr class="separator:aa09c04faf456ebd38677d112e54e430b inherit pub_methods_class_serial_star"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bc8b60a3ea7229cc7eebb6d60b1982d inherit pub_methods_class_serial_star"><td class="memItemLeft" align="right" valign="top"><a id="a5bc8b60a3ea7229cc7eebb6d60b1982d"></a>
+<a class="el" href="class_m_bee_response.html">MBeeResponse</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getResponse</b> ()</td></tr>
+<tr class="separator:a5bc8b60a3ea7229cc7eebb6d60b1982d inherit pub_methods_class_serial_star"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_m_bee"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_m_bee')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_m_bee.html">MBee</a></td></tr>
+<tr class="memitem:a39c91ab7a6249292dfc03edeb0bfc002 inherit pub_methods_class_m_bee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_bee.html#a39c91ab7a6249292dfc03edeb0bfc002">begin</a> (<a class="el" href="class_stream.html">Stream</a> &amp;serial)</td></tr>
+<tr class="separator:a39c91ab7a6249292dfc03edeb0bfc002 inherit pub_methods_class_m_bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2806b9de2dccbe7bb6912806b58247fe inherit pub_methods_class_m_bee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_bee.html#a2806b9de2dccbe7bb6912806b58247fe">setSerial</a> (<a class="el" href="class_stream.html">Stream</a> &amp;serial)</td></tr>
+<tr class="separator:a2806b9de2dccbe7bb6912806b58247fe inherit pub_methods_class_m_bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a47f12debf6d5d7273c3e5fb360417a inherit pub_methods_class_m_bee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_bee.html#a4a47f12debf6d5d7273c3e5fb360417a">available</a> ()</td></tr>
+<tr class="separator:a4a47f12debf6d5d7273c3e5fb360417a inherit pub_methods_class_m_bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74dc94b86d35235e39a000a34b3085c5 inherit pub_methods_class_m_bee"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_bee.html#a74dc94b86d35235e39a000a34b3085c5">read</a> ()</td></tr>
+<tr class="separator:a74dc94b86d35235e39a000a34b3085c5 inherit pub_methods_class_m_bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abec091130c064e052e45b7d4cae18f98 inherit pub_methods_class_m_bee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_bee.html#abec091130c064e052e45b7d4cae18f98">write</a> (uint8_t val)</td></tr>
+<tr class="separator:abec091130c064e052e45b7d4cae18f98 inherit pub_methods_class_m_bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pub_attribs_class_m_bee"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_m_bee')"><img src="closed.png" alt="-"/>&#160;Открытые атрибуты унаследованные от <a class="el" href="class_m_bee.html">MBee</a></td></tr>
+<tr class="memitem:ae9a1e76b5681c90f64763024ca94d707 inherit pub_attribs_class_m_bee"><td class="memItemLeft" align="right" valign="top"><a id="ae9a1e76b5681c90f64763024ca94d707"></a>
+<a class="el" href="class_stream.html">Stream</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_serial</b></td></tr>
+<tr class="separator:ae9a1e76b5681c90f64763024ca94d707 inherit pub_attribs_class_m_bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Этот класс может быть использован вместо класса <a class="el" href="class_serial_star.html">SerialStar</a> и позволяет самостоятельно создавать функции, которые будут автоматически вызываться при получении пакетов от радиомодуля. Такой подход значительно упрощает процесс программирования. При использовании этого класса, прежде всего необходимо зарегистрировать свою callback функцию, с помощью метода onXxx. Каждый метод имеет аргумент uintptr_t, который может быть использован для передачи произвольных данных в callback-функцию. Это оказывается полезным при регистрации одной и той же callback-функции для нескольких событий, либо в случае, если функция должна выполнять разные действия в разных обстоятельствах. Обработка этих данных внутри функции является опциональной, однако присутствие их в списке аргументов callback-функции является обязательным. Если их обработка не предполагается, то данные можно просто проигнорировать. Тип uintptr_t не является указателем, а является целочисленным. Размер его должен быть достаточен для хранения указателя, характерного для данной аппаратной платформы. Например, его длина для плат, использующих AVR, должна быть не менее 16 бит, а для устройств на основе ARM - не менее 32. Для каждого события может быть зарегистрирована только одна функция. Повторная регистрация функции для одного и того же события перепишет ранее зарегистрированную. Для отмены регистрации callback-функции, необходимо передать ей NULL вкачестве аргумента. Для того, чтобы callback-функции работали, необходимо регулярно вызывать метод этого класса <a class="el" href="class_serial_star_with_callbacks.html#a13a43e6d814de94978c515cb084873b1">run()</a>. Проще всего поместить вызов этого метода в главный цикл программы - loop{}. Этот метод автоматически вызывает функции <a class="el" href="class_serial_star.html#a88d30eaef4e5f380b643a45c84820946">readPacket()</a> и getResponse() и некоторые других из класса <a class="el" href="class_m_bee.html">MBee</a>. Таким образом, вызывать их непосредственно из программы не требуется (хотя, если это сделать то ничего страшного не произойдет, тем не менее некоторые callback-функции могут после такого вызова не сработать). Внутри callback-функции не допускаются блокировки в виде задержек или ожиданий. Дело в том, что callback-функции вызываются изнутри функции <a class="el" href="class_serial_star_with_callbacks.html#acd0b1a614166edea8747af1ffdd60c37">waitFor()</a> или других дружественных функций, и если быстро не вернуться из callback, то в функции <a class="el" href="class_serial_star_with_callbacks.html#acd0b1a614166edea8747af1ffdd60c37">waitFor()</a> может произойти таймаут. Отправка пакетов внутри callback-функции вполне допустима,однако вызов фукнций,связанных с приемом пакетов недопустим. К этим функциям относятся <a class="el" href="class_serial_star.html#a88d30eaef4e5f380b643a45c84820946">readPacket()</a> <a class="el" href="class_serial_star_with_callbacks.html#acd0b1a614166edea8747af1ffdd60c37">waitFor()</a> и т.п. Вызов этих функций перепишет принятое ранее сообщение, что заблокирует вызов callback-функций для всех ожидающих событий. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8h_source.html">SerialStar.h</a> строка <a class="el" href="_serial_star_8h_source.html#l01072">1072</a></p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="abaa64d915b3de476dca6666be1e81984"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaa64d915b3de476dca6666be1e81984">&#9670;&nbsp;</a></span>onAtCommandResponse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void onAtCommandResponse </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(<a class="el" href="class_at_command_response.html">AtCommandResponse</a> &amp;, uintptr_t)&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>data</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Регистрация callback-функции, вызываемой при приеме API-фрейма с ответом на локальную AT-команду (apiId = 0x87, 0x88, 0x89). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8h_source.html">SerialStar.h</a> строка <a class="el" href="_serial_star_8h_source.html#l01130">1130</a></p>
+<div class="fragment"><div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160;    {</div><div class="line"><a name="l01132"></a><span class="lineno"> 1132</span>&#160;        _onAtCommandResponse.set(func, data);</div><div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a1c4e3552269f5ffc94e0396902ba6eae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c4e3552269f5ffc94e0396902ba6eae">&#9670;&nbsp;</a></span>onModemStatusResponse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void onModemStatusResponse </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(<a class="el" href="class_modem_status_response.html">ModemStatusResponse</a> &amp;, uintptr_t)&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>data</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Регистрация callback-функции, вызываемой при приеме API-фрейма со статусом модема (apiId = 0x8A). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8h_source.html">SerialStar.h</a> строка <a class="el" href="_serial_star_8h_source.html#l01114">1114</a></p>
+<div class="fragment"><div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;    {</div><div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;        _onModemStatusResponse.set(func, data);</div><div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a53deab9369ccaf8d8eedce7652084fb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53deab9369ccaf8d8eedce7652084fb0">&#9670;&nbsp;</a></span>onOtherResponse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void onOtherResponse </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(<a class="el" href="class_m_bee_response.html">MBeeResponse</a> &amp;, uintptr_t)&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>data</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Регистрация callback-функции для события приема пакета от модуля. Зарегистрированная функция будет вызываться всегда при любом успешном приеме пакета по UART если специфическая callback-функция для данного типа пакета не зарегистрирована. В качестве аргумента передается ссылка на принятый пакет, а также опциональные данные (или указатель на них), определенные при регистрации callback-функции. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8h_source.html">SerialStar.h</a> строка <a class="el" href="_serial_star_8h_source.html#l01101">1101</a></p>
+<div class="fragment"><div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;    {</div><div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;        _onOtherResponse.set(func, data);</div><div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a84eeae3f4ca204c0ec54e7db6b4f84ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84eeae3f4ca204c0ec54e7db6b4f84ce">&#9670;&nbsp;</a></span>onPacketError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void onPacketError </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(uint8_t, uintptr_t)&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>data</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Регистрация callback-функции для события ошибки чтения пакета. Зарегистрированная функция будет вызываться каждый раз при возникновении ошибки разбора пакета, полученного от радиомодуля. Аргументом при вызове будет являться код ошибки, аналогичный получаемому при вызове <a class="el" href="class_m_bee_response.html#a43d9308a01da9f87fadf199af4ea561e">MBeeResponse::getErrorCode()</a>, а также опциональные данные (или указатель на них), определенные при регистрации callback-функции. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8h_source.html">SerialStar.h</a> строка <a class="el" href="_serial_star_8h_source.html#l01080">1080</a></p>
+<div class="fragment"><div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;    {</div><div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;        _onPacketError.set(func, data);</div><div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a04ae031181ee4f559b015b0f609c645b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04ae031181ee4f559b015b0f609c645b">&#9670;&nbsp;</a></span>onRemoteAtCommandResponse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void onRemoteAtCommandResponse </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(<a class="el" href="class_remote_at_command_response.html">RemoteAtCommandResponse</a> &amp;, uintptr_t)&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>data</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Регистрация callback-функции, вызываемой при приеме API-фрейма с ответом на удаленную AT-команду (apiId = 0x97). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8h_source.html">SerialStar.h</a> строка <a class="el" href="_serial_star_8h_source.html#l01138">1138</a></p>
+<div class="fragment"><div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;    {</div><div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;        _onRemoteAtCommandResponse.set(func, data);</div><div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a230e475ff70bb229fadb94ef25920331"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a230e475ff70bb229fadb94ef25920331">&#9670;&nbsp;</a></span>onResponse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void onResponse </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(<a class="el" href="class_m_bee_response.html">MBeeResponse</a> &amp;, uintptr_t)&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>data</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Регистрация callback-функции для события приема пакета от модуля. Зарегистрированная функция будет вызываться всегда при любом успешном приеме пакета по UART перед тем, как будет вызвана специфическая для принятого пакета callback-функция или функция <a class="el" href="class_serial_star_with_callbacks.html#a53deab9369ccaf8d8eedce7652084fb0">onOtherResponse()</a>, если специфическая функция не зарегистрирована. В качестве аргумента передается ссылка на принятый пакета, а также опциональные данные (или указатель на них), определенные при регистрации callback-функции. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8h_source.html">SerialStar.h</a> строка <a class="el" href="_serial_star_8h_source.html#l01091">1091</a></p>
+<div class="fragment"><div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;    {</div><div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;        _onResponse.set(func, data);</div><div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ab1c3af73659348bd000cbf4c010c12c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1c3af73659348bd000cbf4c010c12c4">&#9670;&nbsp;</a></span>onRxAcknowledgeResponse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void onRxAcknowledgeResponse </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(<a class="el" href="class_rx_acknowledge_response.html">RxAcknowledgeResponse</a> &amp;, uintptr_t)&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>data</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Регистрация callback-функции, вызываемой при приеме API-фрейма с подтверждением приема пакета от удаленного модема (apiId = 0x8C). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8h_source.html">SerialStar.h</a> строка <a class="el" href="_serial_star_8h_source.html#l01146">1146</a></p>
+<div class="fragment"><div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;    {</div><div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;        _onRxAcknowledgeResponse.set(func, data);</div><div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a1dfd96e429470bd2d2bf6591296456a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dfd96e429470bd2d2bf6591296456a4">&#9670;&nbsp;</a></span>onRxIoSampleResponse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void onRxIoSampleResponse </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(<a class="el" href="class_rx_io_sample_response.html">RxIoSampleResponse</a> &amp;, uintptr_t)&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>data</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Регистрация callback-функции, вызываемой при приеме API-фрейма с данными о состоянии датчиков удаленного модема (apiId = 0x83). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8h_source.html">SerialStar.h</a> строка <a class="el" href="_serial_star_8h_source.html#l01162">1162</a></p>
+<div class="fragment"><div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;    {</div><div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;        _onRxIoSampleResponse.set(func, data);</div><div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a6945a247da146c44e9a19e832a0998a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6945a247da146c44e9a19e832a0998a1">&#9670;&nbsp;</a></span>onRxResponse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void onRxResponse </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(<a class="el" href="class_rx_response.html">RxResponse</a> &amp;, uintptr_t)&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>data</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Регистрация callback-функции, вызываемой при приеме API-фрейма с неструктурированными данными от удаленного модема (apiId = 0x81, 0x8F). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8h_source.html">SerialStar.h</a> строка <a class="el" href="_serial_star_8h_source.html#l01154">1154</a></p>
+<div class="fragment"><div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;    {</div><div class="line"><a name="l01156"></a><span class="lineno"> 1156</span>&#160;        _onRxResponse.set(func, data);</div><div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a6e804306660b8e33478de0e8072782af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e804306660b8e33478de0e8072782af">&#9670;&nbsp;</a></span>onTxStatusResponse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void onTxStatusResponse </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(<a class="el" href="class_tx_status_response.html">TxStatusResponse</a> &amp;, uintptr_t)&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>data</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Регистрация callback-функции, вызываемой при приеме API-фрейма со статусом передачи (apiId = 0x8B). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8h_source.html">SerialStar.h</a> строка <a class="el" href="_serial_star_8h_source.html#l01122">1122</a></p>
+<div class="fragment"><div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;    {</div><div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;        _onTxStatusResponse.set(func, data);</div><div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a13a43e6d814de94978c515cb084873b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13a43e6d814de94978c515cb084873b1">&#9670;&nbsp;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void run </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Главный цикл. Этот метод должен регулярно вызываться для непрерывной обработки данных, поступающих от модуля <a class="el" href="class_m_bee.html">MBee</a> по последовательному интерфейсу и вызова соответствующих callback-функций. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l01182">1182</a></p>
+<div class="fragment"><div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;{</div><div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;    <span class="keywordflow">if</span>(loopTop())</div><div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;        loopBottom();</div><div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a0abcfbbaadd2f4f609c6205de5d5ec15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0abcfbbaadd2f4f609c6205de5d5ec15">&#9670;&nbsp;</a></span>sendAndWait()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t sendAndWait </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_m_bee_request.html">MBeeRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Передает в UART API-фрейм, предназначенный для передачи по эфиру и ждет ответа со статусом в течение заданного времени. Собственно говоря, этот метод просто последовательно вызывает функции <a class="el" href="class_serial_star.html#aefd9352747104d8a511e52204a27906f">send()</a> и <a class="el" href="class_serial_star_with_callbacks.html#a52eb66fcb01e664e90ced223585502c9">waitForStatus()</a>. См. функцию <a class="el" href="class_serial_star_with_callbacks.html#a52eb66fcb01e664e90ced223585502c9">waitForStatus()</a> для более получения более подробной информации о возвращаемых параметрах и деталях. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8h_source.html">SerialStar.h</a> строка <a class="el" href="_serial_star_8h_source.html#l01197">1197</a></p>
+<div class="fragment"><div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;    {</div><div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;        <a class="code" href="class_serial_star.html#aefd9352747104d8a511e52204a27906f">send</a>(request);</div><div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_serial_star_with_callbacks.html#a52eb66fcb01e664e90ced223585502c9">waitForStatus</a>(request.<a class="code" href="class_m_bee_request.html#a5e24f4267388f39c146a244e2ec42017">getFrameId</a>(), timeout);</div><div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;    }</div><div class="ttc" id="class_m_bee_request_html_a5e24f4267388f39c146a244e2ec42017"><div class="ttname"><a href="class_m_bee_request.html#a5e24f4267388f39c146a244e2ec42017">MBeeRequest::getFrameId</a></div><div class="ttdeci">uint8_t getFrameId()</div><div class="ttdef"><b>Definition:</b> <a href="_serial_star_8cpp_source.html#l00556">SerialStar.cpp:556</a></div></div>
+<div class="ttc" id="class_serial_star_with_callbacks_html_a52eb66fcb01e664e90ced223585502c9"><div class="ttname"><a href="class_serial_star_with_callbacks.html#a52eb66fcb01e664e90ced223585502c9">SerialStarWithCallbacks::waitForStatus</a></div><div class="ttdeci">uint8_t waitForStatus(uint8_t frameId, uint16_t timeout)</div><div class="ttdef"><b>Definition:</b> <a href="_serial_star_8cpp_source.html#l01199">SerialStar.cpp:1199</a></div></div>
+<div class="ttc" id="class_serial_star_html_aefd9352747104d8a511e52204a27906f"><div class="ttname"><a href="class_serial_star.html#aefd9352747104d8a511e52204a27906f">SerialStar::send</a></div><div class="ttdeci">void send(void *)</div><div class="ttdef"><b>Definition:</b> <a href="_serial_star_8cpp_source.html#l01118">SerialStar.cpp:1118</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af31eeb375341ed45463172b8529473dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af31eeb375341ed45463172b8529473dd">&#9670;&nbsp;</a></span>sendAndWaitForAcknowledge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t sendAndWaitForAcknowledge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_m_bee_request.html">MBeeRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Передает в UART API-фрейм, предназначенный для передачи по эфиру. В течение заданного времени ждет ответа со статусом и подтверждение получения пакета от удаленного модуля. Метод просто последовательно вызывает функции <a class="el" href="class_serial_star.html#aefd9352747104d8a511e52204a27906f">send()</a>, <a class="el" href="class_serial_star_with_callbacks.html#a52eb66fcb01e664e90ced223585502c9">waitForStatus()</a> и <a class="el" href="class_serial_star_with_callbacks.html#ac990a762421bc3aed687f540abd41269">waitForAcknowledge()</a>. Ожидание подтверждения приема инициализируется только при удачной отправке пакета в эфир т.е. если вызов <a class="el" href="class_serial_star_with_callbacks.html#a52eb66fcb01e664e90ced223585502c9">waitForStatus()</a> вернул 0. Функция возвращает 0, если принято подтверждение получения и MBEE_WAIT_TIMEOUT(0xFF), если подтверждения так и не дождались. Если сообщение в эфир отправлено не было, то возвращается статус передачи. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l01188">1188</a></p>
+<div class="fragment"><div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;{</div><div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;    uint8_t status;</div><div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> start = millis();</div><div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;    <a class="code" href="class_serial_star.html#aefd9352747104d8a511e52204a27906f">send</a>(request);</div><div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;    status = <a class="code" href="class_serial_star_with_callbacks.html#a52eb66fcb01e664e90ced223585502c9">waitForStatus</a>(request.<a class="code" href="class_m_bee_request.html#a5e24f4267388f39c146a244e2ec42017">getFrameId</a>(), timeout - (millis() - start));</div><div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;    <span class="keywordflow">if</span>(status)</div><div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;        <span class="keywordflow">return</span> status;</div><div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_serial_star_with_callbacks.html#ac990a762421bc3aed687f540abd41269">waitForAcknowledge</a>(request.<a class="code" href="class_m_bee_request.html#a5e24f4267388f39c146a244e2ec42017">getFrameId</a>(), timeout - (millis() - start));</div><div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;}</div><div class="ttc" id="class_m_bee_request_html_a5e24f4267388f39c146a244e2ec42017"><div class="ttname"><a href="class_m_bee_request.html#a5e24f4267388f39c146a244e2ec42017">MBeeRequest::getFrameId</a></div><div class="ttdeci">uint8_t getFrameId()</div><div class="ttdef"><b>Definition:</b> <a href="_serial_star_8cpp_source.html#l00556">SerialStar.cpp:556</a></div></div>
+<div class="ttc" id="class_serial_star_with_callbacks_html_a52eb66fcb01e664e90ced223585502c9"><div class="ttname"><a href="class_serial_star_with_callbacks.html#a52eb66fcb01e664e90ced223585502c9">SerialStarWithCallbacks::waitForStatus</a></div><div class="ttdeci">uint8_t waitForStatus(uint8_t frameId, uint16_t timeout)</div><div class="ttdef"><b>Definition:</b> <a href="_serial_star_8cpp_source.html#l01199">SerialStar.cpp:1199</a></div></div>
+<div class="ttc" id="class_serial_star_with_callbacks_html_ac990a762421bc3aed687f540abd41269"><div class="ttname"><a href="class_serial_star_with_callbacks.html#ac990a762421bc3aed687f540abd41269">SerialStarWithCallbacks::waitForAcknowledge</a></div><div class="ttdeci">uint8_t waitForAcknowledge(uint8_t frameId, uint16_t timeout)</div><div class="ttdef"><b>Definition:</b> <a href="_serial_star_8cpp_source.html#l01215">SerialStar.cpp:1215</a></div></div>
+<div class="ttc" id="class_serial_star_html_aefd9352747104d8a511e52204a27906f"><div class="ttname"><a href="class_serial_star.html#aefd9352747104d8a511e52204a27906f">SerialStar::send</a></div><div class="ttdeci">void send(void *)</div><div class="ttdef"><b>Definition:</b> <a href="_serial_star_8cpp_source.html#l01118">SerialStar.cpp:1118</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acd0b1a614166edea8747af1ffdd60c37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd0b1a614166edea8747af1ffdd60c37">&#9670;&nbsp;</a></span>waitFor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t waitFor </td>
+          <td>(</td>
+          <td class="paramtype">Response &amp;&#160;</td>
+          <td class="paramname"><em>response</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool(*)(Response &amp;, uintptr_t)&#160;</td>
+          <td class="paramname"><em>func</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>data</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>frameId</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Принимает API-фрейм заданного типа, опционально отфильтрованного с помощью определенной функции проверки. Если эта функция проверки определена, то она вызывается каждый раз при приеме API-фрейма требуемого типа. В качестве параметров ей передаются ссылка на ответ и указатель на поле данных. Если функция проверки возвращает true (или если такая проверочная функция не определена), то ожидание приема прекращается и осуществляется возврат в вызывающую функцию с параметром 0. Если же проверочная функция возвращает false,то ожидание приема продолжается. По истечении заданного времени ожидания, функция возвращает MBEE_WAIT_TIMEOUT (0xFF). Если фрейм был отправлен с ненулевым frameID, то на него модуль должен получить ответ со статусом. Если статус не равен 0 т.е. имела место какая-либо ошибка, то ожидание прекращается и этот статусный байт передается как результат работы функции. Такое поведение объясняется следующим: если фрейм предназначался для передачи по эфиру, то наличие ошибок при его обработке/отправке(например вследствие занятости частотного канала) приводит к тому, в эфир он не уйдет и, следовательно, ответа на него удаленного узла ждать бессмысленно. Во время ожидания, любой принятый пакет передается в соответствующую callback-функцию также, как бы это происходило при непрерывном вызове <a class="el" href="class_serial_star_with_callbacks.html#a13a43e6d814de94978c515cb084873b1">run()</a> исключая только те фреймы, которые передаются в OnResponse() и никуда более. После вызова этого метода, пакет может быть получен с помощью обычного вызова getResponse(). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8h_source.html">SerialStar.h</a> строка <a class="el" href="_serial_star_8h_source.html#l01187">1187</a></p>
+<div class="fragment"><div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;    {</div><div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;        <span class="keywordflow">return</span> waitForInternal(Response::API_ID, &amp;response, timeout, (<span class="keywordtype">void</span>*)func, data, frameId);</div><div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ac990a762421bc3aed687f540abd41269"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac990a762421bc3aed687f540abd41269">&#9670;&nbsp;</a></span>waitForAcknowledge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t waitForAcknowledge </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>frameId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Ждет API-фрейм c подтверждением приема удаленным модулем пакета с определенным frameId в течение заданного времени. При возникновении таймаута, возвращает MBEE_WAIT_TIMEOUT(0xFF). Во время ожидания, любой принятый пакет передается в соответствующую callback-функцию также, как бы это происходило при непрерывном вызове <a class="el" href="class_serial_star_with_callbacks.html#a13a43e6d814de94978c515cb084873b1">run()</a> исключая только те фреймы, которые передаются в OnResponse() и никуда более. После вызова этого метода, пакет может быть получен с помощью обычного вызова getResponse(). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l01215">1215</a></p>
+<div class="fragment"><div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;{</div><div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> start = millis();</div><div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;    <span class="keywordflow">do</span></div><div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;    {</div><div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;        <span class="keywordflow">if</span>(loopTop())</div><div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;        {</div><div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;            uint8_t status = matchAcknowledge(frameId);</div><div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;            <span class="keywordflow">if</span>(!status)</div><div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;                <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;            loopBottom(); <span class="comment">//Вызываем регулярные callback-функции.</span></div><div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;        }</div><div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;    } <span class="keywordflow">while</span> (millis() - start &lt; timeout);</div><div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;    <span class="keywordflow">return</span> MBEE_WAIT_TIMEOUT ;</div><div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a52eb66fcb01e664e90ced223585502c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52eb66fcb01e664e90ced223585502c9">&#9670;&nbsp;</a></span>waitForStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t waitForStatus </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>frameId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Ждет приема ответного API-фрейма со статусом после отправки пакета с определенным frameId в течение заданного времени. При возникновении таймаута, возвращает MBEE_WAIT_TIMEOUT(0xFF). Во время ожидания, любой принятый пакет передается в соответствующую callback-функцию также, как бы это происходило при непрерывном вызове <a class="el" href="class_serial_star_with_callbacks.html#a13a43e6d814de94978c515cb084873b1">run()</a> исключая только те фреймы, которые передаются в OnResponse() и никуда более. После вызова этого метода, пакет может быть получен с помощью обычного вызова getResponse(). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l01199">1199</a></p>
+<div class="fragment"><div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;{</div><div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> start = millis();</div><div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;    <span class="keywordflow">do</span></div><div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;    {</div><div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;        <span class="keywordflow">if</span>(loopTop())</div><div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;        {</div><div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;            uint8_t status = matchStatus(frameId);</div><div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;            <span class="keywordflow">if</span>(status != 0xff)</div><div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;                <span class="keywordflow">return</span> status;</div><div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;            loopBottom(); <span class="comment">//Вызываем регулярные callback-функции.</span></div><div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;        }</div><div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;    } <span class="keywordflow">while</span> (millis() - start &lt; timeout);</div><div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;    <span class="keywordflow">return</span> MBEE_WAIT_TIMEOUT ;</div><div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>includes/<a class="el" href="_serial_star_8h_source.html">SerialStar.h</a></li>
+<li><a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
