@@ -30,11 +30,11 @@ Code adapted from  XBee-Arduino library XBee.h. Copyright info below.
 
 #include "includes/System.h"
 
-#if defined(__TI_COMPILER_VERSION__) || (__IAR_SYSTEMS_ICC__)
-  #warning Library cpp-mbee is compiling for microcontrollers. Allocation for hardware timer is required. See readme.txt for details.
+#if defined(__TI_COMPILER_VERSION__) || (__IAR_SYSTEMS_ICC__) || (__SW4STM32__)
+  #warning Library cpp-mbee is compiling for microcontrollers.
 #else
   #include <time.h>
-  uint64_t millis()
+  uint32_t millis()
   {
     return(1000 * clock() / CLOCKS_PER_SEC);
   }

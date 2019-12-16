@@ -1,0 +1,4 @@
+-D__weak=__attribute__((weak))
+-D__packed=__attribute__((__packed__))
+-DUSE_HAL_DRIVER
+-DSTM32G071xx

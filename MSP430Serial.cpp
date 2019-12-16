@@ -49,57 +49,58 @@ Code adapted from  XBee-Arduino library XBee.h. Copyright info below.
 /*********************************************************************
  * CONSTANTS
  */
-//Выбор модуля UART для работы с радиомодулем.
-#ifndef MSP_MBEE_UART_MODULE
-  #define MSP_MBEE_UART_MODULE  EUSCI_A0_BASE
-  //#define MSP_MBEE_UART_MODULE  EUSCI_A1_BASE
-#endif
-
-//Выбор модуля таймера.
-#ifndef MSP_MBEE_TIMER_MODULE
-  //#define MSP_MBEE_TIMER_MODULE TIMER_A0_BASE
-  //#define MSP_MBEE_TIMER_MODULE TIMER_A1_BASE
-  #define MSP_MBEE_TIMER_MODULE TIMER_B0_BASE
-#endif
-
-#define UART_TX_BUFFER_SIZE 128u
-#define UART_RX_BUFFER_SIZE 128u
 
 /*********************************************************************
  * DIAGNOSTICS
  */
-#if (MSP_MBEE_UART_MODULE == EUSCI_A0_BASE)
-  #warning Module eUSCI_A0 is selected as UART for MBee library. Set appropriate pins for peripheral function!
-  #define UCAxIE    UCA0IE
-  #define UCAxIFG   UCA0IFG
-  #define UCAxBRW   UCA0BRW
-  #define UCAxMCTLW UCA0MCTLW
-  #define UCAxCTLW0 UCA0CTLW0
+#if defined(__MSP430_HAS_USCI__)
+  #warning Module USCI_A0 is selected as UART for MBee library. Check for the settting appropriate pins for peripheral function!
+  #define UCxIE     UC0IE
+  #define UCxIFG    UC0IFG
+  #define UCAxBR0   UCA0BR0
+  #define UCAxCTL1  UCA0CTL1
+  #define UCAxMCTL  UCA0MCTL
+  #define UCAxRXIE  UCA0RXIE
+  #define UCAxRXIFG UCA0RXIFG
+  #define UCAxTXIE  UCA0TXIE
+  #define UCAxTXIFG UCA0TXIFG
   #define UCAxRXBUF UCA0RXBUF
   #define UCAxTXBUF UCA0TXBUF
-  #define UCAxIV    UCA0IV
-  #define USCI_Ax_VECTOR USCI_A0_VECTOR
-  #define USCI_Ax_ISR    USCI_A0_ISR
-#elif (MSP_MBEE_UART_MODULE == EUSCI_A1_BASE)
-  #warning Module eUSCI_A1 is selected as UART for MBee library. Set appropriate pins for peripheral function!
-  #define UCAxIE    UCA1IE
-  #define UCAxIFG   UCA1IFG
-  #define UCAxBRW   UCA1BRW
-  #define UCAxMCTLW UCA1MCTLW
-  #define UCAxCTLW0 UCA1CTLW0
-  #define UCAxRXBUF UCA1RXBUF
-  #define UCAxTXBUF UCA1TXBUF
-  #define UCAxIV    UCA1IV
-  #define USCI_Ax_VECTOR  USCI_A1_VECTOR
-  #define USCI_Ax_ISR     USCI_A1_ISR
-#else
-  #error Module for UART must be selected!
+  #define USCIABxRX_VECTOR  USCIAB0RX_VECTOR
+  #define USCIABxTX_VECTOR  USCIAB0TX_VECTOR
+#elif defined(__MSP430_HAS_EUSCI_A0__) || defined(__MSP430_HAS_EUSCI_A1__)
+  #if (MSP_MBEE_UART_MODULE == EUSCI_A0_BASE)
+    #warning Module eUSCI_A0 is selected as UART for MBee library. Check for the settting appropriate pins for peripheral function!
+    #define UCAxIE    UCA0IE
+    #define UCAxIFG   UCA0IFG
+    #define UCAxBRW   UCA0BRW
+    #define UCAxMCTLW UCA0MCTLW
+    #define UCAxCTLW0 UCA0CTLW0
+    #define UCAxRXBUF UCA0RXBUF
+    #define UCAxTXBUF UCA0TXBUF
+    #define UCAxIV    UCA0IV
+    #define USCI_Ax_VECTOR USCI_A0_VECTOR
+    #define USCI_Ax_ISR    USCI_A0_ISR
+  #elif (MSP_MBEE_UART_MODULE == EUSCI_A1_BASE)
+    #warning Module eUSCI_A1 is selected as UART for MBee library. Check for the settting appropriate pins for peripheral function!
+    #define UCAxIE    UCA1IE
+    #define UCAxIFG   UCA1IFG
+    #define UCAxBRW   UCA1BRW
+    #define UCAxMCTLW UCA1MCTLW
+    #define UCAxCTLW0 UCA1CTLW0
+    #define UCAxRXBUF UCA1RXBUF
+    #define UCAxTXBUF UCA1TXBUF
+    #define UCAxIV    UCA1IV
+    #define USCI_Ax_VECTOR  USCI_A1_VECTOR
+    #define USCI_Ax_ISR     USCI_A1_ISR
+  #else
+    #error Module for UART must be selected!
+  #endif
 #endif
 
 #if (MSP_MBEE_TIMER_MODULE == TIMER_A0_BASE)
   #warning Module Timer_A0 is selected as MBee library timer.
   #define TxxCTL    TA0CTL
-  #define TxxEX0    TA0EX0
   #define TxxCCR0   TA0CCR0
   #define TxxCCTL0  TA0CCTL0
   #define TIMERx_x0_VECTOR  TIMER0_A0_VECTOR
@@ -107,7 +108,6 @@ Code adapted from  XBee-Arduino library XBee.h. Copyright info below.
 #elif (MSP_MBEE_TIMER_MODULE == TIMER_A1_BASE)
   #warning Module Timer_A1 is selected as MBee library timer.
   #define TxxCTL    TA1CTL
-  #define TxxEX0    TA1EX0
   #define TxxCCR0   TA1CCR0
   #define TxxCCTL0  TA1CCTL0
   #define TIMERx_x0_VECTOR  TIMER1_A0_VECTOR
@@ -115,7 +115,6 @@ Code adapted from  XBee-Arduino library XBee.h. Copyright info below.
 #elif (MSP_MBEE_TIMER_MODULE == TIMER_B0_BASE)
   #warning Module Timer_B0 is selected as MBee library timer.
   #define TxxCTL    TB0CTL
-  #define TxxEX0    TB0EX0
   #define TxxCCR0   TB0CCR0
   #define TxxCCTL0  TB0CCTL0
   #define TIMERx_x0_VECTOR  TIMER0_B0_VECTOR
@@ -132,11 +131,11 @@ typedef uint16_t interruptState_t;
 /*********************************************************************
  * GLOBAL VARIABLES
  */
+uint16_t millisCorrector = 1; //Переменная используется для коррекции счетчика миллисекунд, если в приложении, использующем библиотеку есть функции, блокирующие прерывания от таймера, определяемого MSP_MBEE_TIMER_MODULE.
 
 /*********************************************************************
  * EXTERNAL VARIABLES
  */
-uint16_t millisCorrector = 1;
 
 /*********************************************************************
  * LOCAL VARIABLES
@@ -218,59 +217,84 @@ void Serial::write(uint8_t byte)
   {
     offset = 0u;
   }
-  if(!(UCAxIE & UCTXIE))
-  {
-    UCAxIFG |= UCTXIFG;
-    UCAxIE |= UCTXIE | UCTXCPTIE;
-  }
+  #if defined(__MSP430_HAS_USCI__)
+    if(!(UCxIE & UCAxTXIE))
+    {
+       UCxIFG |= UCAxTXIFG;
+       UCxIE |= UCAxTXIE;
+    }
+  #elif defined(__MSP430_HAS_EUSCI_A0__) || defined(__MSP430_HAS_EUSCI_A1__)
+    if(!(UCAxIE & UCTXIE))
+    {
+      UCAxIFG |= UCTXIFG;
+      UCAxIE |= UCTXIE | UCTXCPTIE;
+    }
+  #endif
   EXIT_CRITICAL_SECTION(intState);
 }
 
 bool Serial::begin(unsigned long bitrate)
 {
-  //Константы для регистров рассчитаы с помощью утилиты MSP430 USCI/EUSCI UART Baud Rate Calculation, доступной на сайте Texas Insruments поиском по названию.
+  //Константы для регистров рассчитаны с помощью утилиты MSP430 USCI/EUSCI UART Baud Rate Calculation, доступной на сайте Texas Insruments поиском по названию.
+  uint8_t ucaxmctl;
   uint16_t ucaxbrw;
   uint16_t ucaxmctlw;
   switch(bitrate)
   {
   case 9600:
+    ucaxmctl = 0x11;
     ucaxbrw = 0x0034;
     ucaxmctlw = 0x4911;
     break;
   case 19200:
+    ucaxmctl = 0x11;
     ucaxbrw = 0x001A;
     ucaxmctlw = 0xD601;
     break;
   case 38400:
+    ucaxmctl = 0x01;
     ucaxbrw = 0x000D;
     ucaxmctlw = 0x4501;
     break;
   case 57600:
+    ucaxmctl = 0xB1;
     ucaxbrw = 0x0008;
     ucaxmctlw = 0xF7A1;
     break;
   case 115200:
+    ucaxmctl = 0x3B;
     ucaxbrw = 0x0004;
     ucaxmctlw = 0x5551;
     break;
   case 230400:
+    ucaxmctl = 0x27;
     ucaxbrw = 0x0002;
     ucaxmctlw = 0xBB21;
     break;
   default:
-    ucaxbrw = 0x3004; //По умолчанию скорость 9600.
+    ucaxmctl = 0x11;
+    ucaxbrw = 0x0034; //По умолчанию скорость 9600.
     ucaxmctlw = 0x4911;
     break;
   }
-  UCAxBRW = ucaxbrw;
-  UCAxMCTLW = ucaxmctlw;
-  UCAxCTLW0 = 0x0080;
-  UCAxIE = 0x0001; //Прерывания разрешаются только после записи UCAxCTLW0 (видимо сброса бита UCSWRST).
-   //Source - SMCLK, Clock - 125 KHz, UP-mode, Period - 1 ms.
-  TxxCTL = 0x02D0;
-  TxxEX0 = 0x0007;
-  TxxCCR0 = 125;
-  TxxCCTL0 = 0x0010;
+  #if defined(__MSP430_HAS_USCI__)
+    UCAxBR0 = ucaxbrw;
+    UCAxMCTL = ucaxmctlw; //Присвоение выполняется только для подавления Warning[Pe550].
+    UCAxMCTL = ucaxmctl;
+    UCAxCTL1 = 0x80; //В качестве источника тактового сигнала устанавливаем SMCLK.
+    UCxIE |= UCAxRXIE;
+  #elif defined(__MSP430_HAS_EUSCI_A0__) || defined(__MSP430_HAS_EUSCI_A1__)
+    UCAxBRW = ucaxbrw;
+    UCAxMCTLW = ucaxmctl; //Присвоение выполняется только для подавления Warning[Pe550].
+    UCAxMCTLW = ucaxmctlw;
+    UCAxCTLW0 = 0x0080; //В качестве источника тактового сигнала устанавливаем SMCLK.
+    UCAxIE = 0x0001; //Прерывания разрешаются только после записи UCAxCTLW0 (видимо сброса бита UCSWRST).
+  #endif
+
+   //Настройка таймера. Source - SMCLK, Clock - 1 MHz, UP-mode, Period - 1 ms.
+   TxxCTL = 0x02D0;
+   TxxCCR0 = 1000;
+   TxxCCTL0 = 0x0010;
   return true;
 }
 
@@ -279,9 +303,9 @@ void Serial::end()
 
 }
 
-uint64_t millis()
+uint32_t millis()
 {
-  uint64_t time;
+  uint32_t time;
   CRITICAL_STATEMENT(time = sysTickCounter);
   return time;
 }
@@ -289,25 +313,23 @@ uint64_t millis()
 /*********************************************************************
  * LOCAL FUNCTIONS
  *********************************************************************/
-#if defined(__TI_COMPILER_VERSION__) || defined(__IAR_SYSTEMS_ICC__)
-  #pragma vector=USCI_Ax_VECTOR
-  __interrupt void USCI_Ax_ISR(void)
-#elif defined(__GNUC__)
-  void __attribute__ ((interrupt(USCI_Ax_VECTOR))) USCI_Ax_ISR (void)
-#else
-  #error Compiler not supported!
-#endif
-{
-  uint16_t temp;
-  uint16_t offset;
-  switch(__even_in_range(UCAxIV,USCI_UART_UCTXCPTIFG))
+#if defined(__MSP430_HAS_USCI__)
+  #if defined(__TI_COMPILER_VERSION__) || defined(__IAR_SYSTEMS_ICC__)
+    #pragma vector=USCIABxRX_VECTOR
+    __interrupt void USCI_Ax_RX_ISR(void)
+  #elif defined(__GNUC__)
+    void __attribute__ ((interrupt(USCIABxRX_VECTOR))) USCI_Ax_RX_ISR (void)
+  #else
+    #error Compiler not supported!
+  #endif
   {
-    case USCI_NONE:
-      break;
-    case USCI_UART_UCRXIFG:
+    uint16_t temp;
+    uint16_t offset;
+    if(UCxIFG & UCAxRXIFG)
+    {
       //if(rxBufferCounter ==UART_RX_BUFFER_SIZE) //Раскомментировать если ролловер буфера не желателен.
       //break;
-      temp = rxBufferPointer; //Если не скопировать в локальную переменную, то будет предупреждение, потому что txBufferHead объявлена как volatile.
+      temp = rxBufferPointer; //Если не скопировать в локальную переменную, то будет предупреждение, потому что rxBufferPointer объявлена как volatile.
       offset = temp + rxBufferCounter;
       if(offset >= UART_RX_BUFFER_SIZE)
       {
@@ -326,30 +348,97 @@ uint64_t millis()
       {
         rxBufferCounter++;
       }
-      break;
-    case USCI_UART_UCTXIFG:
-      if(txBufferCounter)
+    }
+  }
+  #if defined(__TI_COMPILER_VERSION__) || defined(__IAR_SYSTEMS_ICC__)
+    #pragma vector=USCIABxTX_VECTOR
+    __interrupt void USCI_Ax_TX_ISR(void)
+  #elif defined(__GNUC__)
+    void __attribute__ ((interrupt(USCIABxTX_VECTOR))) USCI_Ax_TX_ISR (void)
+  #else
+    #error Compiler not supported!
+  #endif
+    {
+      if(UCxIFG & UCAxTXIFG)
       {
-        txBufferCounter--;
-        UCAxTXBUF = txBuffer[txBufferPointer++];
-        if(txBufferPointer == UART_TX_BUFFER_SIZE)
+        if(txBufferCounter)
         {
-          txBufferPointer = 0u;
+          txBufferCounter--;
+          UCAxTXBUF = txBuffer[txBufferPointer++];
+          if(txBufferPointer == UART_TX_BUFFER_SIZE)
+          {
+            txBufferPointer = 0u;
+          }
+        }
+        else
+        {
+          UCxIE &= ~UCAxTXIE; //Если передали последний байт в буфере, то запрещаем соответствующие прерывания.
         }
       }
-      else
-      {
-        UCAxIE &= ~(UCTXIE | UCTXCPTIE); //Если передали последний байт в буфере, то запрещаем соответствующие прерывания.
-      }
+    }
+#elif defined(__MSP430_HAS_EUSCI_A0__) || defined(__MSP430_HAS_EUSCI_A1__)
+  #if defined(__TI_COMPILER_VERSION__) || defined(__IAR_SYSTEMS_ICC__)
+    #pragma vector=USCI_Ax_VECTOR
+    __interrupt void USCI_Ax_ISR(void)
+  #elif defined(__GNUC__)
+    void __attribute__ ((interrupt(USCI_Ax_VECTOR))) USCI_Ax_ISR (void)
+  #else
+    #error Compiler not supported!
+  #endif
+  {
+    uint16_t temp;
+    uint16_t offset;
+    switch(__even_in_range(UCAxIV,USCI_UART_UCTXCPTIFG))
+    {
+      case USCI_NONE:
         break;
-    case USCI_UART_UCSTTIFG:
-      break;
-    case USCI_UART_UCTXCPTIFG:
-      break;
-    default:
-      break;
+      case USCI_UART_UCRXIFG:
+        //if(rxBufferCounter ==UART_RX_BUFFER_SIZE) //Раскомментировать если ролловер буфера не желателен.
+        //break;
+        temp = rxBufferPointer; //Если не скопировать в локальную переменную, то будет предупреждение, потому что rxBufferPointer объявлена как volatile.
+        offset = temp + rxBufferCounter;
+        if(offset >= UART_RX_BUFFER_SIZE)
+        {
+          offset -= UART_RX_BUFFER_SIZE;
+        }
+        rxBuffer[offset] = UCAxRXBUF;
+        if(rxBufferCounter == UART_RX_BUFFER_SIZE)
+        {
+          rxBufferPointer++;
+          if(rxBufferPointer == UART_RX_BUFFER_SIZE)
+          {
+            rxBufferPointer = 0u;
+          }
+        }
+        else
+        {
+          rxBufferCounter++;
+        }
+        break;
+      case USCI_UART_UCTXIFG:
+        if(txBufferCounter)
+        {
+          txBufferCounter--;
+          UCAxTXBUF = txBuffer[txBufferPointer++];
+          if(txBufferPointer == UART_TX_BUFFER_SIZE)
+          {
+            txBufferPointer = 0u;
+          }
+        }
+        else
+        {
+          UCAxIE &= ~(UCTXIE | UCTXCPTIE); //Если передали последний байт в буфере, то запрещаем соответствующие прерывания.
+        }
+          break;
+      case USCI_UART_UCSTTIFG:
+        break;
+      case USCI_UART_UCTXCPTIFG:
+        break;
+      default:
+        break;
+    }
   }
-}
+#endif
 
 #if defined(__TI_COMPILER_VERSION__) || defined(__IAR_SYSTEMS_ICC__)
   #pragma vector=TIMERx_x0_VECTOR

@@ -1091,7 +1091,7 @@ bool SerialStar::readPacket(int timeout)
     {
         return false;
     }
-    unsigned long long start = millis();
+    unsigned long start = millis();
     while(int((millis() - start)) < timeout)
     {
         readPacket();
@@ -1188,7 +1188,7 @@ void SerialStarWithCallbacks::run()
 uint8_t SerialStarWithCallbacks::sendAndWaitForAcknowledge(MBeeRequest &request, uint16_t timeout)
 {
     uint8_t status;
-    unsigned long long start = millis();
+    unsigned long start = millis();
     send(request);
     status = waitForStatus(request.getFrameId(), timeout - (millis() - start));
     if(status)
@@ -1198,7 +1198,7 @@ uint8_t SerialStarWithCallbacks::sendAndWaitForAcknowledge(MBeeRequest &request,
 
 uint8_t SerialStarWithCallbacks::waitForStatus(uint8_t frameId, uint16_t timeout)
 {
-    unsigned long long start = millis();
+    unsigned long start = millis();
     do
     {
         if(loopTop())
@@ -1214,7 +1214,7 @@ uint8_t SerialStarWithCallbacks::waitForStatus(uint8_t frameId, uint16_t timeout
 
 uint8_t SerialStarWithCallbacks::waitForAcknowledge(uint8_t frameId, uint16_t timeout)
 {
-    unsigned long long start = millis();
+    unsigned long start = millis();
     do
     {
         if(loopTop())
@@ -1233,7 +1233,7 @@ uint8_t SerialStarWithCallbacks::waitForAcknowledge(uint8_t frameId, uint16_t ti
 *********************************************************************/
 uint8_t SerialStarWithCallbacks::waitForInternal(uint8_t apiId, void *response, uint16_t timeout, void *func, uintptr_t data, int16_t frameId)
 {
-    unsigned long long start = millis();
+    unsigned long start = millis();
     do
     {
         if(loopTop()) //Ждем API-фрейм заданного типа.

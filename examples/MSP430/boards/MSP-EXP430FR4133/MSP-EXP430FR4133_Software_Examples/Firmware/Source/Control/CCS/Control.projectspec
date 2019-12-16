@@ -1,0 +1,25 @@
+<projectSpec>
+	<project compilerBuildOptions="-DDEPRECATED
+		-I${PROJECT_ROOT}/Application
+		-I${PROJECT_ROOT}/cpp-mbee/includes
+		-I${PROJECT_ROOT}/driverlib/MSP430FR2xx_4xx
+		--cmd_file=${PROJECT_ROOT}/cpp-mbee/ControlCpp-mbeeConfig.dat
+		--diag_suppress=10229
+		-advice:power=&quot;none&quot;"
+		device="MSP430FR4133"
+		configurations="Debug,Release"
+		name="Control">
+	<file action="copy" path="../../../Tools/driverlib/" />
+	<file action="copy" path="../Control.cpp" targetDirectory="Application" />
+	<file action="copy" path="../Control.h" targetDirectory="Application" />
+	<file action="copy" path="../../../Tools/macros.h" />
+	<file action="copy" path="../../../Tools/Board.h" />
+	<file action="copy" path="../../../Tools/BOOSTXL-MBEE868-1.1.h" />
+	<file action="copy" path="../../../../../../../../../MBee.cpp" targetDirectory="cpp-mbee" />
+	<file action="copy" path="../../../../../../../../../SerialStar.cpp" targetDirectory="cpp-mbee" />
+	<file action="copy" path="../../../../../../../../../System.cpp" targetDirectory="cpp-mbee" />
+	<file action="copy" path="../../../../../../../../../MSP430Serial.cpp" targetDirectory="cpp-mbee" />
+	<file action="copy" path="../../../../../../../../../includes" targetDirectory="cpp-mbee" />
+	<file action="copy" path="../ControlCpp-mbeeConfig.dat" targetDirectory="cpp-mbee" />
+  </project>
+</projectSpec>

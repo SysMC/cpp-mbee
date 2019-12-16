@@ -1,0 +1,9 @@
+/*Выбор модуля UART для взаимодействия с радиомодулем MBee. Комментарий должен быть снят только с одной строки.*/
+-DMSP_MBEE_UART_MODULE=EUSCI_A0_BASE
+-DUART_TX_BUFFER_SIZE=128u /*Размер передающего буфера драйвера UART*/
+-DUART_RX_BUFFER_SIZE=128u /*Размер приемного буфера драйвера UART*/
+
+/*Выбор модуля таймера, используемого библиотекой cpp-mbee в функции millis(). Комментарий должен быть снят только с одной строки.*/
+/*-DMSP_MBEE_TIMER_MODULE=TIMER_A0_BASE*/
+/*-DMSP_MBEE_TIMER_MODULE=TIMER_A1_BASE*/
+-DMSP_MBEE_TIMER_MODULE=TIMER_B0_BASE

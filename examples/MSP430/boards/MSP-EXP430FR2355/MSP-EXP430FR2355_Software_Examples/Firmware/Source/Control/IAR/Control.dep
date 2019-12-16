@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>2</fileVersion>
+    <fileChecksum>1332738799</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\pmm.c</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\timer_b.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\wdt_a.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\console.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\uart.c</file>
+            <file>$TOOLKIT_DIR$\inc\in430.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\Control.d43</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\console.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\..\System.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\..\MBee.cpp</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\ystdio.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\..\MSP430Serial.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\cs.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\cs.r43</file>
+            <file>$PROJ_DIR$\Debug\Obj\System.r43</file>
+            <file>$PROJ_DIR$\..\ControlCpp-mbeeConfig.dat</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\Board.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\macros.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\console.h</file>
+            <file>$TOOLKIT_DIR$\inc\msp430.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\cs.c</file>
+            <file>$PROJ_DIR$\..\Control.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\wdt_a.c</file>
+            <file>$PROJ_DIR$\..\Control.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\adc.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\..\SerialStar.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\uart.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\BOOSTXL-MBEE868-1.1.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\gpio.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\System.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\ecomp.h</file>
+            <file>$TOOLKIT_DIR$\inc\legacy.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\sysctl.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\timer_b.h</file>
+            <file>$TOOLKIT_DIR$\config\linker\lnk430fr2355.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\SerialStar.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\List\Control.map</file>
+            <file>$TOOLKIT_DIR$\config\linker\multiplier32.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\SerialStar.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart.r43</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\ysizet.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\timer_a.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\stdlib.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\crc.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\string.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\pmm.r43</file>
+            <file>$PROJ_DIR$\Debug\Obj\console.r43</file>
+            <file>$PROJ_DIR$\Debug\Obj\MBee.r43</file>
+            <file>$PROJ_DIR$\Debug\Obj\Control.pbd</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\mpy32.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\Control.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\timer_b.r43</file>
+            <file>$PROJ_DIR$\Debug\Obj\gpio.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\tlv.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\inc\hw_memmap.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\Control.ulp</file>
+            <file>$TOOLKIT_DIR$\lib\dlib\dl430xlsfn.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\tia.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\System.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\ycheck.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\MSP430Serial.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\Control.r43</file>
+            <file>$TOOLKIT_DIR$\inc\msp430fr2355.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\SerialStar.r43</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\MBee.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\eusci_a_uart.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\icc.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\assert.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\xencoding_limits.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\sac.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\timer_b.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\eusci_b_i2c.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Threads.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\gpio.r43</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\adc.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\pmm.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\sfr.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\cs.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\gpio.h</file>
+            <file>$TOOLKIT_DIR$\lib\dlib\dl430xlsfn.r43</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\..\includes\SerialStar.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\inttypes.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\gpio.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\MSP430Serial.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\wdt_a.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\MSP430Serial.r43</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\..\includes\System.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\stdio.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\eusci_b_spi.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\..\includes\MBee.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\framctl.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\MBee.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\stdbool.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\adc.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\pmm.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\driverlib.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\Control.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\timer_b.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\adc.r43</file>
+            <file>$PROJ_DIR$\Debug\Obj\wdt_a.r43</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\lcd_e.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\pmm.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\stdint.h</file>
+            <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\rtc.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\adc.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\wdt_a.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\cs.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart.pbi</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\eusci_a_spi.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\console.pbi</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ULP430</name>
+                    <file> 55</file>
+                </tool>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 6 36</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\pmm.c</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 104</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 96</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 5 107 59 76 19 106 31 103 69 105 68 94 62 54 73 56 64</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\timer_b.c</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 99</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 71</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 94 62 5 73 33 64 68 19 106 105 59 103 56 54 31 107 69</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Tools\uart.c</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 112</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 79</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 59 26 106 94 62 5 103 69 105 40 21 17 54 42 19 31 107 73 56 64</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\Control.d43</name>
+            <outputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 36</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 34 37 100 46 61 13 74 47 87 45 63 14 51 39 101 81</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Tools\console.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 114</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 3</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 105 42 91 69 83 5 26 10 106 54 19 107 21 44 18 59 40 103 73 56 64 89 88 82 94 62 31</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\..\..\..\System.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 58</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 29</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 59 103 69 83 106 105 73 88 56 64</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\..\..\..\MBee.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 93</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 65</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 82 106 56 88 40 89 59 103 83 105 10 69 73 64 91</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\..\..\..\MSP430Serial.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 85</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 60</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 5 59 107 83 103 69 31 88 62 106 105 73 19 56 64</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\cs.c</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 78</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 111</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 54 105 59 5 12 19 106 103 56 68 94 62 73 64 31 107 69</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\wdt_a.c</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 2</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 86</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 59 107 62 19 106 5 31 103 69 105 54 94 73 56 64 110 68</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Control.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 50</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 98</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 59 67 105 54 106 12 33 83 21 32 75 80 19 27 43 49 77 76 57 5 31 103 56 89 26 16 91 17 18 108 72 102 30 92 70 110 41 66 53 113 90 94 62 107 73 64 88 82 40 42 69 97 10</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\adc.c</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 95</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 109</file>
+                </tool>
+                <tool>
+                    <name>ICC430</name>
+                    <file> 100 46 61 13 74 47 87 45 63 14 51 39 101</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 94 62 5 103 56 75 105 59 54 68 19 106 73 64 31 107 69</file>
+                </tool>
+                <tool>
+                    <name>ICC430</name>
+                    <file> 15 54 19 62 5 107 31 106 59 105 103 56 64 69 73 94 75 68 7 21 44 40 91 89 10 83 88 82 18 26 42 23 97 108 32 72 43 102 12 30 49 92 70 77 110 67 41 76 66 80 53 57 113 33 90 16 27 17 20 28 9 11 0 25 8 1 4 22</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\..\..\..\SerialStar.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 38</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 35</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 59 82 73 88 40 64 105 89 103 56 106 91 83 10 69</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 84</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 52</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 80 94 62 5 107 59 68 19 106 31 69 105 54 103 73 56 64</file>
+                </tool>
+            </inputs>
+        </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>XLINK</tool>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\pmm.c</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\timer_b.c</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\uart.c</file>
+            <file>$TOOLKIT_DIR$\inc\in430.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\console.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\..\System.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\..\MBee.cpp</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\ystdio.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\..\MSP430Serial.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\cs.h</file>
+            <file>$PROJ_DIR$\..\ControlCpp-mbeeConfig.dat</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\Board.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\macros.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\console.h</file>
+            <file>$TOOLKIT_DIR$\inc\msp430.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\cs.c</file>
+            <file>$PROJ_DIR$\..\Control.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\wdt_a.c</file>
+            <file>$PROJ_DIR$\..\Control.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\adc.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\..\SerialStar.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\uart.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\gpio.c</file>
+            <file>$PROJ_DIR$\Release\Obj\pmm.r43</file>
+            <file>$PROJ_DIR$\Release\Obj\uart.pbi</file>
+            <file>$PROJ_DIR$\Release\Obj\adc.__cstat.et</file>
+            <file>$PROJ_DIR$\Release\Obj\System.__cstat.et</file>
+            <file>$PROJ_DIR$\Release\Exe\Control.txt</file>
+            <file>$PROJ_DIR$\Release\Obj\MBee.r43</file>
+            <file>$PROJ_DIR$\Release\Obj\console.__cstat.et</file>
+            <file>$PROJ_DIR$\Release\Obj\MSP430Serial.r43</file>
+            <file>$PROJ_DIR$\Release\Obj\SerialStar.pbi</file>
+            <file>$PROJ_DIR$\Release\Obj\adc.pbi</file>
+            <file>$PROJ_DIR$\Release\Obj\pmm.pbi</file>
+            <file>$PROJ_DIR$\Release\Obj\gpio.__cstat.et</file>
+            <file>$PROJ_DIR$\Release\Obj\cs.__cstat.et</file>
+            <file>$PROJ_DIR$\Release\Obj\uart.__cstat.et</file>
+            <file>$PROJ_DIR$\Release\Obj\pmm.__cstat.et</file>
+            <file>$PROJ_DIR$\Release\Obj\MSP430Serial.pbi</file>
+            <file>$PROJ_DIR$\Release\Obj\adc.r43</file>
+            <file>$PROJ_DIR$\Release\Obj\gpio.r43</file>
+            <file>$PROJ_DIR$\Release\Obj\cs.pbi</file>
+            <file>$PROJ_DIR$\Release\Obj\Control.r43</file>
+            <file>$PROJ_DIR$\Release\Exe\Control.ulp</file>
+            <file>$PROJ_DIR$\Release\Obj\System.r43</file>
+            <file>$PROJ_DIR$\Release\Obj\System.pbi</file>
+            <file>$PROJ_DIR$\Release\Obj\timer_b.__cstat.et</file>
+            <file>$PROJ_DIR$\Release\Obj\MBee.pbi</file>
+            <file>$PROJ_DIR$\Release\Obj\wdt_a.pbi</file>
+            <file>$PROJ_DIR$\Release\Obj\cs.r43</file>
+            <file>$PROJ_DIR$\Release\Obj\MBee.__cstat.et</file>
+            <file>$PROJ_DIR$\Release\Obj\timer_b.pbi</file>
+            <file>$PROJ_DIR$\Release\Obj\gpio.pbi</file>
+            <file>$PROJ_DIR$\Release\Obj\SerialStar.__cstat.et</file>
+            <file>$PROJ_DIR$\Release\Obj\wdt_a.r43</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\ecomp.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\BOOSTXL-MBEE868-1.0.h</file>
+            <file>$TOOLKIT_DIR$\inc\legacy.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\sysctl.h</file>
+            <file>$PROJ_DIR$\Release\Obj\console.r43</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\timer_b.h</file>
+            <file>$TOOLKIT_DIR$\config\linker\lnk430fr2355.xcl</file>
+            <file>$PROJ_DIR$\Release\Obj\timer_b.r43</file>
+            <file>$PROJ_DIR$\Release\List\Control.map</file>
+            <file>$PROJ_DIR$\Release\Obj\Control.pbi</file>
+            <file>$TOOLKIT_DIR$\config\linker\multiplier32.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\ysizet.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\timer_a.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\stdlib.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\crc.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\string.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\mpy32.h</file>
+            <file>$PROJ_DIR$\Release\Obj\Control.__cstat.et</file>
+            <file>$PROJ_DIR$\Release\Obj\SerialStar.r43</file>
+            <file>$PROJ_DIR$\Release\Obj\console.pbi</file>
+            <file>$PROJ_DIR$\Release\Obj\uart.r43</file>
+            <file>$PROJ_DIR$\Release\Obj\MSP430Serial.__cstat.et</file>
+            <file>$PROJ_DIR$\Release\Obj\wdt_a.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\tlv.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\inc\hw_memmap.h</file>
+            <file>$TOOLKIT_DIR$\lib\dlib\dl430xlsfn.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\tia.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\msp430fr2355.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\eusci_a_uart.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\icc.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\assert.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\xencoding_limits.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\sac.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\eusci_b_i2c.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Threads.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\adc.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\pmm.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\sfr.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\gpio.h</file>
+            <file>$TOOLKIT_DIR$\lib\dlib\dl430xlsfn.r43</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\..\includes\SerialStar.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\inttypes.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\..\includes\System.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\stdio.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\eusci_b_spi.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\..\includes\MBee.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\framctl.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\stdbool.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\driverlib.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\lcd_e.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\stdint.h</file>
+            <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\rtc.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\wdt_a.h</file>
+            <file>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\eusci_a_spi.h</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ULP430</name>
+                    <file> 43</file>
+                </tool>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 63 27</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\pmm.c</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 33</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 37</file>
+                </tool>
+                <tool>
+                    <name>ICC430</name>
+                    <file> 23</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 3 110 82 80 93 14 109 57 91 87 104 83 108 84 79 107 88</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\timer_b.c</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 51</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 46</file>
+                </tool>
+                <tool>
+                    <name>ICC430</name>
+                    <file> 62</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 108 104 83 3 60 57 88 87 14 109 110 82 79 107 91 80 84</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Tools\uart.c</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 24</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 36</file>
+                </tool>
+                <tool>
+                    <name>ICC430</name>
+                    <file> 75</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 82 21 109 104 83 3 107 88 108 66 16 12 79 68 14 57 110 91 80 84</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Tools\console.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 74</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 29</file>
+                </tool>
+                <tool>
+                    <name>ICC430</name>
+                    <file> 59</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 108 68 102 88 98 3 21 7 109 79 14 110 16 70 13 82 66 107 91 80 84 100 99 97 104 83 57</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\..\..\..\System.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 45</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 26</file>
+                </tool>
+                <tool>
+                    <name>ICC430</name>
+                    <file> 44</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 82 107 88 98 109 108 91 99 80 84</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\..\..\..\MBee.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 47</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 50</file>
+                </tool>
+                <tool>
+                    <name>ICC430</name>
+                    <file> 28</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 97 109 80 99 66 100 82 107 98 108 7 88 91 84 102</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\..\..\..\MSP430Serial.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 38</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 76</file>
+                </tool>
+                <tool>
+                    <name>ICC430</name>
+                    <file> 30</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 3 82 110 98 107 88 57 99 83 109 108 91 14 80 84</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\cs.c</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 41</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 35</file>
+                </tool>
+                <tool>
+                    <name>ICC430</name>
+                    <file> 49</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 82 3 110 9 14 109 79 87 104 83 57 88 108 107 91 80 84</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\wdt_a.c</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 48</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 77</file>
+                </tool>
+                <tool>
+                    <name>ICC430</name>
+                    <file> 54</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 82 110 83 14 109 3 57 107 88 108 79 104 91 80 84 112 87</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Control.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 64</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 72</file>
+                </tool>
+                <tool>
+                    <name>ICC430</name>
+                    <file> 42</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 82 67 108 79 104 3 55 101 83 98 16 90 89 78 56 111 106 103 112 85 113 57 107 80 100 21 11 102 12 13 58 69 9 71 92 94 86 93 95 81 60 14 109 110 91 84 99 97 66 68 88 105 7</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\adc.c</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 32</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 25</file>
+                </tool>
+                <tool>
+                    <name>ICC430</name>
+                    <file> 39 59 42 49 40 28 30 23 73 44 62 75 54</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 109 14 92 3 110 82 87 104 83 57 88 108 79 107 91 80 84</file>
+                </tool>
+                <tool>
+                    <name>ICC430</name>
+                    <file> 10 79 14 83 3 110 57 109 82 108 107 80 84 88 91 104 92 87 4 16 70 66 102 100 7 98 99 97 13 21 68 18 105 111 58 90 69 106 9 55 71 103 89 94 112 86 67 93 85 95 78 81 113 60 101 11 56 12 15 22 6 8 0 20 5 1 2 17</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\..\..\..\SerialStar.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 31</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 53</file>
+                </tool>
+                <tool>
+                    <name>ICC430</name>
+                    <file> 73</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 82 97 91 99 66 84 108 100 107 80 109 102 98 7 88</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 52</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 34</file>
+                </tool>
+                <tool>
+                    <name>ICC430</name>
+                    <file> 40</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 95 3 91 14 109 84 87 104 83 108 82 107 80 79 57 110 88</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Release\Exe\Control.txt</name>
+            <outputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 63</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 61 65 39 59 42 49 40 28 30 23 73 44 62 75 54 96</file>
+                </tool>
+            </inputs>
+        </file>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\adc.c</name>
+            <tool>C-STAT</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\pmm.c</name>
+            <tool>ICC430</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\timer_b.c</name>
+            <tool>ICC430</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\Tools\uart.c</name>
+            <tool>ICC430</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\Tools\console.cpp</name>
+            <tool>ICC430</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\..\..\..\System.cpp</name>
+            <tool>ICC430</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\..\..\..\MBee.cpp</name>
+            <tool>ICC430</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\..\..\..\MSP430Serial.cpp</name>
+            <tool>ICC430</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\cs.c</name>
+            <tool>ICC430</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\wdt_a.c</name>
+            <tool>ICC430</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\Control.cpp</name>
+            <tool>ICC430</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\..\..\..\SerialStar.cpp</name>
+            <tool>ICC430</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\Tools\driverlib\MSP430FR2xx_4xx\gpio.c</name>
+            <tool>ICC430</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>XLINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>
