@@ -52,7 +52,7 @@ extern "C"
 #define CS_MCLK_DESIRED_FREQUENCY_IN_KHZ   8000 //Чтобы не вводить такты ожидания при обращении к FRAM, тактовую тактовую частоту MCLK устанавливаем равной 8 МГц.
 #define CS_MCLK_FLLREF_RATIO ((uint16_t)(CS_MCLK_DESIRED_FREQUENCY_IN_KHZ / 32.768))
 
-#define MBEE_UART_BITRATE 115200 //Выбираем скорость последовательного порта, с которой осуществляется обмен с радиомодулем MBee.
+#define MBEE_UART_BITRATE 9600 //Выбираем скорость последовательного порта, с которой осуществляется обмен с радиомодулем MBee.
 
 #define RED   1 //Код красного светодиода.
 #define GREEN 2 //Код зеленого светодиода.
