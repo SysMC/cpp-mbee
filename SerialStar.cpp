@@ -1,4 +1,4 @@
-/* "Системы модули и компоненты" ("СМК"). 2018. Москва.
+/* "Системы модули и компоненты" ("СМК"). 2020. Москва.
 Библиотека C++ для модулей MBee .
 Распространяется свободно. Надеемся, что программные продукты, созданные
 с помощью данной библиотеки будут полезными, однако никакие гарантии, явные или
@@ -7,7 +7,7 @@
 The MIT License(MIT)
 
 MBee C++ Library.
-Copyright © 2018 Systems, modules and components. Moscow. Russia.
+Copyright © 2020 Systems, modules and components. Moscow. Russia.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files(the "Software"), to deal in the Software without restriction, including without limitation
@@ -103,15 +103,24 @@ uint16_t MBeeResponse::getPacketLength()
     return ((_msbLength << 8) & 0xff) + (_lsbLength & 0xff);
 }
 
+void MBeeResponse::setExtendedFieldsLength(uint8_t length)
+{
+  _extendedFieldsLength = length;
+}
+
+uint8_t MBeeResponse::getExtendedFieldsLength()
+{
+  return _extendedFieldsLength;
+}
+
 void MBeeResponse::reset()
 {
     init();
     _apiId = 0;
     _msbLength = 0;
     _lsbLength = 0;
-    _checksum = 0;
     _frameLength = 0;
-    _errorCode = NO_ERROR_IN_FRAME;
+    _extendedFieldsLength = 0;
 }
 
 void MBeeResponse::init()
@@ -156,6 +165,20 @@ void MBeeResponse::getAtCommandResponse(MBeeResponse &atCommandResponse)
     setCommon(atCommandResponse);
 }
 
+void MBeeResponse::getRemoteAtCommandResponse(MBeeResponse &response)
+{
+    RemoteAtCommandResponse* at = static_cast<RemoteAtCommandResponse*>(&response);
+    at->setFrameData(getFrameData());
+    setCommon(response);
+}
+
+void MBeeResponse::getRxAcknowledgeResponse(MBeeResponse &acknowledge)
+{
+    RxAcknowledgeResponse* ack = static_cast<RxAcknowledgeResponse*>(&acknowledge);
+    ack->setFrameData(getFrameData());
+    setCommon(acknowledge);
+}
+
 bool MBeeResponse::isAvailable()
 {
     return _complete;
@@ -194,20 +217,15 @@ void MBeeResponse::setCommon(MBeeResponse &target)
     target.setFrameLength(getFrameDataLength());
     target.setMsbLength(getMsbLength());
     target.setLsbLength(getLsbLength());
-}
+    target.setExtendedFieldsLength(0);
+    if((getApiId() == RECEIVE_PACKET_EXTENDED_API_FRAME)  ||\
+       (getApiId() == RECEIVE_PACKET_NO_OPTIONS_EXTENDED_API_FRAME) ||\
+       (getApiId() == REMOTE_AT_COMMAND_RESPONSE_EXTENDED_API_FRAME) ||\
+       (getApiId() == IO_DATA_SAMPLE_EXTENDED_API_FRAME))
 
-void MBeeResponse::getRemoteAtCommandResponse(MBeeResponse &response)
-{
-    RemoteAtCommandResponse* at = static_cast<RemoteAtCommandResponse*>(&response);
-    at->setFrameData(getFrameData());
-    setCommon(response);
-}
-
-void MBeeResponse::getRxAcknowledgeResponse(MBeeResponse &acknowledge)
-{
-    RxAcknowledgeResponse* ack = static_cast<RxAcknowledgeResponse*>(&acknowledge);
-    ack->setFrameData(getFrameData());
-    setCommon(acknowledge);
+    {
+      target.setExtendedFieldsLength(3);
+    }
 }
 
 /*********************************************************************
@@ -257,6 +275,24 @@ uint8_t RxCommonResponse::getRssi()
 uint8_t RxCommonResponse::getOption()
 {
     return getFrameData()[3];
+}
+
+uint8_t RxCommonResponse::getFrameId()
+{
+  if(getExtendedFieldsLength())
+  {
+    return getFrameData()[4];
+  }
+  return 0;
+}
+
+uint16_t RxCommonResponse::getPreviousHopAddress()
+{
+  if(getExtendedFieldsLength())
+  {
+    return(getFrameData()[5] << 8) + getFrameData()[6];
+  }
+  return 0;
 }
 
 /*********************************************************************
@@ -324,12 +360,12 @@ RemoteAtCommandResponse::RemoteAtCommandResponse() : RxCommonResponse()
 
 uint8_t* RemoteAtCommandResponse::getCommand()
 {
-    return getFrameData() + 4;
+  return getFrameData() + 4 + getExtendedFieldsLength();
 }
 
 uint8_t RemoteAtCommandResponse::getStatus()
 {
-    return getFrameData()[6];
+  return getFrameData()[6 + getExtendedFieldsLength()];
 }
 
 bool RemoteAtCommandResponse::isOk()
@@ -339,14 +375,14 @@ bool RemoteAtCommandResponse::isOk()
 
 uint8_t RemoteAtCommandResponse::getValueLength()
 {
-    return getFrameDataLength() - 7;
+    return getFrameDataLength() - 7 - getExtendedFieldsLength();
 }
 
 uint8_t* RemoteAtCommandResponse::getValue()
 {
     if(getValueLength() > 0)
     {
-        return getFrameData() + 7;
+        return getFrameData() + 7 + getExtendedFieldsLength();
     }
     return NULL;
 }
@@ -395,12 +431,12 @@ RxIoSampleResponse::RxIoSampleResponse() : RxDataResponse()
 }
 uint8_t RxIoSampleResponse::getDataLength()
 {
-    return getPacketLength() - 6; //Считаем, что поле данных начинается после полей температуры и напряжения на батарее.
+    return getPacketLength() - 6 - getExtendedFieldsLength(); //Считаем, что поле данных начинается после полей температуры и напряжения на батарее.
 }
 
 uint8_t RxIoSampleResponse::getDataOffset()
 {
-    return 6;
+    return 6 + getExtendedFieldsLength();
 }
 
 uint8_t RxIoSampleResponse::getSampleSize()
@@ -418,12 +454,12 @@ uint8_t RxIoSampleResponse::getSampleSize()
 
 uint8_t RxIoSampleResponse::getTemperature()
 {
-    return getFrameData()[4];
+    return getFrameData()[4 + getExtendedFieldsLength()];
 }
 
 uint8_t RxIoSampleResponse::getVbatt()
 {
-    return getFrameData()[5];
+    return getFrameData()[5 + getExtendedFieldsLength()];
 }
 
 uint8_t RxIoSampleResponse::getMode(uint8_t number)
@@ -526,12 +562,12 @@ RxResponse::RxResponse() : RxDataResponse()
 
 uint8_t RxResponse::getDataLength()
 {
-    return getFrameDataLength() - 4;
+    return getFrameDataLength() - 4 - getExtendedFieldsLength();
 }
 
 uint8_t RxResponse::getDataOffset()
 {
-    return 4;
+    return 4 + getExtendedFieldsLength();
 }
 
 bool RxResponse::isAcknowledged()
@@ -1285,6 +1321,7 @@ uint8_t SerialStarWithCallbacks::waitForInternal(uint8_t apiId, void *response, 
                     }
 
                 case REMOTE_AT_COMMAND_RESPONSE_API_FRAME:
+                case REMOTE_AT_COMMAND_RESPONSE_EXTENDED_API_FRAME:
                     {
                         RemoteAtCommandResponse *r = (RemoteAtCommandResponse*)response;
                         bool(*f)(RemoteAtCommandResponse&,uintptr_t) = (bool(*)(RemoteAtCommandResponse&,uintptr_t))func;
@@ -1305,7 +1342,9 @@ uint8_t SerialStarWithCallbacks::waitForInternal(uint8_t apiId, void *response, 
                     }
 
                 case RECEIVE_PACKET_API_FRAME:
+                case RECEIVE_PACKET_EXTENDED_API_FRAME:
                 case RECEIVE_PACKET_NO_OPTIONS_API_FRAME:
+                case RECEIVE_PACKET_NO_OPTIONS_EXTENDED_API_FRAME:
                     {
                         RxResponse *r = (RxResponse*)response;
                         bool(*f)(RxResponse&,uintptr_t) = (bool(*)(RxResponse&,uintptr_t))func;
@@ -1316,6 +1355,7 @@ uint8_t SerialStarWithCallbacks::waitForInternal(uint8_t apiId, void *response, 
                     }
 
                 case IO_DATA_SAMPLE_API_FRAME:
+                case IO_DATA_SAMPLE_EXTENDED_API_FRAME:
                     {
                         RxResponse *r = (RxResponse*)response;
                         bool(*f)(RxResponse&,uintptr_t) = (bool(*)(RxResponse&,uintptr_t))func;
@@ -1403,7 +1443,7 @@ void SerialStarWithCallbacks::loopBottom()
         getResponse().getAtCommandResponse(response);
         called = _onAtCommandResponse.call(response);
     }
-    else if(id == REMOTE_AT_COMMAND_RESPONSE_API_FRAME)
+    else if((id == REMOTE_AT_COMMAND_RESPONSE_API_FRAME) || (id == REMOTE_AT_COMMAND_RESPONSE_EXTENDED_API_FRAME))
     {
         RemoteAtCommandResponse response;
         getResponse().getRemoteAtCommandResponse(response);
@@ -1415,13 +1455,13 @@ void SerialStarWithCallbacks::loopBottom()
         getResponse().getRxAcknowledgeResponse(response);
         called = _onRxAcknowledgeResponse.call(response);
     }
-    else if((id == RECEIVE_PACKET_API_FRAME) || (id == RECEIVE_PACKET_NO_OPTIONS_API_FRAME))
+    else if((id == RECEIVE_PACKET_API_FRAME) || (id == RECEIVE_PACKET_NO_OPTIONS_API_FRAME) || (id == RECEIVE_PACKET_EXTENDED_API_FRAME) || (id == RECEIVE_PACKET_NO_OPTIONS_EXTENDED_API_FRAME))
     {
         RxResponse response;
         getResponse().getRxResponse(response);
         called = _onRxResponse.call(response);
     }
-    else if(id == IO_DATA_SAMPLE_API_FRAME)
+    else if((id == IO_DATA_SAMPLE_API_FRAME) || (id == IO_DATA_SAMPLE_EXTENDED_API_FRAME))
     {
         RxIoSampleResponse response;
         getResponse().getRxIoSampleResponse(response);

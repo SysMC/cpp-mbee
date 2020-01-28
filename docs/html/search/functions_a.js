@@ -15,6 +15,7 @@ var searchData=
   ['setcommandvaluelength',['setCommandValueLength',['../class_at_command_request.html#a9b6280bd318b4c67073ce793ce652ad0',1,'AtCommandRequest']]],
   ['setencryption',['setEncryption',['../class_tx_request.html#ac8bf714992ae741813ee90ef82446ff0',1,'TxRequest']]],
   ['seterrorcode',['setErrorCode',['../class_m_bee_response.html#ac4d6dfbc6e9b6f2d5b77b62cc36ecaf9',1,'MBeeResponse']]],
+  ['setextendedfieldslength',['setExtendedFieldsLength',['../class_m_bee_response.html#a4c996b9ce64fb463716790b4a4485582',1,'MBeeResponse']]],
   ['setframedata',['setFrameData',['../class_m_bee_response.html#a2ce55e6ecb2cbc19d23e12c046d8d857',1,'MBeeResponse']]],
   ['setframeid',['setFrameId',['../class_m_bee_request.html#abdd8685d5d19a7d122f1f3b4136fc6eb',1,'MBeeRequest']]],
   ['setframelength',['setFrameLength',['../class_m_bee_response.html#ad7ba347d05919f5019c1b3443aca6805',1,'MBeeResponse']]],

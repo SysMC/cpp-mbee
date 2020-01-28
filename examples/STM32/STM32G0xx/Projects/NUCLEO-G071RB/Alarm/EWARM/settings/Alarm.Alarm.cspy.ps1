@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\examples\STM32\STM32G0xx\Projects\NUCLEO-G071RB\Alarm\EWARM\settings\Alarm.Alarm.general.xcl" --backend -f "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\examples\STM32\STM32G0xx\Projects\NUCLEO-G071RB\Alarm\EWARM\settings\Alarm.Alarm.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee_temp\examples\STM32\STM32G0xx\Projects\NUCLEO-G071RB\Alarm\EWARM\settings\Alarm.Alarm.general.xcl" --backend -f "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee_temp\examples\STM32\STM32G0xx\Projects\NUCLEO-G071RB\Alarm\EWARM\settings\Alarm.Alarm.driver.xcl" 
 }
 else
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\examples\STM32\STM32G0xx\Projects\NUCLEO-G071RB\Alarm\EWARM\settings\Alarm.Alarm.general.xcl" --debug_file=$debugfile --backend -f "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\examples\STM32\STM32G0xx\Projects\NUCLEO-G071RB\Alarm\EWARM\settings\Alarm.Alarm.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee_temp\examples\STM32\STM32G0xx\Projects\NUCLEO-G071RB\Alarm\EWARM\settings\Alarm.Alarm.general.xcl" --debug_file=$debugfile --backend -f "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee_temp\examples\STM32\STM32G0xx\Projects\NUCLEO-G071RB\Alarm\EWARM\settings\Alarm.Alarm.driver.xcl" 
 }

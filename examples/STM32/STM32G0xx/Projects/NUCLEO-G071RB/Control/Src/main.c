@@ -7,7 +7,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2019 STMicroelectronics and Systems, modules and components.
+  * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics and Systems, modules and components.
   * All rights reserved.</center></h2>
   *
   * This software component is licensed by ST and SMC under BSD 3-Clause license,
@@ -79,7 +79,7 @@ static uint32_t currentPotentiometerBrigthnessSetting;
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
-static void ioSamplePacketReceived(RxIoSampleResponse& ioSample, uintptr_t optionalParameter); //Callback-функция, вызываемая библиотекой cpp-mbee при приеме пакета 0x83.
+static void ioSamplePacketReceived(RxIoSampleResponse& ioSample, uintptr_t optionalParameter); //Callback-функция, вызываемая библиотекой cpp-mbee при приеме пакета 0x83 или 0x84.
 static void parseIoSamplePacket(void);
 static void targetSetup(void);
 static void targetDigitalOutSet(uint32_t level);
@@ -143,7 +143,7 @@ int main(void)
   #if defined(ENABLE_CONSOLE)
     console.begin(CONSOLE_UART_BITRATE);
   #endif
-  MBee.onRxIoSampleResponse(ioSamplePacketReceived); //Регистрация callback-функции для приема пакетов 0x83 с состоянием линий ввода-вывода.
+  MBee.onRxIoSampleResponse(ioSamplePacketReceived); //Регистрация callback-функции для приема пакетов 0x83 или 0x84 с состоянием линий ввода-вывода.
   timer = millis(); //Записываем начальное значение в таймер.
   if (HAL_ADC_Start_IT(&hadc1) != HAL_OK)
   {
@@ -287,9 +287,9 @@ void SystemClock_Config(void)
 
 /* USER CODE BEGIN 4 */
 /**
-  * @brief Callback-функция, вызываемая при приеме пакета 0x83.
+  * @brief Callback-функция, вызываемая при приеме пакета 0x83 или 0x84.
   *        Так как callback-функция должна быть максимально короткая и не содержать задержек, то в ней просто выставляем событие и копируем принятый пакет.
-  * @param  ioSample: ссылка на объект с принятым пакетом 0x83.
+  * @param  ioSample: ссылка на объект с принятым пакетом 0x83 или 0x84.
   * @param  uintptr_t: опциональный параметр. См. документацию к библиотеке cpp-mbee.
   * @retval None
   */
@@ -300,7 +300,7 @@ void ioSamplePacketReceived(RxIoSampleResponse& ioSample, uintptr_t optionalPara
 }
 
 /**
-  * @brief Разбор принятого пакета 0x83
+  * @brief Разбор принятого пакета 0x83 или 0x84.
   * @retval None
   */
 void parseIoSamplePacket(void)

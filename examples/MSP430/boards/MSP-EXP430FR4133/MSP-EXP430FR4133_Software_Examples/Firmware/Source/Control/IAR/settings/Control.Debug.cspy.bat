@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\examples\MSP430\boards\MSP-EXP430FR4133\MSP-EXP430FR4133_Software_Examples\Firmware\Source\Control\IAR\settings\Control.Debug.general.xcl" --backend -f "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\examples\MSP430\boards\MSP-EXP430FR4133\MSP-EXP430FR4133_Software_Examples\Firmware\Source\Control\IAR\settings\Control.Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee_temp\examples\MSP430\boards\MSP-EXP430FR4133\MSP-EXP430FR4133_Software_Examples\Firmware\Source\Control\IAR\settings\Control.Debug.general.xcl" --backend -f "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee_temp\examples\MSP430\boards\MSP-EXP430FR4133\MSP-EXP430FR4133_Software_Examples\Firmware\Source\Control\IAR\settings\Control.Debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\examples\MSP430\boards\MSP-EXP430FR4133\MSP-EXP430FR4133_Software_Examples\Firmware\Source\Control\IAR\settings\Control.Debug.general.xcl" "--debug_file=%~1" --backend -f "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\examples\MSP430\boards\MSP-EXP430FR4133\MSP-EXP430FR4133_Software_Examples\Firmware\Source\Control\IAR\settings\Control.Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee_temp\examples\MSP430\boards\MSP-EXP430FR4133\MSP-EXP430FR4133_Software_Examples\Firmware\Source\Control\IAR\settings\Control.Debug.general.xcl" "--debug_file=%~1" --backend -f "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee_temp\examples\MSP430\boards\MSP-EXP430FR4133\MSP-EXP430FR4133_Software_Examples\Firmware\Source\Control\IAR\settings\Control.Debug.driver.xcl" 
 
 @echo off 
 :end

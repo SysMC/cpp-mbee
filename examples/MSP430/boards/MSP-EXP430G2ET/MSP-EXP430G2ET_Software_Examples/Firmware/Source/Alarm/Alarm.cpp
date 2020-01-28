@@ -70,7 +70,7 @@ static volatile  uint16_t events; //Битовое поле с флагами с
  * LOCAL FUNCTION PROTOTYPES
  */
 static void switchOffAlarm(void);
-static void ioSamplePacketReceived(RxIoSampleResponse& ioSample, uintptr_t optionalParameter); //Callback-функция, вызываемая библиотекой cpp-mbee при приеме пакета 0x83.
+static void ioSamplePacketReceived(RxIoSampleResponse& ioSample, uintptr_t optionalParameter); //Callback-функция, вызываемая библиотекой cpp-mbee при приеме пакета 0x83 или 0x84.
 static void parseIoSamplePacket(void);
 static void sendCommandToRemoteModule(void);
 static void hardwareInit(void);
@@ -84,7 +84,7 @@ static void delayMs(uint16_t ms);
 /**
 <b>Пример использования библиотеки cpp-mbee.</b>
 \n
-Сигнализатор осуществляет прием пакетов (пакет 0x83) с данными о состоянии линий ввода/вывода от датчиков и фильтрует их на принадлежность заданному диапазону адресов.
+Сигнализатор осуществляет прием пакетов (пакет 0x83 или 0x84) с данными о состоянии линий ввода/вывода от датчиков и фильтрует их на принадлежность заданному диапазону адресов.
 Если в пакете содержится информация о состоянии вывода радиомодуля, определяемого константой ALARM_INPUT и если данный вывод используется как цифровой вход, то сигнализатор
 управляет своим P2.4 в зависимости от состояния входа ALARM_INPUT.
 Тревожный сигнал на выходе сигнализатора может быть временно (до прихода очередного пакета) выключен кнопкой BUTTON1.
@@ -99,7 +99,7 @@ int main( void )
   __enable_interrupt(); //Разрешаем прерывания, необходимые для работы модулей UART.
   serial.begin(MBEE_UART_BITRATE);
   MBee.begin(serial);
-  MBee.onRxIoSampleResponse(ioSamplePacketReceived); //Регистрация callback-функции для приема пакетов 0x83 с состоянием линий ввода-вывода.
+  MBee.onRxIoSampleResponse(ioSamplePacketReceived); //Регистрация callback-функции для приема пакетов 0x83 или 0x84 с состоянием линий ввода-вывода.
   //Устанавливаем неизменяемые в процессе работы поля в объекте, предназначенном для отправки команд удаленному модулю.
   remoteCommand.setDefault(); //Приводим все поля команды для передачи к значениям "по умолчанию" для демонстрации наличия этой функции. Таким образом упрощается повторное использование объекта для отправки последующих команд.
   remoteCommand.setAcknowledge(false); //Команды удаленному модулю будут отправляться без подтверждения.
@@ -145,7 +145,7 @@ void switchOffAlarm(void)
 
 //*****************************************************************************
 //
-//! \brief Callback-функция, вызываемая при приеме пакета 0x83.
+//! \brief Callback-функция, вызываемая при приеме пакета 0x83 или 0x84.
 //! Так как callback-функция должна быть максимально короткая и не содержать задержек, то
 //! в ней просто выставляем событие и копируем принятый пакет.
 //!
@@ -160,7 +160,7 @@ void ioSamplePacketReceived(RxIoSampleResponse& ioSample, uintptr_t optionalPara
 
 //*****************************************************************************
 //
-//! \brief Разбор принятого пакета 0x83.
+//! \brief Разбор принятого пакета 0x83 и 0x84.
 //!
 //! \return NONE
 //

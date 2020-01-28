@@ -7,7 +7,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2019 STMicroelectronics and Systems, modules and components.
+  * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics and Systems, modules and components.
   * All rights reserved.</center></h2>
   *
   * This software component is licensed by ST and SMC under BSD 3-Clause license,
@@ -72,7 +72,7 @@ static volatile  uint32_t events; //Битовое поле с флагами с
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
 static void switchOffAlarm(void);
-static void ioSamplePacketReceived(RxIoSampleResponse& ioSample, uintptr_t optionalParameter); //Callback-функция, вызываемая библиотекой cpp-mbee при приеме пакета 0x83.
+static void ioSamplePacketReceived(RxIoSampleResponse& ioSample, uintptr_t optionalParameter); //Callback-функция, вызываемая библиотекой cpp-mbee при приеме пакета 0x83 или 0x84.
 static void parseIoSamplePacket(void);
 static void sendCommandToRemoteModule(void);
 extern void MBEE_HAL_UART_TxCpltCallback(UART_HandleTypeDef *UartHandle);
@@ -97,7 +97,7 @@ int main(void)
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
-  
+
 
   /* MCU Configuration--------------------------------------------------------*/
 
@@ -124,7 +124,7 @@ int main(void)
   #if defined(ENABLE_CONSOLE)
     console.begin(CONSOLE_UART_BITRATE);
   #endif
-  MBee.onRxIoSampleResponse(ioSamplePacketReceived); //Регистрация callback-функции для приема пакетов 0x83 с состоянием линий ввода-вывода.
+  MBee.onRxIoSampleResponse(ioSamplePacketReceived); //Регистрация callback-функции для приема пакетов 0x83 или 0x84 с состоянием линий ввода-вывода.
   //Устанавливаем неизменяемые в процессе работы поля в объекте, предназначенном для отправки команд удаленному модулю.
   remoteCommand.setDefault(); //Приводим все поля команды для передачи к значениям "по умолчанию" для демонстрации наличия этой функции. С помощью этой функции упрощается повторное использование объекта для отправки последующих команд.
   remoteCommand.setAcknowledge(false); //Команды удаленному модулю будут отправляться без подтверждения их приема удаленным модулем.
@@ -184,10 +184,10 @@ void SystemClock_Config(void)
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
   RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
 
-  /** Configure the main internal regulator output voltage 
+  /** Configure the main internal regulator output voltage
   */
   HAL_PWREx_ControlVoltageScaling(PWR_REGULATOR_VOLTAGE_SCALE1);
-  /** Initializes the CPU, AHB and APB busses clocks 
+  /** Initializes the CPU, AHB and APB busses clocks
   */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
@@ -204,7 +204,7 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  /** Initializes the CPU, AHB and APB busses clocks 
+  /** Initializes the CPU, AHB and APB busses clocks
   */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1;
@@ -216,7 +216,7 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  /** Initializes the peripherals clocks 
+  /** Initializes the peripherals clocks
   */
   PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USART1|RCC_PERIPHCLK_USART2
                               |RCC_PERIPHCLK_TIM1;
@@ -245,9 +245,9 @@ void switchOffAlarm(void)
 }
 
 /**
-  * @brief Callback-функция, вызываемая при приеме пакета 0x83.
+  * @brief Callback-функция, вызываемая при приеме пакета 0x83 или 0x84.
   *        Так как callback-функция должна быть максимально короткая и не содержать задержек, то в ней просто выставляем событие и копируем принятый пакет.
-  * @param  ioSample: ссылка на объект с принятым пакетом 0x83.
+  * @param  ioSample: ссылка на объект с принятым пакетом 0x83 или 0x84.
   * @param  uintptr_t: опциональный параметр. См. документацию к библиотеке cpp-mbee.
   * @retval None
   */
@@ -258,7 +258,7 @@ void ioSamplePacketReceived(RxIoSampleResponse& ioSample, uintptr_t optionalPara
 }
 
 /**
-  * @brief Разбор принятого пакета 0x83
+  * @brief Разбор принятого пакета 0x83 или 0x84.
   * @retval None
   */
 void parseIoSamplePacket(void)
@@ -404,7 +404,7 @@ void Error_Handler(void)
   * @retval None
   */
 void assert_failed(uint8_t *file, uint32_t line)
-{ 
+{
   /* USER CODE BEGIN 6 */
   /* User can add his own implementation to report the file name and line number,
     ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */

@@ -113,7 +113,7 @@ $(function() {
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Базовый класс для всех пакетов, предназначенных для передачи по эфиру неструктурированных данных. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_serial_star_8h_source.html">SerialStar.h</a> строка <a class="el" href="_serial_star_8h_source.html#l00796">796</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8h_source.html">SerialStar.h</a> строка <a class="el" href="_serial_star_8h_source.html#l00829">829</a></p>
 </div><h2 class="groupheader">Методы</h2>
 <a id="a79bf867bc90ae21d88d6266aef6feea7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a79bf867bc90ae21d88d6266aef6feea7">&#9670;&nbsp;</a></span>getPayload()</h2>
@@ -131,8 +131,8 @@ $(function() {
 </div><div class="memdoc">
 <p>Возвращает указатель на поле данных. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00666">666</a></p>
-<div class="fragment"><div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;{</div><div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;    <span class="keywordflow">return</span> _payloadPtr;</div><div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00702">702</a></p>
+<div class="fragment"><div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;{</div><div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;    <span class="keywordflow">return</span> _payloadPtr;</div><div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a31e085fcb06f4603c1358d541cc2ca6a"></a>
@@ -151,8 +151,8 @@ $(function() {
 </div><div class="memdoc">
 <p>Возвращает установленную длину поля данных. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00676">676</a></p>
-<div class="fragment"><div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;{</div><div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;    <span class="keywordflow">return</span> _payloadLength;</div><div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00712">712</a></p>
+<div class="fragment"><div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;{</div><div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;    <span class="keywordflow">return</span> _payloadLength;</div><div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a0984735099ca5a737d66d51ad3be735c"></a>
@@ -172,8 +172,8 @@ $(function() {
 </div><div class="memdoc">
 <p>Устанавливает указатель на поле данных. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00671">671</a></p>
-<div class="fragment"><div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;{</div><div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;    _payloadPtr = payload;</div><div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00707">707</a></p>
+<div class="fragment"><div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;{</div><div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;    _payloadPtr = payload;</div><div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a0d7ae2e197ee496ccab10b9b23053fcd"></a>
@@ -211,9 +211,9 @@ $(function() {
 </div><div class="memdoc">
 <p>Уставливает инлайном одновременно указатель на поле данных и число байт из него, начиная с первого, которое требуется поместить в передаваемое сообщение. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_serial_star_8h_source.html">SerialStar.h</a> строка <a class="el" href="_serial_star_8h_source.html#l00814">814</a></p>
-<div class="fragment"><div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;    {</div><div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;        <a class="code" href="class_payload_request.html#a0984735099ca5a737d66d51ad3be735c">setPayload</a>(payloadPtr);</div><div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;        <a class="code" href="class_payload_request.html#a42cd89199ab2773fedeb41d4ebe9e4ca">setPayloadLength</a>(payloadLength);</div><div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;    }</div><div class="ttc" id="class_payload_request_html_a0984735099ca5a737d66d51ad3be735c"><div class="ttname"><a href="class_payload_request.html#a0984735099ca5a737d66d51ad3be735c">PayloadRequest::setPayload</a></div><div class="ttdeci">void setPayload(uint8_t *payloadPtr)</div><div class="ttdef"><b>Definition:</b> <a href="_serial_star_8cpp_source.html#l00671">SerialStar.cpp:671</a></div></div>
-<div class="ttc" id="class_payload_request_html_a42cd89199ab2773fedeb41d4ebe9e4ca"><div class="ttname"><a href="class_payload_request.html#a42cd89199ab2773fedeb41d4ebe9e4ca">PayloadRequest::setPayloadLength</a></div><div class="ttdeci">void setPayloadLength(uint8_t payloadLength)</div><div class="ttdef"><b>Definition:</b> <a href="_serial_star_8cpp_source.html#l00681">SerialStar.cpp:681</a></div></div>
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8h_source.html">SerialStar.h</a> строка <a class="el" href="_serial_star_8h_source.html#l00847">847</a></p>
+<div class="fragment"><div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;    {</div><div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;        <a class="code" href="class_payload_request.html#a0984735099ca5a737d66d51ad3be735c">setPayload</a>(payloadPtr);</div><div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;        <a class="code" href="class_payload_request.html#a42cd89199ab2773fedeb41d4ebe9e4ca">setPayloadLength</a>(payloadLength);</div><div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;    }</div><div class="ttc" id="class_payload_request_html_a0984735099ca5a737d66d51ad3be735c"><div class="ttname"><a href="class_payload_request.html#a0984735099ca5a737d66d51ad3be735c">PayloadRequest::setPayload</a></div><div class="ttdeci">void setPayload(uint8_t *payloadPtr)</div><div class="ttdef"><b>Definition:</b> <a href="_serial_star_8cpp_source.html#l00707">SerialStar.cpp:707</a></div></div>
+<div class="ttc" id="class_payload_request_html_a42cd89199ab2773fedeb41d4ebe9e4ca"><div class="ttname"><a href="class_payload_request.html#a42cd89199ab2773fedeb41d4ebe9e4ca">PayloadRequest::setPayloadLength</a></div><div class="ttdeci">void setPayloadLength(uint8_t payloadLength)</div><div class="ttdef"><b>Definition:</b> <a href="_serial_star_8cpp_source.html#l00717">SerialStar.cpp:717</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -234,8 +234,8 @@ $(function() {
 </div><div class="memdoc">
 <p>Устанавливает число байт, которое надо поместить в поле данных отправляемого пакета. Например, если буфер, на который указывает указатель, установленный функцией <a class="el" href="class_payload_request.html#a0984735099ca5a737d66d51ad3be735c">setPayload()</a>, содержит 40 байт, а требуется передать только первые 5, то вызывается эта функция с параметром 5. Значение параметра не должно превышать длину буфера. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00681">681</a></p>
-<div class="fragment"><div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;{</div><div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;    _payloadLength = payloadLength;</div><div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00717">717</a></p>
+<div class="fragment"><div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;{</div><div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;    _payloadLength = payloadLength;</div><div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>

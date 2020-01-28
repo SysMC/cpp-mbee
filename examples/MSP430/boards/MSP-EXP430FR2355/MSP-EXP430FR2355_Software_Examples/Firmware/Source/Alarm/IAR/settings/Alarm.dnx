@@ -12,7 +12,7 @@
         <ByteLimit>50</ByteLimit>
     </Stack>
     <DebugChecksum>
-        <Checksum>3064311558</Checksum>
+        <Checksum>2162289787</Checksum>
     </DebugChecksum>
     <CodeCoverage>
         <Enabled>_ 0</Enabled>
@@ -96,7 +96,8 @@
         <Fmt6>{W}1:P2SEL0	1	0</Fmt6>
         <Fmt7>{W}1:P2SEL1	1	0</Fmt7>
         <Fmt8>{W}1:P2SELC	1	0</Fmt8>
-        <Fmt9>{W}2:events	4	0</Fmt9>
+        <Fmt9>{W}1:extendedFrameFormatFieldsLength	4	0</Fmt9>
+        <Fmt10>{W}2:events	4	0</Fmt10>
     </watch_formats>
     <PowerLog>
         <Title_0>Energy</Title_0>

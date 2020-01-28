@@ -126,6 +126,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setLsbLength</b> (uin
 <tr class="separator:af2d53ac013fb017328b26928eb37016e inherit pub_methods_class_m_bee_response"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c92a22bda407baf545007bc390266bd inherit pub_methods_class_m_bee_response"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_bee_response.html#a7c92a22bda407baf545007bc390266bd">getPacketLength</a> ()</td></tr>
 <tr class="separator:a7c92a22bda407baf545007bc390266bd inherit pub_methods_class_m_bee_response"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c996b9ce64fb463716790b4a4485582 inherit pub_methods_class_m_bee_response"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_bee_response.html#a4c996b9ce64fb463716790b4a4485582">setExtendedFieldsLength</a> (uint8_t length)</td></tr>
+<tr class="separator:a4c996b9ce64fb463716790b4a4485582 inherit pub_methods_class_m_bee_response"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2158e212aa45def9f550493f19c7641 inherit pub_methods_class_m_bee_response"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_bee_response.html#af2158e212aa45def9f550493f19c7641">getExtendedFieldsLength</a> (void)</td></tr>
+<tr class="separator:af2158e212aa45def9f550493f19c7641 inherit pub_methods_class_m_bee_response"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad20897c5c8bd47f5d4005989bead0e55 inherit pub_methods_class_m_bee_response"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_bee_response.html#ad20897c5c8bd47f5d4005989bead0e55">reset</a> ()</td></tr>
 <tr class="separator:ad20897c5c8bd47f5d4005989bead0e55 inherit pub_methods_class_m_bee_response"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02fd73d861ef2e4aabb38c0c9ff82947 inherit pub_methods_class_m_bee_response"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_bee_response.html#a02fd73d861ef2e4aabb38c0c9ff82947">init</a> ()</td></tr>
@@ -165,7 +169,7 @@ uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><b>_frameDataPtr</b
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Класс для локального ответа модуля со статусом передачи в эфир или размещением в буфере. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_serial_star_8h_source.html">SerialStar.h</a> строка <a class="el" href="_serial_star_8h_source.html#l00444">444</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8h_source.html">SerialStar.h</a> строка <a class="el" href="_serial_star_8h_source.html#l00476">476</a></p>
 </div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a23e73266556365add142581627f8c432"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a23e73266556365add142581627f8c432">&#9670;&nbsp;</a></span>TxStatusResponse()</h2>
@@ -183,8 +187,8 @@ uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><b>_frameDataPtr</b
 </div><div class="memdoc">
 <p>Конструктор "по умолчанию". </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00302">302</a></p>
-<div class="fragment"><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                                   : <a class="code" href="class_frame_id_response.html#a69325e2554270976cc2ef97a50409cf6">FrameIdResponse</a>()</div><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;{</div><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;}</div><div class="ttc" id="class_frame_id_response_html_a69325e2554270976cc2ef97a50409cf6"><div class="ttname"><a href="class_frame_id_response.html#a69325e2554270976cc2ef97a50409cf6">FrameIdResponse::FrameIdResponse</a></div><div class="ttdeci">FrameIdResponse()</div><div class="ttdef"><b>Definition:</b> <a href="_serial_star_8cpp_source.html#l00216">SerialStar.cpp:216</a></div></div>
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00338">338</a></p>
+<div class="fragment"><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                                   : <a class="code" href="class_frame_id_response.html#a69325e2554270976cc2ef97a50409cf6">FrameIdResponse</a>()</div><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;{</div><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;}</div><div class="ttc" id="class_frame_id_response_html_a69325e2554270976cc2ef97a50409cf6"><div class="ttname"><a href="class_frame_id_response.html#a69325e2554270976cc2ef97a50409cf6">FrameIdResponse::FrameIdResponse</a></div><div class="ttdeci">FrameIdResponse()</div><div class="ttdef"><b>Definition:</b> <a href="_serial_star_8cpp_source.html#l00234">SerialStar.cpp:234</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -223,8 +227,8 @@ uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><b>_frameDataPtr</b
 </div><div class="memdoc">
 <p>Возвращает статус локальной команды. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00307">307</a></p>
-<div class="fragment"><div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;{</div><div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_m_bee_response.html#af2d53ac013fb017328b26928eb37016e">getFrameData</a>()[4];</div><div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;}</div><div class="ttc" id="class_m_bee_response_html_af2d53ac013fb017328b26928eb37016e"><div class="ttname"><a href="class_m_bee_response.html#af2d53ac013fb017328b26928eb37016e">MBeeResponse::getFrameData</a></div><div class="ttdeci">uint8_t * getFrameData()</div><div class="ttdef"><b>Definition:</b> <a href="_serial_star_8cpp_source.html#l00096">SerialStar.cpp:96</a></div></div>
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00343">343</a></p>
+<div class="fragment"><div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;{</div><div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_m_bee_response.html#af2d53ac013fb017328b26928eb37016e">getFrameData</a>()[4];</div><div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;}</div><div class="ttc" id="class_m_bee_response_html_af2d53ac013fb017328b26928eb37016e"><div class="ttname"><a href="class_m_bee_response.html#af2d53ac013fb017328b26928eb37016e">MBeeResponse::getFrameData</a></div><div class="ttdeci">uint8_t * getFrameData()</div><div class="ttdef"><b>Definition:</b> <a href="_serial_star_8cpp_source.html#l00096">SerialStar.cpp:96</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -244,8 +248,8 @@ uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><b>_frameDataPtr</b
 </div><div class="memdoc">
 <p>Возвращает true, если команда исполнена. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00312">312</a></p>
-<div class="fragment"><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;{</div><div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_tx_status_response.html#ab02fa6549a1103b194b19d9582bf5cf6">getStatus</a>() == SUCCESS;</div><div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;}</div><div class="ttc" id="class_tx_status_response_html_ab02fa6549a1103b194b19d9582bf5cf6"><div class="ttname"><a href="class_tx_status_response.html#ab02fa6549a1103b194b19d9582bf5cf6">TxStatusResponse::getStatus</a></div><div class="ttdeci">uint8_t getStatus()</div><div class="ttdef"><b>Definition:</b> <a href="_serial_star_8cpp_source.html#l00307">SerialStar.cpp:307</a></div></div>
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00348">348</a></p>
+<div class="fragment"><div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;{</div><div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_tx_status_response.html#ab02fa6549a1103b194b19d9582bf5cf6">getStatus</a>() == SUCCESS;</div><div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;}</div><div class="ttc" id="class_tx_status_response_html_ab02fa6549a1103b194b19d9582bf5cf6"><div class="ttname"><a href="class_tx_status_response.html#ab02fa6549a1103b194b19d9582bf5cf6">TxStatusResponse::getStatus</a></div><div class="ttdeci">uint8_t getStatus()</div><div class="ttdef"><b>Definition:</b> <a href="_serial_star_8cpp_source.html#l00343">SerialStar.cpp:343</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

@@ -1,4 +1,4 @@
-/* "Системы модули и компоненты" ("СМК"). 2018. Москва.
+/* "Системы модули и компоненты" ("СМК"). 2020. Москва.
 Библиотека C++ для модулей MBee .
 Распространяется свободно. Надеемся, что программные продукты, созданные
 с помощью данной библиотеки будут полезными, однако никакие гарантии, явные или
@@ -7,7 +7,7 @@
 The MIT License(MIT)
 
 MBee C++ Library.
-Copyright © 2018 Systems, modules and components. Moscow. Russia.
+Copyright © 2020 Systems, modules and components. Moscow. Russia.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files(the "Software"), to deal in the Software without restriction, including without limitation
@@ -71,6 +71,7 @@ Code adapted from  XBee-Arduino library XBee.h. Copyright info below.
 #define DEVICE_MODE_REPEATER_BIT          2 //Бит, включающий/выключающий функцию ретрансляции пакетов.
 #define DEVICE_MODE_CCA_BIT               4 //Бит, управляющий режимом CCA при передаче пакетов в прозрачном режиме UART. Если равен 1, то CCA отключено.
 #define DEVICE_MODE_ENCRYPTION_BIT        5 //Бит, управляющий шифрованием трафика в прозрачном режиме UART. Если равен 1, то шифрование включено.
+#define DEVICE_MODE_EXTENDED_FORMAT_BIT   6 //Бит, управляющий наличием дополнительных полей в выходном API-фрейме.
 
 //Параметры поля transmitOptions.
 #define ACKNOWLEDGE_DISABLE_TX_OPTIONS_BIT 0
@@ -135,28 +136,34 @@ Code adapted from  XBee-Arduino library XBee.h. Copyright info below.
 #define R9_ID   24
 
 //Режимы линий ввода/вывода.
-#define IO_DISABLED                     0
-#define IO_NOT_AVAILABLE                1
-#define IO_ADC                          2
-#define IO_DIGITAL_INPUT                3
-#define IO_DIGITAL_OUTPUT_LO            4
-#define IO_DIGITAL_OUTPUT_HI            5
-#define IO_UART_TX                      6
-#define IO_UART_RX                      7
-#define IO_UART_CTS                     8
-#define IO_UART_RTS                     9
-#define IO_SYSTEM_LED                   10
-#define IO_SLEEP_REQUEST                11
-#define IO_SLEEP_STATUS                 12
-#define IO_COUNTER_INPUT1               13
-#define IO_COUNTER_INPUT2               14
-#define IO_WAKEUP_INPUT_FALLING_EDGE    15
-#define IO_WAKEUP_INPUT_RISING_EDGE     16
-#define IO_PWM1                         17
-#define IO_PWM2                         18
-#define IO_PWM3                         19
-#define IO_PWM4                         20
-#define IO_RS485_DIRECTION              21
+#define IO_DISABLED                       0
+#define IO_NOT_AVAILABLE                  1
+#define IO_ADC                            2
+#define IO_DIGITAL_INPUT                  3
+#define IO_DIGITAL_OUTPUT_LO              4
+#define IO_DIGITAL_OUTPUT_HI              5
+#define IO_UART_TX                        6
+#define IO_UART_RX                        7
+#define IO_UART_CTS                       8
+#define IO_UART_RTS                       9
+#define IO_SYSTEM_LED                     10
+#define IO_SLEEP_REQUEST                  11
+#define IO_SLEEP_STATUS                   12
+#define IO_COUNTER_INPUT1                 13
+#define IO_COUNTER_INPUT2                 14
+#define IO_WAKEUP_INPUT_FALLING_EDGE      15
+#define IO_WAKEUP_INPUT_RISING_EDGE       16
+#define IO_PWM1                           17
+#define IO_PWM2                           18
+#define IO_PWM3                           19
+#define IO_PWM4                           20
+#define IO_RS485_DIRECTION                21
+#define IO_DIGITAL_LINE_PASSING	          22
+#define IO_DIGITAL_LINE_PASSING_INVERTED	23
+#define IO_ANALOG_LINE_PASSING_PWM1	      24
+#define IO_ANALOG_LINE_PASSING_PWM2	      25
+#define IO_ANALOG_LINE_PASSING_PWM3	      26
+#define IO_ANALOG_LINE_PASSING_PWM4 	    27
 
 //Макросы.
 #define BV(n)    (1 << (n))
@@ -174,13 +181,17 @@ Code adapted from  XBee-Arduino library XBee.h. Copyright info below.
 #define AT_COMMAND_RESPONSE_QUEUE_PARAMETER_VALUE_API_FRAME 0x89 //ex. TX_STATUS_RESPONSE. Идентификатор не имеет аналога в проекте SerialStar.
 #define REMOTE_AT_COMMAND_REQUEST_API_FRAME                 0x17 //ex. REMOTE_AT_REQUEST.
 #define REMOTE_AT_COMMAND_RESPONSE_API_FRAME                0x97 //ex. REMOTE_AT_COMMAND_RESPONSE.
+#define REMOTE_AT_COMMAND_RESPONSE_EXTENDED_API_FRAME       0x98 //Идентификатор, введенный SysMC. Фрейм содержит дополнительные поля из маршрутного заголовка принятого пакета.
 #define TRANSMIT_REQUEST_NO_OPTIONS_API_FRAME               0x0F //Идентификатор, введенный SysMC, предназначенный для передачи данных без байта опций. Нужен для увеличения полезной нагрузки.
-#define TRANSMIT_REQUEST_API_FRAME                          0x10    //ex. ZB_TX_REQUEST.
+#define TRANSMIT_REQUEST_API_FRAME                          0x10 //ex. ZB_TX_REQUEST.
 #define TRANSMIT_REQUEST_PRO_API_FRAME                      0x01 //ex. TX_16_REQUEST.
 #define REMOTE_ACKNOWLEDGE_API_FRAME                        0x8C //Идентификатор, введенный SysMC, предназначенный для подтверждения приема пакетов удаленным модемом.
 #define RECEIVE_PACKET_API_FRAME                            0x81 //ex. RX_16_RESPONSE.
+#define RECEIVE_PACKET_EXTENDED_API_FRAME	                  0x82 //Идентификатор, введенный SysMC. Фрейм содержит дополнительные поля из маршрутного заголовка принятого пакета.
 #define RECEIVE_PACKET_NO_OPTIONS_API_FRAME                 0x8F //Идентификатор, введенный SysMC, используемый при выдаче в UART сообщений, переданных удаленным модемом в прозрачном режиме или в пакетном режиме без опций (TRANSMIT_REQUEST_NO_OPTIONS_API_FRAME).
+#define RECEIVE_PACKET_NO_OPTIONS_EXTENDED_API_FRAME	      0x90 //Идентификатор, введенный SysMC. Фрейм содержит дополнительные поля из маршрутного заголовка принятого пакета.
 #define IO_DATA_SAMPLE_API_FRAME                            0x83 //ex. RX_16_IO_RESPONSE.
+#define IO_DATA_SAMPLE_EXTENDED_API_FRAME                   0x84 //Идентификатор, введенный SysMC. Фрейм содержит дополнительные поля из маршрутного заголовка принятого пакета.
 
 /**
 Супер класс для всех пакетов, передаваемых по UART модулями MBee-868-x.0 в проекте SerialStar.
@@ -255,6 +266,16 @@ public:
     uint16_t getPacketLength();
 
     /**
+    Устанавливает длину дополнительных полей пакета расширенного формата. В случае стандартного пакета длина дополнительных полей равна 0.
+    */
+    void setExtendedFieldsLength(uint8_t length);
+
+    /**
+    Возвращает длину дополнительных полей пакета расширенного формата.
+    */
+    uint8_t getExtendedFieldsLength(void);
+
+    /**
     Сбрасывает все поля пакета.
     */
     void reset();
@@ -265,37 +286,37 @@ public:
     void init();
 
     /**
-    Вызов TxStatusResponse при getApiId() == TRANSMIT_STATUS_API_FRAME 0x8B(ex. ZB_TX_STATUS_RESPONSE).
+    Вызов TxStatusResponse при getApiId() == 0x8B.
     */
     void getTxStatusResponse(MBeeResponse &response);
 
     /**
-    Вызов RxResponse при getApiId() == RECEIVE_PACKET_API_FRAME 0x81(ex. RX_16_RESPONSE).
+    Вызов RxResponse при getApiId() == 0x81, 0x82, 0x8F, 0x90.
     */
     void getRxResponse(MBeeResponse &response);
 
     /**
-    Вызов RxIoSampleResponse при getApiId() == IO_DATA_SAMPLE_API_FRAME 0x83 (ex. RX_16_IO_RESPONSE).
+    Вызов RxIoSampleResponse при getApiId() == 0x83, 0x84.
     */
     void getRxIoSampleResponse(MBeeResponse &response);
 
     /**
-    Вызов ModemStatusResponse при getApiId() == MODEM_STATUS_API_FRAME 0x8A (ex. MODEM_STATUS_RESPONSE).
+    Вызов ModemStatusResponse при getApiId() == 0x8A.
     */
     void getModemStatusResponse(MBeeResponse &response);
 
     /**
-    Вызов AtCommandResponse при getApiId() == AT_COMMAND_RESPONSE_API_FRAME 0x88 (ex. AT_COMMAND_RESPONSE).
+    Вызов AtCommandResponse при getApiId() == x88).
     */
     void getAtCommandResponse(MBeeResponse &responses);
 
     /**
-    Вызов RemoteAtCommandResponse при getApiId() == REMOTE_AT_COMMAND_RESPONSE_API_FRAME 0x97 (ex. REMOTE_AT_COMMAND_RESPONSE).
+    Вызов RemoteAtCommandResponse при getApiId() == 0x97, 0x98.
     */
     void getRemoteAtCommandResponse(MBeeResponse &response);
 
     /**
-  Вызов RxAcknowledgeResponse при getApiId() == REMOTE_ACKNOWLEDGE_API_FRAME 0x8C.
+    Вызов RxAcknowledgeResponse при getApiId() == 0x8C.
     */
     void getRxAcknowledgeResponse(MBeeResponse &response);
 
@@ -336,6 +357,7 @@ private:
     uint8_t _frameLength;
     bool _complete;
     uint8_t _errorCode;
+    uint8_t _extendedFieldsLength;
 };
 
 /**
@@ -386,7 +408,7 @@ public:
     RxCommonResponse();
 
     /**
-    Возвращает адрес модема, отправившего пакет.
+    Возвращает адрес модема, источника данных.
     */
     uint16_t getRemoteAddress();
 
@@ -399,6 +421,16 @@ public:
     Возвращает байт опций.
     */
     uint8_t getOption();
+
+    /**
+    Возвращает frameId в случае приема пакета расширенного формата. Для стандарных пакетов, возвращает NULL.
+    */
+    uint8_t getFrameId();
+
+    /**
+    Возвращает адрес модема, непосредственно отправившего пакет. Действителен только для пакетоа расширенного формата. В случае приема стандартного пакета возвращает NULL.
+    */
+    uint16_t getPreviousHopAddress();
 };
 
 /**
@@ -483,7 +515,8 @@ public:
     uint8_t* getCommand();
 
     /**
-     Возвращает статус команды. Если статус 0, значит команда выполнена успешно.
+     Возвращает статус команды. Если статус 0, значит команда выполнена успешно, 2 - удаленный модуль
+     не поддерживает данную AT-команду.
     */
     uint8_t getStatus();
 
@@ -1085,7 +1118,7 @@ public:
     /**
     Регистрация callback-функции для события приема пакета от модуля. Зарегистрированная функция будет вызываться всегда при любом успешном приеме
     пакета по UART перед тем, как    будет вызвана специфическая для принятого пакета callback-функция или функция onOtherResponse(), если
-    специфическая функция не зарегистрирована. В качестве аргумента передается ссылка на принятый пакета, а также опциональные данные
+    специфическая функция не зарегистрирована. В качестве аргумента передается ссылка на принятый пакет, а также опциональные данные
     (или указатель на них), определенные при регистрации callback-функции.
     */
     void onResponse(void (*func)(MBeeResponse&, uintptr_t), uintptr_t data = 0)
@@ -1133,7 +1166,7 @@ public:
     }
 
     /**
-    Регистрация callback-функции, вызываемой при приеме API-фрейма с ответом на удаленную AT-команду (apiId = 0x97).
+    Регистрация callback-функции, вызываемой при приеме API-фрейма с ответом на удаленную AT-команду (apiId = 0x97, 0x98).
     */
     void onRemoteAtCommandResponse(void (*func)(RemoteAtCommandResponse&, uintptr_t), uintptr_t data = 0)
     {
@@ -1149,7 +1182,7 @@ public:
     }
 
     /**
-    Регистрация callback-функции, вызываемой при приеме API-фрейма с неструктурированными данными от удаленного модема (apiId = 0x81, 0x8F).
+    Регистрация callback-функции, вызываемой при приеме API-фрейма с неструктурированными данными от удаленного модема (apiId = 0x81, 0x82, 0x8F, 0x90).
     */
     void onRxResponse(void (*func)(RxResponse&, uintptr_t), uintptr_t data = 0)
     {
@@ -1157,7 +1190,7 @@ public:
     }
 
     /**
-    Регистрация callback-функции, вызываемой при приеме API-фрейма с данными о состоянии датчиков удаленного модема (apiId = 0x83).
+    Регистрация callback-функции, вызываемой при приеме API-фрейма с данными о состоянии датчиков удаленного модема (apiId = 0x83, 0x84).
     */
     void onRxIoSampleResponse(void (*func)(RxIoSampleResponse&, uintptr_t), uintptr_t data = 0)
     {
@@ -1171,16 +1204,16 @@ public:
     void run();
 
     /**
-    Принимает API-фрейм заданного типа, опционально отфильтрованного с помощью определенной функции проверки.    Если эта функция проверки определена,
-    то она вызывается каждый раз при приеме API-фрейма требуемого типа. В качестве параметров ей передаются    ссылка на ответ и указатель на поле
+    Принимает API-фрейм заданного типа, опционально отфильтрованного с помощью определенной функции проверки. Если эта функция проверки определена,
+    то она вызывается каждый раз при приеме API-фрейма требуемого типа. В качестве параметров ей передаются ссылка на ответ и указатель на поле
     данных. Если функция проверки возвращает true (или если такая проверочная функция не определена), то ожидание приема прекращается и осуществляется
     возврат в вызывающую функцию с параметром 0. Если же проверочная функция возвращает false,то ожидание приема продолжается. По истечении заданного
-    времени ожидания, функция возвращает MBEE_WAIT_TIMEOUT (0xFF).    Если фрейм был отправлен с ненулевым frameID, то на него модуль должен получить ответ со
+    времени ожидания, функция возвращает MBEE_WAIT_TIMEOUT (0xFF). Если фрейм был отправлен с ненулевым frameID, то на него модуль должен получить ответ со
     статусом. Если статус не равен 0 т.е. имела место    какая-либо ошибка, то ожидание прекращается и этот статусный байт передается как результат
-    работы функции. Такое поведение объясняется    следующим: если фрейм предназначался для передачи по эфиру, то наличие    ошибок при его
+    работы функции. Такое поведение объясняется следующим: если фрейм предназначался для передачи по эфиру, то наличие    ошибок при его
     обработке/отправке(например вследствие занятости частотного канала) приводит к тому, в эфир он не уйдет    и, следовательно, ответа на него удаленного
-    узла ждать бессмысленно. Во время     ожидания, любой принятый пакет передается в соответствующую callback-функцию также, как бы это происходило при
-    непрерывном вызове run() исключая    только те фреймы, которые передаются в OnResponse()    и  никуда более.     После вызова этого метода, пакет может быть
+    узла ждать бессмысленно. Во время ожидания, любой принятый пакет передается в соответствующую callback-функцию также, как бы это происходило при
+    непрерывном вызове run() исключая только те фреймы, которые передаются в OnResponse() и никуда более. После вызова этого метода, пакет может быть
     получен с помощью обычного вызова getResponse().
     */
     template <typename Response>

@@ -5,4 +5,4 @@ rem Second command line argument is the name of output exe file without extensio
 
 g++ MBee.cpp System.cpp WindowsSerial.cpp SerialStar.cpp %1 -o %2.exe
 
-rem usage example: compile.bat c:\cpp-mbee\examples\WindowsLinux\IoSamples_Callbacks\IoSamples_Callbacks.cpp IoSamples_Callbacks
+rem usage example: compile.bat examples\WindowsLinux\IoSamples_Callbacks\IoSamples_Callbacks.cpp IoSamples_Callbacks

@@ -1,4 +1,4 @@
-/* "Системы модули и компоненты" ("СМК"). 2019. Москва.
+/* "Системы модули и компоненты" ("СМК"). 2020. Москва.
 Библиотека C++ для модулей MBee. Пример использования библиотеки cpp-mbee на микроконтроллерах STM32 производства STMicroelectronics.
 Распространяется свободно. Надеемся, что программные продукты, созданные
 на основе данного примера будут полезными, однако никакие гарантии, явные или
@@ -7,7 +7,7 @@
 The MIT License(MIT)
 
 MBee C++ Library Example for STM32.
-Copyright © 2019 Systems, modules and components. Moscow. Russia.
+Copyright © 2020 Systems, modules and components. Moscow. Russia.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files(the "Software"), to deal in the Software without restriction, including without limitation
@@ -144,6 +144,11 @@ uint8_t Console::run()
 void Console::printIoSamplePacket(RxIoSampleResponse& ioSample)
 {
   printf("\nReceived packet with I/O samples from remote node with address: %x.\n\r", ioSample.getRemoteAddress()); //Печатаем адрес отправителя.
+  if(ioSample.getExtendedFieldsLength()) //Принятый фрейм имеет расширенный или стандартный формат.
+  {
+    printf("Frame identificator: %d.\n\r", ioSample.getFrameId());
+    printf("Previous hop address: %x.\n\r", ioSample.getPreviousHopAddress());
+  }
   if(ioSample.getTemperature() < 128) //Выводим температуру чипа удаленного модуля по показаниям встроенного датчика.
   {
     printf("Chip temperature is %dC.\r\n", ioSample.getTemperature());

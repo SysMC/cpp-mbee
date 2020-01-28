@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\examples\STM32\STM32G0xx\Projects\NUCLEO-G071RB\Control\EWARM\settings\Control.Control.general.xcl" --backend -f "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\examples\STM32\STM32G0xx\Projects\NUCLEO-G071RB\Control\EWARM\settings\Control.Control.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee_temp\examples\STM32\STM32G0xx\Projects\NUCLEO-G071RB\Control\EWARM\settings\Control.Control.general.xcl" --backend -f "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee_temp\examples\STM32\STM32G0xx\Projects\NUCLEO-G071RB\Control\EWARM\settings\Control.Control.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\examples\STM32\STM32G0xx\Projects\NUCLEO-G071RB\Control\EWARM\settings\Control.Control.general.xcl" "--debug_file=%~1" --backend -f "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee\examples\STM32\STM32G0xx\Projects\NUCLEO-G071RB\Control\EWARM\settings\Control.Control.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee_temp\examples\STM32\STM32G0xx\Projects\NUCLEO-G071RB\Control\EWARM\settings\Control.Control.general.xcl" "--debug_file=%~1" --backend -f "C:\VONBOD\SYSMC\Low-Power RF\C++\cpp-mbee_temp\examples\STM32\STM32G0xx\Projects\NUCLEO-G071RB\Control\EWARM\settings\Control.Control.driver.xcl" 
 
 @echo off 
 :end

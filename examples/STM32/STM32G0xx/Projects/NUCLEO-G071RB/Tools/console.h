@@ -1,4 +1,4 @@
-/* "Системы модули и компоненты" ("СМК"). 2019. Москва.
+/* "Системы модули и компоненты" ("СМК"). 2020. Москва.
 Библиотека C++ для модулей MBee. Пример использования библиотеки cpp-mbee на микроконтроллерах STM32 производства STMicroelectronics.
 Распространяется свободно. Надеемся, что программные продукты, созданные
 на основе данного примера будут полезными, однако никакие гарантии, явные или
@@ -7,7 +7,7 @@
 The MIT License(MIT)
 
 MBee C++ Library Example for STM32.
-Copyright © 2019 Systems, modules and components. Moscow. Russia.
+Copyright © 2020 Systems, modules and components. Moscow. Russia.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files(the "Software"), to deal in the Software without restriction, including without limitation
@@ -94,7 +94,7 @@ public:
   uint8_t run();
 
   /**
-  Метод, который выводит на последовательный порт содержание пакета с данными о состоянии линий ввода/вывода (пакет 0x83).
+  Метод, который выводит на последовательный порт содержание пакета с данными о состоянии линий ввода/вывода (пакет 0x83 или 0x84).
   */
   void printIoSamplePacket(RxIoSampleResponse& ioSample);
 

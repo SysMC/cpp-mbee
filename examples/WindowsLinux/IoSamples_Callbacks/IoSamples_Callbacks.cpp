@@ -71,7 +71,12 @@ int main()
 void rxIoSampleResponseCallback(RxIoSampleResponse& ioSample, uintptr_t optionalParameter)
 {
 
-    printf("\nReceived packet with I/O samples from remote modem with address: %#x", ioSample.getRemoteAddress()); //Печатаем адрес модуля от которого получен пакет.
+    printf("\nReceived packet with I/O samples from remote modem with address: %#x", ioSample.getRemoteAddress()); //Печатаем адрес модуля - источника данных.
+    if(ioSample.getExtendedFieldsLength()) //Проверяем, принятый пакет имеет расширенный формат или стандартный.
+    {
+        printf("\nFrame identificator: %d", ioSample.getFrameId()); //Выводим идентификатор фрейма.
+        printf("\nPrevious hop address: %#x", ioSample.getPreviousHopAddress()); //Печатаем адрес модуля непосредственно от которого получен пакет.
+    }
     /**********************************************************************************************************/
     int8_t temp =  ioSample.getTemperature();
     if(temp > 128) //Переводим число из дополнительного кода в прямой.

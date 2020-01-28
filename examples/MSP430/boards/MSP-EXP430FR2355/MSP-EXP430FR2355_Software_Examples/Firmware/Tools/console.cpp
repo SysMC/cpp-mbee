@@ -7,7 +7,7 @@
 The MIT License(MIT)
 
 MBee C++ Library Example for MSP430.
-Copyright © 2019 Systems, modules and components. Moscow. Russia.
+Copyright © 2020 Systems, modules and components. Moscow. Russia.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files(the "Software"), to deal in the Software without restriction, including without limitation
@@ -96,8 +96,15 @@ uint8_t Console::run()
 void Console::printIoSamplePacket(RxIoSampleResponse& ioSample)
 {
   println("");
-  print("Received packet with I/O samples from remote node with address: "); //Печатаем адрес отправителя.
+  print("Received packet with I/O samples from remote node with address: "); //Печатаем адрес модуля - источника данных.
   println(ioSample.getRemoteAddress(), 16);
+  if(ioSample.getExtendedFieldsLength()) //Принятый фрейм имеет расширенный или стандартный формат.
+  {
+    print("Frame identificator: ");
+    println(ioSample.getFrameId(), 10);
+    print("Previous hop address: ");
+    println(ioSample.getPreviousHopAddress(), 16);
+  }
   print("Chip temperature is "); //Выводим температуру чипа удаленного модуля по показаниям встроенного датчика.
   if(ioSample.getTemperature() < 128) //Переводим число из дополнительного кода в прямой.
   {

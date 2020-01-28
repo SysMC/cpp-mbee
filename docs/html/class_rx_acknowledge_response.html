@@ -94,6 +94,10 @@ $(function() {
 <tr class="separator:a6f0a79835b9a66e63c24f87d8130338c inherit pub_methods_class_rx_common_response"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cfd487291c3842225242ed894865dc1 inherit pub_methods_class_rx_common_response"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rx_common_response.html#a0cfd487291c3842225242ed894865dc1">getOption</a> ()</td></tr>
 <tr class="separator:a0cfd487291c3842225242ed894865dc1 inherit pub_methods_class_rx_common_response"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e24f4267388f39c146a244e2ec42017 inherit pub_methods_class_rx_common_response"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rx_common_response.html#a5e24f4267388f39c146a244e2ec42017">getFrameId</a> ()</td></tr>
+<tr class="separator:a5e24f4267388f39c146a244e2ec42017 inherit pub_methods_class_rx_common_response"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63fa4a6325c73b64327f6d324971f24c inherit pub_methods_class_rx_common_response"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rx_common_response.html#a63fa4a6325c73b64327f6d324971f24c">getPreviousHopAddress</a> ()</td></tr>
+<tr class="separator:a63fa4a6325c73b64327f6d324971f24c inherit pub_methods_class_rx_common_response"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_m_bee_response"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_m_bee_response')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_m_bee_response.html">MBeeResponse</a></td></tr>
 <tr class="memitem:a7c53ed48bdfdb07824d843d42b9bc4b3 inherit pub_methods_class_m_bee_response"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_bee_response.html#a7c53ed48bdfdb07824d843d42b9bc4b3">MBeeResponse</a> ()</td></tr>
 <tr class="separator:a7c53ed48bdfdb07824d843d42b9bc4b3 inherit pub_methods_class_m_bee_response"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,6 +130,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setLsbLength</b> (uin
 <tr class="separator:af2d53ac013fb017328b26928eb37016e inherit pub_methods_class_m_bee_response"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c92a22bda407baf545007bc390266bd inherit pub_methods_class_m_bee_response"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_bee_response.html#a7c92a22bda407baf545007bc390266bd">getPacketLength</a> ()</td></tr>
 <tr class="separator:a7c92a22bda407baf545007bc390266bd inherit pub_methods_class_m_bee_response"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c996b9ce64fb463716790b4a4485582 inherit pub_methods_class_m_bee_response"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_bee_response.html#a4c996b9ce64fb463716790b4a4485582">setExtendedFieldsLength</a> (uint8_t length)</td></tr>
+<tr class="separator:a4c996b9ce64fb463716790b4a4485582 inherit pub_methods_class_m_bee_response"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2158e212aa45def9f550493f19c7641 inherit pub_methods_class_m_bee_response"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_bee_response.html#af2158e212aa45def9f550493f19c7641">getExtendedFieldsLength</a> (void)</td></tr>
+<tr class="separator:af2158e212aa45def9f550493f19c7641 inherit pub_methods_class_m_bee_response"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad20897c5c8bd47f5d4005989bead0e55 inherit pub_methods_class_m_bee_response"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_bee_response.html#ad20897c5c8bd47f5d4005989bead0e55">reset</a> ()</td></tr>
 <tr class="separator:ad20897c5c8bd47f5d4005989bead0e55 inherit pub_methods_class_m_bee_response"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02fd73d861ef2e4aabb38c0c9ff82947 inherit pub_methods_class_m_bee_response"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_bee_response.html#a02fd73d861ef2e4aabb38c0c9ff82947">init</a> ()</td></tr>
@@ -165,7 +173,7 @@ uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><b>_frameDataPtr</b
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Класс для пакета с подтверждением получения неструктурированных данных удаленным модемом. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_serial_star_8h_source.html">SerialStar.h</a> строка <a class="el" href="_serial_star_8h_source.html#l00510">510</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8h_source.html">SerialStar.h</a> строка <a class="el" href="_serial_star_8h_source.html#l00543">543</a></p>
 </div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a7a77d7e641114ee5e49f93de75724476"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7a77d7e641114ee5e49f93de75724476">&#9670;&nbsp;</a></span>RxAcknowledgeResponse()</h2>
@@ -183,8 +191,8 @@ uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><b>_frameDataPtr</b
 </div><div class="memdoc">
 <p>Конструктор "по умолчанию". </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00357">357</a></p>
-<div class="fragment"><div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;                                             : <a class="code" href="class_rx_common_response.html#a4e9002ab365b4e30b325b9a8c85e917d">RxCommonResponse</a>()</div><div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;{</div><div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;}</div><div class="ttc" id="class_rx_common_response_html_a4e9002ab365b4e30b325b9a8c85e917d"><div class="ttname"><a href="class_rx_common_response.html#a4e9002ab365b4e30b325b9a8c85e917d">RxCommonResponse::RxCommonResponse</a></div><div class="ttdeci">RxCommonResponse()</div><div class="ttdef"><b>Definition:</b> <a href="_serial_star_8cpp_source.html#l00242">SerialStar.cpp:242</a></div></div>
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00393">393</a></p>
+<div class="fragment"><div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                                             : <a class="code" href="class_rx_common_response.html#a4e9002ab365b4e30b325b9a8c85e917d">RxCommonResponse</a>()</div><div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;{</div><div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;</div><div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;}</div><div class="ttc" id="class_rx_common_response_html_a4e9002ab365b4e30b325b9a8c85e917d"><div class="ttname"><a href="class_rx_common_response.html#a4e9002ab365b4e30b325b9a8c85e917d">RxCommonResponse::RxCommonResponse</a></div><div class="ttdeci">RxCommonResponse()</div><div class="ttdef"><b>Definition:</b> <a href="_serial_star_8cpp_source.html#l00260">SerialStar.cpp:260</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -205,8 +213,8 @@ uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><b>_frameDataPtr</b
 </div><div class="memdoc">
 <p>Возвращает frameId пакета, полученного удаленным модулем на который отправлено это подтверждение. Может использоваться хостом для проверки доставки пакетов. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00361">361</a></p>
-<div class="fragment"><div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;{</div><div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_m_bee_response.html#aadca285fab370a7604ed8c024074b29e">getFrameDataLength</a>() - 4;</div><div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;}</div><div class="ttc" id="class_m_bee_response_html_aadca285fab370a7604ed8c024074b29e"><div class="ttname"><a href="class_m_bee_response.html#aadca285fab370a7604ed8c024074b29e">MBeeResponse::getFrameDataLength</a></div><div class="ttdeci">uint8_t getFrameDataLength()</div><div class="ttdef"><b>Definition:</b> <a href="_serial_star_8cpp_source.html#l00081">SerialStar.cpp:81</a></div></div>
+<p class="definition">См. определение в файле <a class="el" href="_serial_star_8cpp_source.html">SerialStar.cpp</a> строка <a class="el" href="_serial_star_8cpp_source.html#l00397">397</a></p>
+<div class="fragment"><div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;{</div><div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_m_bee_response.html#aadca285fab370a7604ed8c024074b29e">getFrameDataLength</a>() - 4;</div><div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;}</div><div class="ttc" id="class_m_bee_response_html_aadca285fab370a7604ed8c024074b29e"><div class="ttname"><a href="class_m_bee_response.html#aadca285fab370a7604ed8c024074b29e">MBeeResponse::getFrameDataLength</a></div><div class="ttdeci">uint8_t getFrameDataLength()</div><div class="ttdef"><b>Definition:</b> <a href="_serial_star_8cpp_source.html#l00081">SerialStar.cpp:81</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
